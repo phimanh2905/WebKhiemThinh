@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.drdvietnam.org/accessibility/danh-sach-ung-ho-nang-cao-nang-luc.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Oct 2017 13:16:27 GMT -->
+<head>
+<base   />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danh sách ủng hộ - Lĩnh vực hoạt động</title>
+<link rel="stylesheet" href="../css/style.css">
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+<link href="http://www.drdvietnam.org/images/favico.ico" rel="shortcut icon" type="image/x-icon" />
+<script src="../js/jquery-1.8.1.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
+<script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="../js/greyscale.js"></script>
+<script type="text/javascript" src="../js/expancer.js"></script>
+<script type="text/javascript" src="../js/mousetrap.min.js"></script>
+<!--
+<script type="text/javascript" src="http://www.trungtamtinhoc.edu.vn/api/snowstorm.js"></script>
+<script type="text/javascript" src="js/hoa-mai-roi.js"></script>
+-->
+<script>
+			$(document).ready(function(){
+				//Examples of how to assign the ColorBox event to elements
+				if ($(window).width() > 700) {
+					$(".inlinee").colorbox({inline:true, width:"30%", height:"20%"});
+				}
+				else {
+					if($(window).width()<700 && $(window).width()>500) {
+						$(".inlinee").colorbox({inline:true, width:"400px", height:"20%"});
+					}
+					else {
+						$(".inlinee").colorbox({inline:true, width:"220px", height:"20%"});
+					}
+				}
+				
+			});
+		</script>
+<script>
+$(document).ready(function(){
+//ID, class and tag element that font size is adjustable in this array
+//Put in html or body if you want the font of the entire page adjustable
+var section = new Array('div.fontset','.section2');
+section = section.join(',');
+// Reset Font Size
+var originalFontSize = $(section).css('font-size');
+$(".resetFont").click(function(){
+$(section).css('font-size', originalFontSize);
+});
+// Increase Font Size
+$(".increaseFont").click(function(){
+var currentFontSize = $(section).css('font-size');
+var currentFontSizeNum = parseFloat(currentFontSize, 10);
+var newFontSize = currentFontSizeNum*1.2;
+$(section).css('font-size', newFontSize);
+return false;
+});
+// Decrease Font Size
+$(".decreaseFont").click(function(){
+var currentFontSize = $(section).css('font-size');
+var currentFontSizeNum = parseFloat(currentFontSize, 10);
+var newFontSize = currentFontSizeNum*0.8;
+$(section).css('font-size', newFontSize);
+return false;
+});
+	// nhan 1 phim
+	// phim tat header 
+		Mousetrap.bind('alt+0', function() {window.location.assign("http://www.drdvietnam.org/highvisibility");}, 'keyup');
+				Mousetrap.bind('alt+1', function() {window.location.assign("http://www.drdvietnam.org/language.php?set=en");}, 'keyup');
+			Mousetrap.bind('alt+w', function() {
+		var currentFontSize = $(section).css('font-size');
+		var currentFontSizeNum = parseFloat(currentFontSize, 10);
+		var newFontSize = currentFontSizeNum*1.2;
+		$(section).css('font-size', newFontSize);
+		return false;
+	});
+	Mousetrap.bind('alt+r', function() {
+		$(section).css('font-size', originalFontSize);
+	});
+	Mousetrap.bind('alt+e', function() {
+		var currentFontSize = $(section).css('font-size');
+		var currentFontSizeNum = parseFloat(currentFontSize, 10);
+		var newFontSize = currentFontSizeNum*0.8;
+		$(section).css('font-size', newFontSize);
+		return false;
+	});
+	Mousetrap.bind('alt+q', function() {window.location.assign("danh-sach-ung-ho.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+i', function() {window.location.assign("dang-nhap.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+u', function() {window.location.assign("dang-ky.html#noidungnoidung");}, 'keyup');
+	
+	Mousetrap.bind('alt+a', function() {window.location.assign("index.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+j', function() {window.location.assign("drd.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+l', function() {window.location.assign("linh-vuc-hoat-dong.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+c', function() {window.location.assign("hoi-quan.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+n', function() {window.location.assign("thu-vien-thong-tin.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+m', function() {window.location.assign("video.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+p', function() {window.location.assign("chinh-sach-phap-luat.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+y', function() {window.location.assign("dien-dan.html#noidungnoidung");}, 'keyup');
+	
+	Mousetrap.bind('6', function() {window.location.assign("danh-sach-ung-ho-nang-cao-nang-luc.html#menutoptop");}, 'keyup');
+	Mousetrap.bind('7', function() {window.location.assign("danh-sach-ung-ho-nang-cao-nang-luc.html#menumainmain");}, 'keyup');
+	Mousetrap.bind('8', function() {window.location.assign("danh-sach-ung-ho-nang-cao-nang-luc.html#gotop");}, 'keyup');
+	Mousetrap.bind('9', function() {window.location.assign("danh-sach-ung-ho-nang-cao-nang-luc.html#noidungnoidung");}, 'keyup');
+	//Mousetrap.bind('alt+9', function() {$('html, body').animate({scrollTop: $("#noidungnoidung").offset().top}, 2000);}, 'keyup');
+	//Mousetrap.bind('alt+9', function() {$(document).scrollTo('#noidungnoidung');}, 'keyup');
+});
+</script>    
+<script type="text/javascript">
+	function setLocation(ev){
+		window.location.assign(ev);
+	}
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50073537-1', 'drdvietnam.org');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="normal" style="overflow-x: hidden;">
+<script>
+  (function() {
+    var cx = '004167217340609662241:rz4rgq9n_-m';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script><div id="gotop"></div>
+<div class="fontset">
+<section>
+	<div id="giaodientiepcan" class="normal">
+    	<header>
+        	<div id="tcheader">
+                <p class="gdtc"><a href="http://www.drdvietnam.org/">Giao diện chuẩn</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+                <p class="gdtp"><a href="http://www.drdvietnam.org/highvisibility/" title="Giao diện này phù hợp với người khuyết tật về mắt">Tương phản cao</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+                <p class="gdtc"><a href="http://www.drdvietnam.org/nightmode/" title="Chế độ này phù hợp với máy tính bảng và các thiết bị cầm tay vì tiết kiệm pin và các đoạn văn được hiển thị với phông nền tối, chữ sáng">Chế độ ban đêm</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+        <p class="resize"><a class='increaseFont' style='cursor: pointer; cursor: hand;' title=''>Tăng kích cỡ chữ </a><span class="font12">(Phím tắt  alt+w)</span><span class="cach"></span>
+        <a class='resetFont' style='cursor: pointer; cursor: hand;'>Đặt lại cỡ chữ chuẩn </a><span class="font12">(Phím tắt  alt+r)</span><span class="cach"></span>
+    <a class='decreaseFont' style='cursor: pointer; cursor: hand;' title=''>Giảm kích cỡ chữ </a><span class="font12">(Phím tắt  alt+e)</span><span class="cach"></span></p>
+    <p><a href="huong-dan-su-dung.html#noidungnoidung">Hướng dẫn truy cập</a></p>
+    <p class="dsuh"><a href="danh-sach-ung-ho.html#noidungnoidung"><span>Danh sách ủng hộ</span></a> <span class="font12">(Phím tắt  alt+q)</span><span class="cach"></span></p>
+    
+    	<p class="ngonngu"><a href="http://www.drdvietnam.org/language.php?set=vn" title="">Tiếng Việt </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span>
+        <a href="http://www.drdvietnam.org/language.php?set=en" title="">English </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span></p>
+        <p class="slr"><a href="tim-kiem.html#noidungnoidung">Tìm kiếm</a><span class="cach"></span></p>
+        <p class="slr"><a href="tim-kiem-theo-tu-khoa.html#noidungnoidung">Tìm theo từ khóa</a><span class="cach"></span></p>
+        				                            
+        <p class="slr"><a href="dang-nhap.html#noidungnoidung" title="Phím tắt  alt+i">Đăng nhập</a><span class="cach"></span></p>
+        <p class="slr"><a href="dang-ky.html#noidungnoidung" title="Phím tắt  alt+u">Đăng ký</a></p>
+        			</div>
+		<section><p class="vitrihientai">Bạn đang ở: </p></section>
+        </header>
+        <p class="mntop" id="menutoptop"><span>Menu top</span> <span class="font16">( Phím tắt  <u>6</u> )</span></p>
+            <nav class="menutopp">
+            	<ul>
+                	<li><a class="" href="index.html#noidungnoidung">Trang chủ</a> <span class="padl5">(Phím tắt  <u>alt+a</u>)</span></li>
+                    <li><a class="" href="drd.html#noidungnoidung">Giới thiệu</a> <span class="padl5">(Phím tắt  <u>alt+j</u>)</span></li>
+                    <li><a class="" href="linh-vuc-hoat-dong.html#noidungnoidung">Lĩnh vực hoạt động</a> <span class="padl5">(Phím tắt  <u>alt+l</u>)</span></li>
+                    <li><a class="" href="hoi-quan.html#noidungnoidung">Hội quán Đời Rất Đẹp</a> <span class="padl5">(Phím tắt  <u>alt+c</u>)</span></li>
+                    <li><a class="" href="thu-vien-thong-tin.html#noidungnoidung">Tin tức</a> <span class="padl5">(Phím tắt  <u>alt+n</u>)</span></li>
+                    <li><a class="" href="video.html#noidungnoidung">Thư viện</a> <span class="padl5">(Phím tắt  <u>alt+m</u>)</span></li>
+                    <li><a class="" href="chinh-sach-phap-luat.html#noidungnoidung">Chính sách và pháp luật</a> <span class="padl5">(Phím tắt  <u>alt+p</u>)</span></li>
+                    <li><a class="" href="dien-dan.html#noidungnoidung">Diễn đàn</a> <span class="padl5">(Phím tắt  <u>alt+y</u>)</span></li>
+                    <li class="gotop"><a href="danh-sach-ung-ho-nang-cao-nang-luc.html#gotop" class="font14">Lên trên</a></li>
+                </ul>
+            </nav>
+            <!--<div style="display:none;">
+                        	<div id="searchgoogle" class="searchgo"><gcse:searchbox></gcse:searchbox>
+<div style="visibility:hidden"><gcse:searchresults refinementStyle="link"></gcse:searchresults></div>
+                        </div>
+            </div>--><link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
+<script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
+<script>
+			$(document).ready(function(){
+				//Examples of how to assign the ColorBox event to elements
+				$(".inlineee").colorbox({inline:true, Maxwidth:"50%", Maxheight:"90%"});
+				
+			});
+		</script>
+        <p class="mntop" id="menumainmain"><span>Menu Chính</span> <span class="font16">( Phím tắt  <u>7</u> )</span></p>
+            <nav class="menutopp">
+            	<ul>
+                	
+			
+			<li><a class="" href="tiep-can-vi-su-hoa-nhap.html#noidungnoidung">Tiếp cận vì sự hòa nhập</a></li>
+
+				<li class="menucon"><a class="" href="tiep-can-vi-su-hoa-nhap/gioi-thieu.html#noidungnoidung">&raquo;&nbsp;Giới thiệu</a></li>
+				<li class="menucon"><a class="" href="tiep-can-vi-su-hoa-nhap/tin-hoat-dong.html#noidungnoidung">&raquo;&nbsp;Tin hoạt động</a></li>
+				<li class="menucon"><a class="" href="tiep-can-vi-su-hoa-nhap/lien-he.html#noidungnoidung">&raquo;&nbsp;Liên hệ</a></li>
+            
+            <li><a class="" href="tiep-can-giao-duc-danh-cho-sinh-vien-khuyet-tat.html#noidungnoidung">Tiếp cận giáo dục dành cho sinh viên khuyết tật</a></li>
+
+				<li class="menucon"><a class="" href="tiep-can-giao-duc-danh-cho-sinh-vien-khuyet-tat/gioi-thieu.html#noidungnoidung">&raquo;&nbsp;Giới thiệu</a></li>
+				<li class="menucon"><a class="" href="tiep-can-giao-duc-danh-cho-sinh-vien-khuyet-tat/tin-hoat-dong.html#noidungnoidung">&raquo;&nbsp;Tin hoạt động</a></li>
+				<li class="menucon"><a class="" href="tiep-can-giao-duc-danh-cho-sinh-vien-khuyet-tat/lien-he.html#noidungnoidung">&raquo;&nbsp;Liên hệ</a></li>
+                
+			<li><a class="" href="nang-cao-nang-luc.html#noidungnoidung">Nâng cao năng lực</a></li>
+
+				<li class="menucon"><a class="" href="nang-cao-nang-luc/gioi-thieu.html#noidungnoidung">&raquo;&nbsp;Giới thiệu</a></li>
+				<li class="menucon"><a class="" href="nang-cao-nang-luc/tin-hoat-dong.html#noidungnoidung">&raquo;&nbsp;Tin hoạt động</a></li>
+				<li class="menucon"><a class="" href="nang-cao-nang-luc/thanh-nien-khuyet-tat.html#noidungnoidung">&raquo;&nbsp;Thanh niên khuyết tật</a></li>
+				
+				<li class="menucon"><a class="" href="danh-sach-ung-ho-nang-cao-nang-luc.html#noidungnoidung">&raquo;&nbsp;Danh sách ủng hộ</a></li>
+				<li class="menucon"><a class="" href="nang-cao-nang-luc/lien-he.html#noidungnoidung">&raquo;&nbsp;Liên hệ</a></li>
+
+			<li><a class="" href="ho-tro-viec-lam.html#noidungnoidung">Việc làm</a></li>
+
+				<li class="menucon"><a class="" href="viec-lam/gioi-thieu.html#noidungnoidung">&raquo;&nbsp;Giới thiệu</a></li>
+				<li class="menucon"><a class="" href="viec-lam/tin-hoat-dong.html#noidungnoidung">&raquo;&nbsp;Tin hoạt động</a></li>
+				<li class="menucon"><a class="" href="tin-tuyen-dung.html#noidungnoidung">&raquo;&nbsp;Tin tuyển dụng</a></li>
+				
+				<li class="menucon"><a class="" href="tai-lieu/ky-nang-tim-viec.html#noidungnoidung">&raquo;&nbsp;Kỹ năng tìm việc</a></li>
+				<li class="menucon"><a class="" href="viec-lam/lien-he.html#noidungnoidung">&raquo;&nbsp;Liên hệ</a></li>
+
+			
+			<li><a class="" href="song-doc-lap.html#noidungnoidung">Sống độc lập</a></li>
+
+				<li class="menucon"><a class="" href="song-doc-lap/gioi-thieu.html#noidungnoidung">&raquo;&nbsp;Giới thiệu</a></li>
+				<li class="menucon"><a class="" href="song-doc-lap/tin-hoat-dong.html#noidungnoidung">&raquo;&nbsp;Tin hoạt động</a></li>
+				<li class="menucon"><a class="" href="song-doc-lap/lien-he.html#noidungnoidung">&raquo;&nbsp;Liên hệ</a></li>
+
+			<li><a class="" href="ho-tro-di-chuyen.html#noidungnoidung">Hỗ trợ di chuyển</a></li>
+
+				<li class="menucon"><a class="" href="ho-tro-di-chuyen/gioi-thieu.html#noidungnoidung">&raquo;&nbsp;Giới thiệu</a></li>
+				<li class="menucon"><a class="" href="ho-tro-di-chuyen/tin-hoat-dong.html#noidungnoidung">&raquo;&nbsp;Tin hoạt động</a></li>
+				<li class="menucon"><a class="" href="ho-tro-di-chuyen/lien-he.html#noidungnoidung">&raquo;&nbsp;Liên hệ</a></li>
+
+			<li><a class="" href="hoc-bong-nguoi-ban-dong-hanh.html#noidungnoidung">Học bổng người bạn đồng hành</a></li>
+
+				<li class="menucon"><a class="" href="hoc-bong-nguoi-ban-dong-hanh/gioi-thieu.html#noidungnoidung">&raquo;&nbsp;Giới thiệu</a></li>
+				<li class="menucon"><a class="" href="hoc-bong-nguoi-ban-dong-hanh/tin-hoat-dong.html#noidungnoidung">&raquo;&nbsp;Tin hoạt động</a></li>
+
+			<li><a class="" href="nang-cao-nhan-thuc.html#noidungnoidung">Nâng cao nhận thức</a></li>
+			<li><a class="" href="van-dong-bien-ho.html#noidungnoidung">Vận động biện hộ</a></li>
+			<li><a class="" href="mang-luoi-nguoi-khuyet-tat.html#noidungnoidung">Mạng lưới người khuyết tật</a></li>
+
+				<li class="menucon"><a class="" href="mang-luoi-nguoi-khuyet-tat/gioi-thieu.html#noidungnoidung">&raquo;&nbsp;Giới thiệu</a></li>
+				<li class="menucon"><a class="" href="mang-luoi-nguoi-khuyet-tat/tin-hoat-dong.html#noidungnoidung">&raquo;&nbsp;Tin hoạt động</a></li>
+
+			<li><a class="" href="lich-hoat-dong.html#noidungnoidung">Lịch hoạt động</a></li>
+                                
+		                    <li class="gotop"><a href="danh-sach-ung-ho-nang-cao-nang-luc.html#gotop" class="font14">Lên trên</a></li>
+                </ul>
+            </nav>
+<script type="text/javascript" src="../js/jquery-responsiveTables.js"></script>
+
+<script type="text/javascript" src="../js/jquery.responsiveText.js"></script>
+
+<script type="text/javascript">
+
+      $(document).ready(function() {
+
+        $('.responsive').not('table').responsiveText();
+
+        $('table.responsive').responsiveTables();
+
+      });
+
+    </script>
+
+<script type="text/javascript" src="../js/tablefilter_all.js"></script>
+
+<p class="mntop" id="noidungnoidung"><span>Nội dung</span> <span class="font16">( Phím tắt  <u>9</u> )</span></p>
+
+            <section>
+
+            <!-- start noidung -->
+
+            	<div class="contenttiepcan" style="width: 98% !important; padding-right:2%;">
+                	<p class="textright"><a href="thong-tin-ung-ho.html">Kênh ủng hộ</a></p> 
+
+                    <table width="100%" class="responsiveTable" data-min="11" data-max="30" cellpadding="0" cellspacing="0" id="table2" >
+
+<thead>
+
+<tr style="">
+
+<th style="width: 20%; text-align:center; vertical-align:middle; padding:0 0.2em; ">Họ tên / Cơ quan</th>
+
+<th style="width:13%; padding:0 0.2em; vertical-align:middle; " >Ghi chú</th>
+
+<th style="width:17%; padding:0 0.2em; vertical-align:middle;" >Loại đóng góp</th>
+
+<th style="width:14%; text-align:center; vertical-align:middle;" >PT thanh toán</th>
+
+<th style="width:10%; text-align:center; vertical-align:middle;" >Số tiền</th>
+
+<th style="width:7%; text-align:center; vertical-align:middle;" >Loại tiền</th>
+
+<th style="width:10%; text-align:center; vertical-align:middle; padding:0 0.2em;" >Ngày đóng góp</th>
+
+<th style="width:20%; text-align:center;border-right:0 !important; vertical-align:middle;">Hỗ trợ hoạt động</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>	<td class="nd ht">Đỗ Thị Thu Hồng</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">27-09-2017</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Cô Yumiko</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">10.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-09-2017</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Đỗ Thị Thu Hồng</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">05-07-2017</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Đỗ Thị Thu Hồng</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">05-06-2017</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Đỗ Thị Thu Hồng</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">19-04-2017</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Angie Ngọc Trần</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">100</td>	<td class="nd lt">USD</td>	<td class="nd ndg">15-07-2016</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bác sĩ Thiện</td>	<td class="nd gc">Ủng hộ xe lăn điện cho 1 bạn sinh viên khuyết tật</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000</td>	<td class="nd lt">AUD</td>	<td class="nd ndg">21-04-2016</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Chị Nga</td>	<td class="nd gc">Virginia, Hoa Kỳ</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200</td>	<td class="nd lt">USD</td>	<td class="nd ndg">17-02-2016</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Công ty TNHH Hệ thống Glandore Vietnam</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">10.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">02-02-2016</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Thanh Hương</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">27-01-2016</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bà Nguyễn Thị Ngọc Oanh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-03-2014</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bà Nguyễn Thị Ngọc Oanh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-02-2014</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bà Nguyễn Thị Ngọc Oanh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-01-2014</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bà Nguyễn Thị Ngọc Oanh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-12-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bà Nguyễn Thị Ngọc Oanh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-11-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bà Nguyễn Thị Ngọc Oanh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-10-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bà Nguyễn Thị Ngọc Oanh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-09-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bà Nguyễn Thị Ngọc Oanh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-08-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bà Nguyễn Thị Ngọc Oanh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-07-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bà Nguyễn Thị Ngọc Oanh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-06-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bà Nguyễn Thị Hồng Hạnh</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">450.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">11-06-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Mạnh Thường Quân không tên</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">2.245</td>	<td class="nd lt">USD</td>	<td class="nd ndg">31-05-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bà Nguyễn Thị Ngọc Oanh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-05-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Việt Kiều Canada</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">300</td>	<td class="nd lt">CAD</td>	<td class="nd ndg">03-05-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Giấu tên</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">26-04-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bà Nguyễn Thị Hồng Hạnh</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">450.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">24-04-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Ngọc Oanh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-04-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Phủ sóng yêu thương</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">52.905.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">31-03-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Hoàng Long, Cô Sáu</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">3.200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">29-03-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Lâm Thanh Thủy</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">29-03-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Vợ chồng ông bà Diệp Thiện Tánh và Nguyễn Thị Hoa</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">3.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">26-03-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Ngọc Oanh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-03-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Việt kiều Úc dấu tên</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">300</td>	<td class="nd lt">CAD</td>	<td class="nd ndg">01-03-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Luật sư Lương Thái Anh</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-02-2013</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Ô tô Toàn Cầu</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">5.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">13-12-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Cô Lê Thiên Hương</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">22-11-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Mạnh thường quân dấu tên</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">300</td>	<td class="nd lt">CAD</td>	<td class="nd ndg">15-11-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Trần Trọng Văn, anh Duy</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">3.200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">15-11-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Tình</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">14-09-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Bá Công</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">4.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">14-09-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">MTQ</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">300</td>	<td class="nd lt">CAD</td>	<td class="nd ndg">14-09-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Mạnh thường quân</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">22-08-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Trần Thị Diệu Hiền</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">22-08-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Một người dấu tên</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">300</td>	<td class="nd lt">CAD</td>	<td class="nd ndg">17-06-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Hương</td>	<td class="nd gc">Cty Vinca Media</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">5.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">17-06-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">BS Hoài Nam </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">17-06-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Tuyết Minh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">17-06-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Tuệ An</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">17-06-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Duy Anh và Trần Trọng Văn</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">650.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">17-06-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Ngọc Bích Ngân</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">14-02-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">2 bạn Sinh viên Đại Học kinh tế</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">13-02-2012</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Bích Ngân  </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">4.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">16-12-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Ca sĩ Bích Hồng </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">03-12-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Cty INVESTCO </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">9.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">31-10-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Phan Thị Ngân</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">31-10-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyên Văn Xương </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">31-10-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia Đình Giáo Sư Nguyễn Khánh Dư </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">12.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">31-10-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình BS. Hoài Nam </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">12.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-10-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Bích Ngân </td>	<td class="nd gc">Ngân hàng VCB</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">05-10-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Cô Yến và Gia đình</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">10.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">03-10-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Phạm Thị Ngọc Yến, Đặng Hồng Nga </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">12.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">28-09-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình Minh Vân- Minh Đức </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">23-09-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Mai Thị Thanh Vân </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-08-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Bích Ngân</td>	<td class="nd gc">ngân hàng VCB</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">27-05-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thu Trang</td>	<td class="nd gc">tổ chức Warlegacies Project</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">5.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">27-04-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Ông Quang Ngọc</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200</td>	<td class="nd lt">USD</td>	<td class="nd ndg">26-04-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Ông Quang Ngọc</td>	<td class="nd gc">FPT</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">26-04-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Tuyết Minh </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">11.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-04-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">BS. Hoài Nam </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">12.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-04-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Bích Ngân </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">04-04-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Cô Yến và gia đình</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">28-03-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Phạm Ngọc Châu </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">300.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">22-03-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Mai</td>	<td class="nd gc">Tiểu bang Virginia, USA</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500</td>	<td class="nd lt">USD</td>	<td class="nd ndg">14-03-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Cty TNHH Tâm An </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">10.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">11-03-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình em Phương Thanh </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">21-02-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Học sinh lớp 8A7 trường Trần Đại Nghĩa</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">21-02-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bác sỹ Khánh Dư</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">12.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">28-01-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Lê Thị Mỹ Hương</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">07-01-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Trường Đại học EWHA - Hàn Quốc</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">10.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">07-01-2011</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Lưu Thị Ánh Loan</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">29-12-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Chị Nguyễn Thị Thanh Hương</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">02-12-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Chị Nguyễn Thị Thanh Hương</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">02-12-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình Minh Văn - Minh Đức</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-12-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Tổ chức từ thiện CUICUI</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">14.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">29-11-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Đỗ Hồng Thu</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">26-10-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">cô Thái Thị Ngọc Dư</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">21-10-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bùi Tiểu Binh</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">10.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">19-09-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Huỳnh Thắng Dũng</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">24-08-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Mã Văn Quang</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">3.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-08-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Cô Lê Thị Mỹ Hương</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">4.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-08-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia Đình Cô Yến</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">02-08-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Đỗ Thu Hồng </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">18.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">29-07-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Kim Yến & Thành</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">24.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">27-07-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Huỳnh Bích Ảnh </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">08-06-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Cô Tuyết Minh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">7.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">16-05-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">BS Hoàng Nam</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">16-05-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">BS Khánh Dư</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">16-05-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Lê Thị Mỹ Hương</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">15-05-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Huỳnh Thắng Dũng</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">13-05-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Caroline</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-05-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Ngọc Mỹ Phương</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">22-04-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Mỹ Hồng Ngọc </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">19-04-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Cần Thị Côn </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">19-04-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Anoa Dussol Perran </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">26-03-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Không tiết lộ tên </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">25-03-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Chị Thu</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">27-01-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Không tiết lộ tên</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">21-01-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Đỗ Văn Quang</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ 1 phần của học bổng toàn phần</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">15-01-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Đặng Thị Hồng Nga / Phạm Thị Ngọc Yến </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">12.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">14-01-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Hoàng Châu Hiền </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200</td>	<td class="nd lt">USD</td>	<td class="nd ndg">11-01-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình Minh Vân / Minh Đức </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ 1 phần của học bổng toàn phần</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-01-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Lương Hiệp Thuận</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">12.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">02-01-2010</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Hoàng Yến</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">23-12-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Lidia Rozdilsky</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">100</td>	<td class="nd lt">USD</td>	<td class="nd ndg">22-12-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bán áo thun</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">15.990.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">14-12-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Võ T. Bích Thu </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ 1 phần của học bổng toàn phần</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">27-11-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Huỳnh Bích Ảnh </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">7.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">24-11-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Veronica Reatare</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">23-11-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bùi Lam Sơn</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">5.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">16-11-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Lâm Sơn Hoàng</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">26-10-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Ca sĩ</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">26-10-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">CĐ Nhà Máy Sữa Thống Nhất</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">26-10-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Trần Bá Thiện</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">22-10-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Christiane </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">9.982.090</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">22-10-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht"> 	  Mã Văn Quang </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ 1 phần của học bổng toàn phần</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">5.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">22-09-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Chị Mỹ Hương - Nga</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">9.600.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">18-09-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht"> 	  Penny & John </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">16-09-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Văn Lợi</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">75.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">23-07-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Bs Phan Vương Huy Đổng </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">12.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-07-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">American Council of learned Society</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">35.500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">09-06-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Christiane & D.Hương</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.940.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">29-05-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Lưu Minh Phước</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">4.900.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">21-05-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Clair Kingston </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">400.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">05-05-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Lương T. Thanh Hương </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">400.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">26-03-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Thầy Lê Bảo Lâm</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">24-02-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Thầy Lê Bảo Lâm</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">24-02-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Thúy Vi </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">18-02-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Thầy Nguyễn Văn Minh </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-02-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Câu chuyện ước mơ </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">3.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">09-02-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">CLB Phụ Nữ và hoạt động QT </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nhóm Việt Mới </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">8.600.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Cty TNHH TV DT Tầm nhìn </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">17.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Trường tư thục QT Sài Gòn tài trợ cho Lê Minh Duy </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">7.200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Trường tư thục QT Sài Gòn tài trợ cho Nguyễn Thanh Tùng </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Thanh Hương </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">400.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Lương Thị Thanh Hương </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">400.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Không tên </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Ngô Thị Minh Huyền </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Phạm Thị Ngân </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">3.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nhóm học sinh Mỹ </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Thanh Hương</td>	<td class="nd gc">GV tiếng Anh</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Elizabeth Wilson Milne </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">3.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">CLB Phụ nữ VN hoạt động quốc tế </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Trương Bạch Lan </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Ngọc Mai </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.400.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Mã Văn Quang </td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ 1 phần của học bổng toàn phần</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Cty TNHH Xây Lắp Thương Mại Hải Âu </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">12.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">C. Mỹ Hương & C. Nga </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">9.600.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">PGS TS Nguyễn Hoài Nam </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình Minh Vân & Minh Đức </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Cô Bích Hồng </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-01-2009</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Mã Văn Quang</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ 1 phần của học bổng toàn phần</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">30-12-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Công ty TNHH TV DT Tầm Nhìn</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">25.600.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">13-10-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình Hoàng Yến</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-10-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Công ty XLTM Hải Âu</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">12.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-10-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Ngọc Mai</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.400.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-10-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Trương Bạch Lan</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">12-10-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình anh Quân</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ 1 phần của học bổng toàn phần</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.400.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-10-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình Minh Vân & Minh Đức</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-10-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình Tuyết Minh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">18.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">07-10-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Cô Bích Hồng </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">07-10-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Thanh Hương</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">400.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">03-10-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Trường Tư Thục Quốc Tế (tài trợ cho Nguyễn Thanh Tùng và Lê Minh Duy)</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">9.200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">30-09-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình Hoài Phương</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-09-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Phan Thị Ngân </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">3.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">03-09-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Đỗ Thu Hồng</td>	<td class="nd gc">Cơ Sở May Hồng Phú</td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">4.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">15-08-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Không tiết lộ tên</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">300.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">13-08-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Elizabeth Wilson Milne</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">3.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">11-08-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình chị Đặng Hồng Nga</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">12.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">05-08-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Clair Kingston</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">400.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">05-08-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Jenn Thorkeson</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">80.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">05-08-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Ruby NTN</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">05-08-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn T.Nhật</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">100.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">05-08-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nhóm học sinh Mỹ</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">05-08-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Không tiết lộ tên</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">14-07-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình chị Kim Yến và NSƯT Thành Hội</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">09-07-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Công ty thép Pomina</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">30.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">19-06-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Thanh Hương</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">18-06-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Công Ty Phân Bón Thiên Sinh</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ một học bổng toàn phần 1triệu VNĐ/1 tháng</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">4.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">02-06-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Không tiết lộ tên</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">300.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">02-06-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Cô Thủy</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">800.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">30-05-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">TS. Thái T. Ngọc Dư </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">18-05-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Võ Thị Bích Thu</td>	<td class="nd gc"></td>	<td class="nd ldg">Hỗ trợ định kỳ 1 phần của học bổng toàn phần</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-05-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình Nguyễn Thị Tuyết Mai</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">17-04-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình Nguyễn Thị Hòa</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">14-04-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình Lâm Sơn Hoàng</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">14-04-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Ngô Thị Minh Huyền</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">400.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">04-04-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Hạnh Dung</td>	<td class="nd gc">IFP Alumi VietNam</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">3.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">31-03-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Vũ Minh Thư</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">3.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">28-03-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Trần Triều Năng Lực  </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">27-03-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Hoàng Phương Duy</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">27-03-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Tuyết</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">27-03-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Gia đình anh Võ Minh Phúc (IFP Alumi VietNam)</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">27-03-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Thị Ngọc</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">20-03-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Nguyễn Văn Lợi</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">19-03-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Rose Marino</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Chuyển khoản</td>	<td class="nd st">13.855.952</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">21-02-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht"> 	  Không tiết lộ tên</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">300.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">05-02-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">Lương Thị Thanh Hương</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">400.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">03-02-2008</td>	<td class="nd hthd">Học Bổng</td></tr><tr>	<td class="nd ht">GS. Glen W. White</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.600.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">08-08-2007</td>	<td class="nd hthd">Học Bổng</td></tr>
+</tbody>
+
+</table>    
+
+<script type="text/javascript">
+
+//<![CDATA[    
+
+    var table2_Props =  {        
+
+                    col_0: "none",
+
+                    col_1:"none",
+
+                    col_2: "select",
+
+                    col_3: "select",  
+
+                    col_4: "none",
+
+                    col_5: "select",
+
+                    col_7: "select",  
+
+                    display_all_text: " [ Xem tất cả ] ",  
+
+                    sort_select: true,
+
+                    paging: true,
+
+                    paging_length: 7,
+
+                    results_per_page: ['Hiển thị từng trang',[7,10,20,25,50,100]] ,
+
+                    page_selector_type: 'select',
+
+                    stylesheet: 'css/filtergrid.css',
+
+                    help_instructions: false,
+
+                    page_text: 'Trang',
+
+                    of_text: ' / ',
+
+                    rows_counter: true
+
+                    //grid_layout: true
+
+                    
+
+                };  
+
+    var tf2 = setFilterGrid( "table2",table2_Props );  
+
+    
+
+//]]>  
+
+</script>
+
+                </div>
+
+             </section><section>
+            	<footer>
+                	<div class="footer">
+                    	<div class="doitac">
+                        	  
+                        	<a href="http://www.fordfound.org/regions/vietnam/overview" target="_blank"><img src="../images/doitacdrd/f.png" alt="AP" title="Ford Foundation"></a>
+                                                        <img src="../images/doitacdrd/armcharm.png" alt="amcham vietnam" title="amcham vietnam">
+                              
+                        	<a href="http://www.atlanticphilanthropies.org/" target="_blank"><img src="../images/doitacdrd/atlantic.png" alt="The Atlantic Philantropies" title="The Atlantic Philantropies"></a>
+                              
+                        	<a href="http://www.irishaid.gov.ie/" target="_blank"><img src="../images/doitacdrd/irish.png" alt="Irish Aid" title="Irish Aid"></a>
+                              
+                        	<a href="http://www.nippon-foundation.or.jp/eng/" target="_blank"><img src="../images/doitacdrd/nippon.png" alt="Nippon" title="Nippon"></a>
+                              
+                        	<a href="http://www.invescohcm.com.vn/Quatrinhhinhthanh.html" target="_blank"><img src="../images/doitacdrd/invesco.png" alt="Invesco" title="Invesco"></a>
+                              
+                        	<a href="http://www.humancare1986.jp/english.html" target="_blank"><img src="../images/doitacdrd/hcare.png" alt="HumanCare" title="HumanCare"></a>
+                              
+                        	<a href="http://www.koica.go.kr/english/main.html" target="_blank"><img src="../images/doitacdrd/logokoica.jpg" alt="Koica" title="Koica"></a>
+                              
+                        	<a href="http://www.ableforum.com/" target="_blank"><img src="../images/doitacdrd/hq.png" alt="Ableforum" title="Ableforum"></a>
+                                                        <img src="../images/doitacdrd/dpi.png" alt="Khuyết tật" title="Khuyết tật">
+                              
+                        	<a href="http://australia.gov.au/" target="_blank"><img src="../images/doitacdrd/ausaid.png" alt="Australia Goverment" title="Australia Goverment"></a>
+                                                        <img src="../images/doitacdrd/vusta.png" alt="Vusta" title="Vusta">
+                              
+                        	<a href="http://www.pavietnam.vn/" target="_blank"><img src="../images/doitacdrd/PAvietnam.jpg" alt="Logo PAVietNam" title="PA Việt Nam"></a>
+                              
+                        	<a href="http://eqvn.net/" target="_blank"><img src="../images/doitacdrd/eqvn.jpg" alt="Học vien EQVN" title="Học vien EQVN"></a>
+                              
+                        	<a href="https://www.usaid.gov/vi/vietnam" target="_blank"><img src="../images/doitacdrd/USAID.jpg" alt="logo tổ chức USAID" title="USAID"></a>
+                              
+                        	<a href="http://moveability.icrc.org/" target="_blank"><img src="../images/doitacdrd/ICRC.jpg" alt=" Quỹ ICRC MoveAbility" title=" Quỹ ICRC MoveAbility"></a>
+                              
+                        	<a href="http://tamnguyenviet.vn/voi-ca-tam-tinh/" target="_blank"><img src="../images/doitacdrd/Tamnguyenviet01.jpg" alt="" title="Tâm nguyện Việt"></a>
+                                                        <p class="clr"></p>
+                        </div>
+                        <div class="copyright"><p style="text-align: left;float: left;"><img src="../images/icon_dien_thoai.png" alt="Điện thoại" style="margin:5px 5px 0 0;height:15px;" />028 6267 9911 - <img src="../images/icon_email.png" alt="Email" style="margin:5px 5px 0 0;height:15px;" /><a href="mailto:info@drdvietnam.com" style="color: #fff;;">info@drdvietnam.com</a></p><p style="float: right;">&copy; Power by DRD Vietnam. All right reserved.</p><p class="clr"></p></div>
+                    </div>
+                </footer>
+            </section>
+            
+		
+	</div>
+</section>
+</div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/58340a557bb7bf7f521ddde8/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+
+<!-- Mirrored from www.drdvietnam.org/accessibility/danh-sach-ung-ho-nang-cao-nang-luc.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Oct 2017 13:16:27 GMT -->
+</html>

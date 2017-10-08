@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.drdvietnam.org/accessibility/thu-vien-sach/169/sach-ho-tro.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Oct 2017 13:28:47 GMT -->
+<head>
+<base   />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sách - Hỗ trợ</title>
+<link rel="stylesheet" href="../../../css/style.css">
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+<link href="http://www.drdvietnam.org/images/favico.ico" rel="shortcut icon" type="image/x-icon" />
+<script src="../../../js/jquery-1.8.1.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../admin/css/colorbox.css" media="screen" />
+<script type="text/javascript" src="../../../admin/js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="../../../js/greyscale.js"></script>
+<script type="text/javascript" src="../../../js/expancer.js"></script>
+<script type="text/javascript" src="../../../js/mousetrap.min.js"></script>
+<!--
+<script type="text/javascript" src="http://www.trungtamtinhoc.edu.vn/api/snowstorm.js"></script>
+<script type="text/javascript" src="js/hoa-mai-roi.js"></script>
+-->
+<script>
+			$(document).ready(function(){
+				//Examples of how to assign the ColorBox event to elements
+				if ($(window).width() > 700) {
+					$(".inlinee").colorbox({inline:true, width:"30%", height:"20%"});
+				}
+				else {
+					if($(window).width()<700 && $(window).width()>500) {
+						$(".inlinee").colorbox({inline:true, width:"400px", height:"20%"});
+					}
+					else {
+						$(".inlinee").colorbox({inline:true, width:"220px", height:"20%"});
+					}
+				}
+				
+			});
+		</script>
+<script>
+$(document).ready(function(){
+//ID, class and tag element that font size is adjustable in this array
+//Put in html or body if you want the font of the entire page adjustable
+var section = new Array('div.fontset','.section2');
+section = section.join(',');
+// Reset Font Size
+var originalFontSize = $(section).css('font-size');
+$(".resetFont").click(function(){
+$(section).css('font-size', originalFontSize);
+});
+// Increase Font Size
+$(".increaseFont").click(function(){
+var currentFontSize = $(section).css('font-size');
+var currentFontSizeNum = parseFloat(currentFontSize, 10);
+var newFontSize = currentFontSizeNum*1.2;
+$(section).css('font-size', newFontSize);
+return false;
+});
+// Decrease Font Size
+$(".decreaseFont").click(function(){
+var currentFontSize = $(section).css('font-size');
+var currentFontSizeNum = parseFloat(currentFontSize, 10);
+var newFontSize = currentFontSizeNum*0.8;
+$(section).css('font-size', newFontSize);
+return false;
+});
+	// nhan 1 phim
+	// phim tat header 
+		Mousetrap.bind('alt+0', function() {window.location.assign("http://www.drdvietnam.org/highvisibility");}, 'keyup');
+				Mousetrap.bind('alt+1', function() {window.location.assign("http://www.drdvietnam.org/language.php?set=en");}, 'keyup');
+			Mousetrap.bind('alt+w', function() {
+		var currentFontSize = $(section).css('font-size');
+		var currentFontSizeNum = parseFloat(currentFontSize, 10);
+		var newFontSize = currentFontSizeNum*1.2;
+		$(section).css('font-size', newFontSize);
+		return false;
+	});
+	Mousetrap.bind('alt+r', function() {
+		$(section).css('font-size', originalFontSize);
+	});
+	Mousetrap.bind('alt+e', function() {
+		var currentFontSize = $(section).css('font-size');
+		var currentFontSizeNum = parseFloat(currentFontSize, 10);
+		var newFontSize = currentFontSizeNum*0.8;
+		$(section).css('font-size', newFontSize);
+		return false;
+	});
+	Mousetrap.bind('alt+q', function() {window.location.assign("../../danh-sach-ung-ho.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+i', function() {window.location.assign("../../dang-nhap.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+u', function() {window.location.assign("../../dang-ky.html#noidungnoidung");}, 'keyup');
+	
+	Mousetrap.bind('alt+a', function() {window.location.assign("../../index.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+j', function() {window.location.assign("../../drd.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+l', function() {window.location.assign("../../linh-vuc-hoat-dong.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+c', function() {window.location.assign("../../hoi-quan.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+n', function() {window.location.assign("../../thu-vien-thong-tin.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+m', function() {window.location.assign("../../video.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+p', function() {window.location.assign("../../chinh-sach-phap-luat.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+y', function() {window.location.assign("../../dien-dan.html#noidungnoidung");}, 'keyup');
+	
+	Mousetrap.bind('6', function() {window.location.assign("sach-ho-tro.html#menutoptop");}, 'keyup');
+	Mousetrap.bind('7', function() {window.location.assign("sach-ho-tro.html#menumainmain");}, 'keyup');
+	Mousetrap.bind('8', function() {window.location.assign("sach-ho-tro.html#gotop");}, 'keyup');
+	Mousetrap.bind('9', function() {window.location.assign("sach-ho-tro.html#noidungnoidung");}, 'keyup');
+	//Mousetrap.bind('alt+9', function() {$('html, body').animate({scrollTop: $("#noidungnoidung").offset().top}, 2000);}, 'keyup');
+	//Mousetrap.bind('alt+9', function() {$(document).scrollTo('#noidungnoidung');}, 'keyup');
+});
+</script>    
+<script type="text/javascript">
+	function setLocation(ev){
+		window.location.assign(ev);
+	}
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50073537-1', 'drdvietnam.org');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="normal" style="overflow-x: hidden;">
+<script>
+  (function() {
+    var cx = '004167217340609662241:rz4rgq9n_-m';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script><div id="gotop"></div>
+<div class="fontset">
+<section>
+	<div id="giaodientiepcan" class="normal">
+    	<header>
+        	<div id="tcheader">
+                <p class="gdtc"><a href="http://www.drdvietnam.org/">Giao diện chuẩn</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+                <p class="gdtp"><a href="http://www.drdvietnam.org/highvisibility/" title="Giao diện này phù hợp với người khuyết tật về mắt">Tương phản cao</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+                <p class="gdtc"><a href="http://www.drdvietnam.org/nightmode/" title="Chế độ này phù hợp với máy tính bảng và các thiết bị cầm tay vì tiết kiệm pin và các đoạn văn được hiển thị với phông nền tối, chữ sáng">Chế độ ban đêm</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+        <p class="resize"><a class='increaseFont' style='cursor: pointer; cursor: hand;' title=''>Tăng kích cỡ chữ </a><span class="font12">(Phím tắt  alt+w)</span><span class="cach"></span>
+        <a class='resetFont' style='cursor: pointer; cursor: hand;'>Đặt lại cỡ chữ chuẩn </a><span class="font12">(Phím tắt  alt+r)</span><span class="cach"></span>
+    <a class='decreaseFont' style='cursor: pointer; cursor: hand;' title=''>Giảm kích cỡ chữ </a><span class="font12">(Phím tắt  alt+e)</span><span class="cach"></span></p>
+    <p><a href="../../huong-dan-su-dung.html#noidungnoidung">Hướng dẫn truy cập</a></p>
+    <p class="dsuh"><a href="../../danh-sach-ung-ho.html#noidungnoidung"><span>Danh sách ủng hộ</span></a> <span class="font12">(Phím tắt  alt+q)</span><span class="cach"></span></p>
+    
+    	<p class="ngonngu"><a href="http://www.drdvietnam.org/language.php?set=vn" title="">Tiếng Việt </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span>
+        <a href="http://www.drdvietnam.org/language.php?set=en" title="">English </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span></p>
+        <p class="slr"><a href="../../tim-kiem.html#noidungnoidung">Tìm kiếm</a><span class="cach"></span></p>
+        <p class="slr"><a href="../../tim-kiem-theo-tu-khoa.html#noidungnoidung">Tìm theo từ khóa</a><span class="cach"></span></p>
+        				                            
+        <p class="slr"><a href="../../dang-nhap.html#noidungnoidung" title="Phím tắt  alt+i">Đăng nhập</a><span class="cach"></span></p>
+        <p class="slr"><a href="../../dang-ky.html#noidungnoidung" title="Phím tắt  alt+u">Đăng ký</a></p>
+        			</div>
+		<section><p class="vitrihientai">Bạn đang ở: Thư viện&nbsp;&raquo;&nbsp;Tài liệu&nbsp;&raquo;&nbsp;Sách</p></section>
+        </header>
+        <p class="mntop" id="menutoptop"><span>Menu top</span> <span class="font16">( Phím tắt  <u>6</u> )</span></p>
+            <nav class="menutopp">
+            	<ul>
+                	<li><a class="" href="../../index.html#noidungnoidung">Trang chủ</a> <span class="padl5">(Phím tắt  <u>alt+a</u>)</span></li>
+                    <li><a class="" href="../../drd.html#noidungnoidung">Giới thiệu</a> <span class="padl5">(Phím tắt  <u>alt+j</u>)</span></li>
+                    <li><a class="" href="../../linh-vuc-hoat-dong.html#noidungnoidung">Lĩnh vực hoạt động</a> <span class="padl5">(Phím tắt  <u>alt+l</u>)</span></li>
+                    <li><a class="" href="../../hoi-quan.html#noidungnoidung">Hội quán Đời Rất Đẹp</a> <span class="padl5">(Phím tắt  <u>alt+c</u>)</span></li>
+                    <li><a class="" href="../../thu-vien-thong-tin.html#noidungnoidung">Tin tức</a> <span class="padl5">(Phím tắt  <u>alt+n</u>)</span></li>
+                    <li><a class="dangxem" href="../../video.html#noidungnoidung">Thư viện</a> <span class="padl5">(Phím tắt  <u>alt+m</u>)</span></li>
+                    <li><a class="" href="../../chinh-sach-phap-luat.html#noidungnoidung">Chính sách và pháp luật</a> <span class="padl5">(Phím tắt  <u>alt+p</u>)</span></li>
+                    <li><a class="" href="../../dien-dan.html#noidungnoidung">Diễn đàn</a> <span class="padl5">(Phím tắt  <u>alt+y</u>)</span></li>
+                    <li class="gotop"><a href="sach-ho-tro.html#gotop" class="font14">Lên trên</a></li>
+                </ul>
+            </nav>
+            <!--<div style="display:none;">
+                        	<div id="searchgoogle" class="searchgo"><gcse:searchbox></gcse:searchbox>
+<div style="visibility:hidden"><gcse:searchresults refinementStyle="link"></gcse:searchresults></div>
+                        </div>
+            </div>--><link type="text/css" rel="stylesheet" href="../../../admin/css/colorbox.css" media="screen" />
+<script type="text/javascript" src="../../../admin/js/jquery.colorbox.js"></script>
+<script>
+			$(document).ready(function(){
+				//Examples of how to assign the ColorBox event to elements
+				$(".inlineee").colorbox({inline:true, Maxwidth:"50%", Maxheight:"90%"});
+				
+			});
+		</script>
+        <p class="mntop" id="menumainmain"><span>Menu Chính</span> <span class="font16">( Phím tắt  <u>7</u> )</span></p>
+            <nav class="menutopp">
+            	<ul>
+                	<li><a class="" href="../../video.html#noidungnoidung">Video</a></li>
+                        <li class="menucon"><a class="" href="../../video-gioi-thieu-drd.html#noidungnoidung">&raquo;&nbsp;Giới thiệu DRD</a></li>
+						<li class="menucon"><a class="" href="../../video-cau-chuyen-thanh-nien.html#noidungnoidung">&raquo;&nbsp;Câu chuyện thanh niên</a></li>
+						<li class="menucon"><a class="" href="../../video-hoat-dong-drd.html#noidungnoidung">&raquo;&nbsp;Hoạt động DRD</a></li>
+						<li class="menucon"><a class="" href="../../video-hoat-dong-van-nghe.html#noidungnoidung">&raquo;&nbsp;Hoạt động văn nghệ</a></li>
+						<li class="menucon"><a class="" href="../../video-guong-dien-hinh.html#noidungnoidung">&raquo;&nbsp;Gương điển hình</a></li>
+						<li class="menucon"><a class="" href="../../video-khac.html#noidungnoidung">&raquo;&nbsp;Khác</a></li>
+		
+		<li><a class="" href="../../goc-anh-dep.html#noidungnoidung">Hình ảnh</a></li><li><a class=" dangxem" href="../../tai-lieu.html#noidungnoidung">Tài liệu</a></li>
+						<li class="menucon"><a class=" dangxem" href="../../tai-lieu/thu-vien-sach.html#noidungnoidung">&raquo;&nbsp;Sách</a></li>
+						<li class="menucon"><a class="" href="../../tai-lieu/an-pham-do-drd-phat-hanh.html#noidungnoidung">&raquo;&nbsp;Ấn phẩm đã phát hành</a></li>
+						<li class="menucon"><a class="" href="../../tai-lieu/bao-cao-hoat-dong-drd.html#noidungnoidung">&raquo;&nbsp;Báo cáo hoạt động</a></li>
+						<li class="menucon"><a class="" href="../../tai-lieu/ky-nang-tim-viec.html#noidungnoidung">&raquo;&nbsp;Kỹ năng tìm việc</a></li>
+            <li><a class="" href="../../dien-dan.html#noidungnoidung">Diễn đàn</a></li>
+			<li class="menucon"><a class="" href="../../gioi-thieu-dien-dan-drd.html#noidungnoidung">&nbsp;&raquo;&nbsp;Giới thiệu diễn đàn DRD</a></li>
+			<li class="menucon"><a class="" href="../../noi-quy-dien-dan.html#noidungnoidung">&nbsp;&raquo;&nbsp;Nội quy diễn đàn</a></li>
+            <li class="menucon"><a class="" href="../../cac-chu-de-thao-luan.html#noidungnoidung">&nbsp;&raquo;&nbsp;Các chủ đề thảo luận</a></li>
+			
+				<li class="menucon"><a class="" href="../../luat-nguoi-khuyet-tat.html#noidungnoidung">&nbsp;&nbsp;&nbsp;&raquo;&nbsp;Luật người khuyết tật</a></li>
+				<li class="menucon"><a class="" href="../../sang-tac-cua-nguoi-khuyet-tat.html#noidungnoidung">&nbsp;&nbsp;&nbsp;&raquo;&nbsp;Sáng tác của người khuyết tật</a></li>
+				<li class="menucon"><a class="" href="../../chu-de-khac.html#noidungnoidung">&nbsp;&nbsp;&nbsp;&raquo;&nbsp;Chủ đề khác</a></li>
+			<li class="menucon"><a class="" href="../../tao-chu-de.html#noidungnoidung">&nbsp;&raquo;&nbsp;Tạo chủ đề mới</a></li>			
+		                    <li class="gotop"><a href="sach-ho-tro.html#gotop" class="font14">Lên trên</a></li>
+                </ul>
+            </nav>
+<script>
+      jQuery(document).ready(function ($) {
+        
+		$("div.holder").jPages({
+		  containerID : "itemContainer",
+		  fallback    : 500,
+		  animation: 2000,
+		  perPage: 20,
+		  minHeight: false,
+		  previous: "Trang Trước",
+	      next: "Trang Sau"
+		});
+      });
+    </script>
+<p class="mntop" id="noidungnoidung"><span>Nội dung</span> <span class="font16">( Phím tắt  <u>9</u> )</span></p>
+            <section>
+            <!-- start noidung -->
+            	<div class="contenttiepcan">
+                    
+                    	<div class="sach">
+                        	<p class="td"><span>Sách - Hỗ trợ</span></p>
+                            <div class="tungdm">
+                            	<div class="dongtieude">
+                                	<p class="sttt">#</p>
+                                    <p class="tieude">Tiêu đề của danh mục</p>
+                                    <p class="truycap">Số truy cập</p>
+                                    <p class="clr"></p>
+                                    </div>
+                            </div>
+                            <div id="itemContainer">
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">1</p>
+                                    <p class="tieude"><a href="../../sach/10389/trac-nghiem-ve-giao-tiep-voi-tre-vi-thanh-nien.html#noidungnoidung" title="Trắc nghiệm về giao tiếp với trẻ vị thành niên">Trắc nghiệm về giao tiếp với trẻ vị thành niên</a></p>
+                                    <p class="truycap">455</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">2</p>
+                                    <p class="tieude"><a href="../../sach/9754/voices-of-women-entrepreneurs-in-ethiopia.html#noidungnoidung" title="VOICES OF WOMEN ENTREPRENEURS IN ETHIOPIA">VOICES OF WOMEN ENTREPRENEURS IN ETHIOPIA</a></p>
+                                    <p class="truycap">343</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">3</p>
+                                    <p class="tieude"><a href="../../sach/9758/voices-of-women-entrepreneurs-in-ethiopia-tanzania-uganda-and-zambia.html#noidungnoidung" title="VOICES OF WOMEN ENTREPRENEURS IN ETHIOPIA, TANZANIA, UGANDA AND ZAMBIA">VOICES OF WOMEN ENTREPRENEURS IN ETHIOPIA, TANZANIA, UGANDA AND ZAMBIA</a></p>
+                                    <p class="truycap">347</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">4</p>
+                                    <p class="tieude"><a href="../../sach/9763/voices-of-women-entrepreneurs-in-tanzania.html#noidungnoidung" title="VOICES OF WOMEN ENTREPRENEURS IN TANZANIA">VOICES OF WOMEN ENTREPRENEURS IN TANZANIA</a></p>
+                                    <p class="truycap">348</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">5</p>
+                                    <p class="tieude"><a href="../../sach/9590/voices-of-women-entrepreneurs-in-uganda.html#noidungnoidung" title="VOICES OF WOMEN ENTREPRENEURS IN UGANDA">VOICES OF WOMEN ENTREPRENEURS IN UGANDA</a></p>
+                                    <p class="truycap">362</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">6</p>
+                                    <p class="tieude"><a href="../../sach/9801/universal-design-barrier-free-access.html#noidungnoidung" title="UNIVERSAL DESIGN BARRIER-FREE ACCESS">UNIVERSAL DESIGN BARRIER-FREE ACCESS</a></p>
+                                    <p class="truycap">386</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">7</p>
+                                    <p class="tieude"><a href="../../sach/9888/phuc-hoi-chuc-nang-dua-vao-cong-dong.html#noidungnoidung" title="PHỤC HỒI CHỨC NĂNG DỰA VÀO CỘNG ĐỒNG">PHỤC HỒI CHỨC NĂNG DỰA VÀO CỘNG ĐỒNG</a></p>
+                                    <p class="truycap">638</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">8</p>
+                                    <p class="tieude"><a href="../../sach/10125/project-to-support-persons-with-physical-disabilities-pwpds-in-vietnam-through-community-rehabilitation-and-their-empowerment-quaterly-report-no11.html#noidungnoidung" title="Project to support persons with physical disabilities (PWPDs) in Vietnam through community rehabilitation and their empowerment- Quaterly report No.11">Project to support persons with physical disabilities (PWPDs) in Vietnam through ...</a></p>
+                                    <p class="truycap">272</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">9</p>
+                                    <p class="tieude"><a href="../../sach/9972/project-to-support-persons-with-physical-disabilities-pwpds-in-vietnam-through-community-rehabilitation-and-their-empowerment-quaterly-report-no11.html#noidungnoidung" title="Project to support persons with physical disabilities (PWPDs) in Vietnam through community rehabilitation and their empowerment- Quaterly report No.11">Project to support persons with physical disabilities (PWPDs) in Vietnam through ...</a></p>
+                                    <p class="truycap">274</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">10</p>
+                                    <p class="tieude"><a href="../../sach/9901/phuong-phap-giao-tiep-voi-tre-khiem-thinh.html#noidungnoidung" title="Phương pháp giao tiếp với trẻ khiếm thính">Phương pháp giao tiếp với trẻ khiếm thính</a></p>
+                                    <p class="truycap">817</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">11</p>
+                                    <p class="tieude"><a href="../../sach/9786/urban-and-rural-areas-2007.html#noidungnoidung" title="Urban and rural areas 2007">Urban and rural areas 2007</a></p>
+                                    <p class="truycap">433</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">12</p>
+                                    <p class="tieude"><a href="../../sach/9789/urban-population-development-and-the-environment-2007.html#noidungnoidung" title="Urban population, development and the environment 2007">Urban population, development and the environment 2007</a></p>
+                                    <p class="truycap">336</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">13</p>
+                                    <p class="tieude"><a href="../../sach/10126/project-to-support-persons-with-physical-disabilities-pwpds-in-vietnam-through-community-rehabilitation-and-their-empowerment-quaterly-report-no2.html#noidungnoidung" title="Project to support persons with physical disabilities (PWPDs) in Vietnam through community rehabilitation and their empowerment- Quaterly Report No.2">Project to support persons with physical disabilities (PWPDs) in Vietnam through ...</a></p>
+                                    <p class="truycap">249</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">14</p>
+                                    <p class="tieude"><a href="../../sach/10127/project-to-support-persons-with-physical-disabilities-pwpds-in-vietnam-through-community-rehabilitation-and-their-empowerment-quaterly-report-no4.html#noidungnoidung" title="Project to support persons with physical disabilities (PWPDs) in Vietnam through community rehabilitation and their empowerment- Quaterly Report No.4">Project to support persons with physical disabilities (PWPDs) in Vietnam through ...</a></p>
+                                    <p class="truycap">265</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">15</p>
+                                    <p class="tieude"><a href="../../sach/9879/phong-chong-va-phuc-hoi-chuc-nang-tan-tat-trong-benh-phong.html#noidungnoidung" title="Phòng chống và phục hồi chức năng tàn tật trong bệnh phong">Phòng chống và phục hồi chức năng tàn tật trong bệnh phong</a></p>
+                                    <p class="truycap">382</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">16</p>
+                                    <p class="tieude"><a href="../../sach/9973/project-to-support-persons-with-physical-disabilities-pwpds-in-vietnam-through-community-rehabilitation-and-their-empowerment-quaterly-report-no2.html#noidungnoidung" title="Project to support persons with physical disabilities (PWPDs) in Vietnam through community rehabilitation and their empowerment- Quaterly Report No.2">Project to support persons with physical disabilities (PWPDs) in Vietnam through ...</a></p>
+                                    <p class="truycap">281</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">17</p>
+                                    <p class="tieude"><a href="../../sach/9974/project-to-support-persons-with-physical-disabilities-pwpds-in-vietnam-through-community-rehabilitation-and-their-empowerment-quaterly-report-no4.html#noidungnoidung" title="Project to support persons with physical disabilities (PWPDs) in Vietnam through community rehabilitation and their empowerment- Quaterly Report No.4">Project to support persons with physical disabilities (PWPDs) in Vietnam through ...</a></p>
+                                    <p class="truycap">267</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">18</p>
+                                    <p class="tieude"><a href="../../sach/9798/tuyen-tap-cac-du-an-vi-cong-dong-doat-giai.html#noidungnoidung" title="Tuyển tập các dự án Vì Cộng Đồng đoạt giải">Tuyển tập các dự án Vì Cộng Đồng đoạt giải</a></p>
+                                    <p class="truycap">423</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">19</p>
+                                    <p class="tieude"><a href="../../sach/9753/vocational-rehabilitation-and-employment-of-disabled-persons.html#noidungnoidung" title="Vocational rehabilitation and employment of disabled persons">Vocational rehabilitation and employment of disabled persons</a></p>
+                                    <p class="truycap">347</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">20</p>
+                                    <p class="tieude"><a href="../../sach/9782/unraveling-the-mystery-of-autism-and-pervasive-developmental-disorder.html#noidungnoidung" title="Unraveling the mystery of autism and pervasive developmental disorder">Unraveling the mystery of autism and pervasive developmental disorder</a></p>
+                                    <p class="truycap">328</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">21</p>
+                                    <p class="tieude"><a href="../../sach/9874/phat-trien-va-nang-cao-chat-luong-thong-tin-tu-lieu-ve-xa-hoi-hoc-phuc-vu-cong-tac-nghien-cuu-va-dao-tao.html#noidungnoidung" title="Phát Triển Và Nâng Cao Chất Lượng Thông Tin - Tư Liệu Về Xã Hội Học Phục Vụ Công Tác Nghiên Cứu Và Đào Tạo">Phát Triển Và Nâng Cao Chất Lượng Thông Tin - Tư Liệu Về Xã ...</a></p>
+                                    <p class="truycap">317</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">22</p>
+                                    <p class="tieude"><a href="../../sach/9774/viet-nam-2010-tien-vao-the-ky-21-bao-cao-phat-trien-viet-nam-2001-cac-tru-cot-cua-su-phat-trien.html#noidungnoidung" title="Việt Nam 2010 tiến vào thế kỷ 21 - Báo cáo phát triển Việt Nam 2001- Các trụ cột của sự phát triển">Việt Nam 2010 tiến vào thế kỷ 21 - Báo cáo phát triển Việt Nam ...</a></p>
+                                    <p class="truycap">256</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">23</p>
+                                    <p class="tieude"><a href="../../sach/9778/viet-nam-2010-tien-vao-the-ky-21-bao-cao-phat-trien-viet-nam-2001-quan-he-hop-tac-cho-su-phat-trien.html#noidungnoidung" title="Việt Nam 2010 tiến vào thế kỷ 21 - Báo cáo phát triển Việt Nam 2001-Quan hệ hợp tác cho sự phát triển">Việt Nam 2010 tiến vào thế kỷ 21 - Báo cáo phát triển Việt Nam ...</a></p>
+                                    <p class="truycap">273</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">24</p>
+                                    <p class="tieude"><a href="../../sach/9872/phat-trien-moi-truong-hoc-than-thien-voi-tre-o-thanh-pho-ho-chi-minh.html#noidungnoidung" title="Phát triển môi trường học thân thiện với trẻ ở thành phố Hồ Chí Minh">Phát triển môi trường học thân thiện với trẻ ở thành phố ...</a></p>
+                                    <p class="truycap">274</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">25</p>
+                                    <p class="tieude"><a href="../../sach/9966/project-to-support-persons-with-physical-disabilities-in-vietnam-through-community-rehabilitation-and-their-empowerment-quarterly-report-no1.html#noidungnoidung" title="Project to support persons with physical disabilities in Vietnam through community rehabilitation and their empowerment- Quarterly report No.1">Project to support persons with physical disabilities in Vietnam through community ...</a></p>
+                                    <p class="truycap">293</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">26</p>
+                                    <p class="tieude"><a href="../../sach/9881/phong-chong-va-phuc-hoi-chuc-nang-tan-tat-trong-benh-phong.html#noidungnoidung" title="PHÒNG CHỐNG VÀ PHỤC HỒI CHỨC NĂNG TÀN TẬT TRONG BỆNH PHONG">PHÒNG CHỐNG VÀ PHỤC HỒI CHỨC NĂNG TÀN TẬT TRONG BỆNH PHONG</a></p>
+                                    <p class="truycap">296</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">27</p>
+                                    <p class="tieude"><a href="../../sach/9756/vocational-training-a-employment-for-street-children.html#noidungnoidung" title="Vocational training & employment for street children">Vocational training & employment for street children</a></p>
+                                    <p class="truycap">275</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">28</p>
+                                    <p class="tieude"><a href="../../sach/9781/viec-lam-cua-nguoi-tan-tat.html#noidungnoidung" title="VIỆC LÀM CỦA NGƯỜI TÀN TẬT">VIỆC LÀM CỦA NGƯỜI TÀN TẬT</a></p>
+                                    <p class="truycap">329</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">29</p>
+                                    <p class="tieude"><a href="../../sach/10393/training-manual-a-guide-to-administration.html#noidungnoidung" title="Training manual: a guide to administration">Training manual: a guide to administration</a></p>
+                                    <p class="truycap">287</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">30</p>
+                                    <p class="tieude"><a href="../../sach/10130/promoting-independence-following-a-pinal-cord-injury.html#noidungnoidung" title="Promoting independence following a pinal cord injury">Promoting independence following a pinal cord injury</a></p>
+                                    <p class="truycap">273</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">31</p>
+                                    <p class="tieude"><a href="../../sach/9894/phu-nu-khuyet-tat-nhung-tro-ngai-trong-tinh-yeu-hon-nhan-va-gia-dinh.html#noidungnoidung" title="Phụ nữ khuyết tật- Những trở ngại trong tình yêu hôn nhân và gia đình">Phụ nữ khuyết tật- Những trở ngại trong tình yêu hôn nhân...</a></p>
+                                    <p class="truycap">345</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">32</p>
+                                    <p class="tieude"><a href="../../sach/9773/ve-sinh-an-toan-thuc-pham.html#noidungnoidung" title="Vệ sinh an toàn thực phẩm">Vệ sinh an toàn thực phẩm</a></p>
+                                    <p class="truycap">343</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">33</p>
+                                    <p class="tieude"><a href="../../sach/9873/phat-trien-moi-truong-hoc-than-thien-voi-tre-o-tphcm.html#noidungnoidung" title="Phát triển môi trường học thân thiện với trẻ ở tphcm">Phát triển môi trường học thân thiện với trẻ ở tphcm</a></p>
+                                    <p class="truycap">337</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">34</p>
+                                    <p class="tieude"><a href="../../sach/9876/phong-chong-tai-nan-thuong-tich.html#noidungnoidung" title="Phòng chống tai nạn thương tích">Phòng chống tai nạn thương tích</a></p>
+                                    <p class="truycap">303</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">35</p>
+                                    <p class="tieude"><a href="../../sach/9877/phong-chong-va-phuc-hoi-chuc-nang-tan-tat-trong-benh-phong.html#noidungnoidung" title="Phòng chống và phục hồi chức năng tàn tật trong bệnh phong">Phòng chống và phục hồi chức năng tàn tật trong bệnh phong</a></p>
+                                    <p class="truycap">342</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">36</p>
+                                    <p class="tieude"><a href="../../sach/9878/phong-chong-va-phuc-hoi-chuc-nang-tan-tat-trong-benh-phong.html#noidungnoidung" title="Phòng chống và phục hồi chức năng tàn tật trong bệnh phong">Phòng chống và phục hồi chức năng tàn tật trong bệnh phong</a></p>
+                                    <p class="truycap">280</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">37</p>
+                                    <p class="tieude"><a href="../../sach/9885/phuc-hoi-chuc-nang-dua-vao-cd-tai-viet-nam.html#noidungnoidung" title="Phục hồi chức năng dựa vào cđ tại việt nam">Phục hồi chức năng dựa vào cđ tại việt nam</a></p>
+                                    <p class="truycap">290</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">38</p>
+                                    <p class="tieude"><a href="../../sach/9886/phuc-hoi-chuc-nang-dua-vao-cong-dong.html#noidungnoidung" title="Phục hồi chức năng dựa vào cộng đồng">Phục hồi chức năng dựa vào cộng đồng</a></p>
+                                    <p class="truycap">272</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">39</p>
+                                    <p class="tieude"><a href="../../sach/9889/phuc-hoi-tre-tan-tat-tai-cong-dong.html#noidungnoidung" title="Phục hồi trẻ tàn tật tại cộng đồng">Phục hồi trẻ tàn tật tại cộng đồng</a></p>
+                                    <p class="truycap">302</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">40</p>
+                                    <p class="tieude"><a href="../../sach/10004/trien-khai-mot-kieu-mau-du-an-phcn-dua-vao-cong-dong-tai-viet-nam.html#noidungnoidung" title="Triển khai một kiểu mẫu dự án phcn dựa vào cộng đồng tại việt nam">Triển khai một kiểu mẫu dự án phcn dựa vào cộng đồng tại ...</a></p>
+                                    <p class="truycap">300</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	<div class="tungdm">
+                            	<div class="ndd">
+                                	<p class="sttt">41</p>
+                                    <p class="tieude"><a href="../../sach/9977/promoting-independence-following-a-pinal-cord-injury.html#noidungnoidung" title="Promoting independence following a pinal cord injury">Promoting independence following a pinal cord injury</a></p>
+                                    <p class="truycap">276</p>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                                                	</div>
+                        </div>
+                                                <div class="holder" ></div>
+                </div>
+            
+            </section><section>
+            	<footer>
+                	<div class="footer">
+                    	<div class="doitac">
+                        	  
+                        	<a href="http://www.fordfound.org/regions/vietnam/overview" target="_blank"><img src="../../../images/doitacdrd/f.png" alt="AP" title="Ford Foundation"></a>
+                                                        <img src="../../../images/doitacdrd/armcharm.png" alt="amcham vietnam" title="amcham vietnam">
+                              
+                        	<a href="http://www.atlanticphilanthropies.org/" target="_blank"><img src="../../../images/doitacdrd/atlantic.png" alt="The Atlantic Philantropies" title="The Atlantic Philantropies"></a>
+                              
+                        	<a href="http://www.irishaid.gov.ie/" target="_blank"><img src="../../../images/doitacdrd/irish.png" alt="Irish Aid" title="Irish Aid"></a>
+                              
+                        	<a href="http://www.nippon-foundation.or.jp/eng/" target="_blank"><img src="../../../images/doitacdrd/nippon.png" alt="Nippon" title="Nippon"></a>
+                              
+                        	<a href="http://www.invescohcm.com.vn/Quatrinhhinhthanh.html" target="_blank"><img src="../../../images/doitacdrd/invesco.png" alt="Invesco" title="Invesco"></a>
+                              
+                        	<a href="http://www.humancare1986.jp/english.html" target="_blank"><img src="../../../images/doitacdrd/hcare.png" alt="HumanCare" title="HumanCare"></a>
+                              
+                        	<a href="http://www.koica.go.kr/english/main.html" target="_blank"><img src="../../../images/doitacdrd/logokoica.jpg" alt="Koica" title="Koica"></a>
+                              
+                        	<a href="http://www.ableforum.com/" target="_blank"><img src="../../../images/doitacdrd/hq.png" alt="Ableforum" title="Ableforum"></a>
+                                                        <img src="../../../images/doitacdrd/dpi.png" alt="Khuyết tật" title="Khuyết tật">
+                              
+                        	<a href="http://australia.gov.au/" target="_blank"><img src="../../../images/doitacdrd/ausaid.png" alt="Australia Goverment" title="Australia Goverment"></a>
+                                                        <img src="../../../images/doitacdrd/vusta.png" alt="Vusta" title="Vusta">
+                              
+                        	<a href="http://www.pavietnam.vn/" target="_blank"><img src="../../../images/doitacdrd/PAvietnam.jpg" alt="Logo PAVietNam" title="PA Việt Nam"></a>
+                              
+                        	<a href="http://eqvn.net/" target="_blank"><img src="../../../images/doitacdrd/eqvn.jpg" alt="Học vien EQVN" title="Học vien EQVN"></a>
+                              
+                        	<a href="https://www.usaid.gov/vi/vietnam" target="_blank"><img src="../../../images/doitacdrd/USAID.jpg" alt="logo tổ chức USAID" title="USAID"></a>
+                              
+                        	<a href="http://moveability.icrc.org/" target="_blank"><img src="../../../images/doitacdrd/ICRC.jpg" alt=" Quỹ ICRC MoveAbility" title=" Quỹ ICRC MoveAbility"></a>
+                              
+                        	<a href="http://tamnguyenviet.vn/voi-ca-tam-tinh/" target="_blank"><img src="../../../images/doitacdrd/Tamnguyenviet01.jpg" alt="" title="Tâm nguyện Việt"></a>
+                                                        <p class="clr"></p>
+                        </div>
+                        <div class="copyright"><p style="text-align: left;float: left;"><img src="../../../images/icon_dien_thoai.png" alt="Điện thoại" style="margin:5px 5px 0 0;height:15px;" />028 6267 9911 - <img src="../../../images/icon_email.png" alt="Email" style="margin:5px 5px 0 0;height:15px;" /><a href="mailto:info@drdvietnam.com" style="color: #fff;;">info@drdvietnam.com</a></p><p style="float: right;">&copy; Power by DRD Vietnam. All right reserved.</p><p class="clr"></p></div>
+                    </div>
+                </footer>
+            </section>
+            
+		
+	</div>
+</section>
+</div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/58340a557bb7bf7f521ddde8/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+
+<!-- Mirrored from www.drdvietnam.org/accessibility/thu-vien-sach/169/sach-ho-tro.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Oct 2017 13:29:28 GMT -->
+</html>

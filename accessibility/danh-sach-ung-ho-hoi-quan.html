@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.drdvietnam.org/accessibility/danh-sach-ung-ho-hoi-quan.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Oct 2017 13:17:38 GMT -->
+<head>
+<base   />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danh sách ủng hộ - Hội quán</title>
+<link rel="stylesheet" href="../css/style.css">
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+<link href="http://www.drdvietnam.org/images/favico.ico" rel="shortcut icon" type="image/x-icon" />
+<script src="../js/jquery-1.8.1.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
+<script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="../js/greyscale.js"></script>
+<script type="text/javascript" src="../js/expancer.js"></script>
+<script type="text/javascript" src="../js/mousetrap.min.js"></script>
+<!--
+<script type="text/javascript" src="http://www.trungtamtinhoc.edu.vn/api/snowstorm.js"></script>
+<script type="text/javascript" src="js/hoa-mai-roi.js"></script>
+-->
+<script>
+			$(document).ready(function(){
+				//Examples of how to assign the ColorBox event to elements
+				if ($(window).width() > 700) {
+					$(".inlinee").colorbox({inline:true, width:"30%", height:"20%"});
+				}
+				else {
+					if($(window).width()<700 && $(window).width()>500) {
+						$(".inlinee").colorbox({inline:true, width:"400px", height:"20%"});
+					}
+					else {
+						$(".inlinee").colorbox({inline:true, width:"220px", height:"20%"});
+					}
+				}
+				
+			});
+		</script>
+<script>
+$(document).ready(function(){
+//ID, class and tag element that font size is adjustable in this array
+//Put in html or body if you want the font of the entire page adjustable
+var section = new Array('div.fontset','.section2');
+section = section.join(',');
+// Reset Font Size
+var originalFontSize = $(section).css('font-size');
+$(".resetFont").click(function(){
+$(section).css('font-size', originalFontSize);
+});
+// Increase Font Size
+$(".increaseFont").click(function(){
+var currentFontSize = $(section).css('font-size');
+var currentFontSizeNum = parseFloat(currentFontSize, 10);
+var newFontSize = currentFontSizeNum*1.2;
+$(section).css('font-size', newFontSize);
+return false;
+});
+// Decrease Font Size
+$(".decreaseFont").click(function(){
+var currentFontSize = $(section).css('font-size');
+var currentFontSizeNum = parseFloat(currentFontSize, 10);
+var newFontSize = currentFontSizeNum*0.8;
+$(section).css('font-size', newFontSize);
+return false;
+});
+	// nhan 1 phim
+	// phim tat header 
+		Mousetrap.bind('alt+0', function() {window.location.assign("http://www.drdvietnam.org/highvisibility");}, 'keyup');
+				Mousetrap.bind('alt+1', function() {window.location.assign("http://www.drdvietnam.org/language.php?set=en");}, 'keyup');
+			Mousetrap.bind('alt+w', function() {
+		var currentFontSize = $(section).css('font-size');
+		var currentFontSizeNum = parseFloat(currentFontSize, 10);
+		var newFontSize = currentFontSizeNum*1.2;
+		$(section).css('font-size', newFontSize);
+		return false;
+	});
+	Mousetrap.bind('alt+r', function() {
+		$(section).css('font-size', originalFontSize);
+	});
+	Mousetrap.bind('alt+e', function() {
+		var currentFontSize = $(section).css('font-size');
+		var currentFontSizeNum = parseFloat(currentFontSize, 10);
+		var newFontSize = currentFontSizeNum*0.8;
+		$(section).css('font-size', newFontSize);
+		return false;
+	});
+	Mousetrap.bind('alt+q', function() {window.location.assign("danh-sach-ung-ho.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+i', function() {window.location.assign("dang-nhap.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+u', function() {window.location.assign("dang-ky.html#noidungnoidung");}, 'keyup');
+	
+	Mousetrap.bind('alt+a', function() {window.location.assign("index.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+j', function() {window.location.assign("drd.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+l', function() {window.location.assign("linh-vuc-hoat-dong.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+c', function() {window.location.assign("hoi-quan.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+n', function() {window.location.assign("thu-vien-thong-tin.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+m', function() {window.location.assign("video.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+p', function() {window.location.assign("chinh-sach-phap-luat.html#noidungnoidung");}, 'keyup');
+	Mousetrap.bind('alt+y', function() {window.location.assign("dien-dan.html#noidungnoidung");}, 'keyup');
+	
+	Mousetrap.bind('6', function() {window.location.assign("danh-sach-ung-ho-hoi-quan.html#menutoptop");}, 'keyup');
+	Mousetrap.bind('7', function() {window.location.assign("danh-sach-ung-ho-hoi-quan.html#menumainmain");}, 'keyup');
+	Mousetrap.bind('8', function() {window.location.assign("danh-sach-ung-ho-hoi-quan.html#gotop");}, 'keyup');
+	Mousetrap.bind('9', function() {window.location.assign("danh-sach-ung-ho-hoi-quan.html#noidungnoidung");}, 'keyup');
+	//Mousetrap.bind('alt+9', function() {$('html, body').animate({scrollTop: $("#noidungnoidung").offset().top}, 2000);}, 'keyup');
+	//Mousetrap.bind('alt+9', function() {$(document).scrollTo('#noidungnoidung');}, 'keyup');
+});
+</script>    
+<script type="text/javascript">
+	function setLocation(ev){
+		window.location.assign(ev);
+	}
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50073537-1', 'drdvietnam.org');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="normal" style="overflow-x: hidden;">
+<script>
+  (function() {
+    var cx = '004167217340609662241:rz4rgq9n_-m';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script><div id="gotop"></div>
+<div class="fontset">
+<section>
+	<div id="giaodientiepcan" class="normal">
+    	<header>
+        	<div id="tcheader">
+                <p class="gdtc"><a href="http://www.drdvietnam.org/">Giao diện chuẩn</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+                <p class="gdtp"><a href="http://www.drdvietnam.org/highvisibility/" title="Giao diện này phù hợp với người khuyết tật về mắt">Tương phản cao</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+                <p class="gdtc"><a href="http://www.drdvietnam.org/nightmode/" title="Chế độ này phù hợp với máy tính bảng và các thiết bị cầm tay vì tiết kiệm pin và các đoạn văn được hiển thị với phông nền tối, chữ sáng">Chế độ ban đêm</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+        <p class="resize"><a class='increaseFont' style='cursor: pointer; cursor: hand;' title=''>Tăng kích cỡ chữ </a><span class="font12">(Phím tắt  alt+w)</span><span class="cach"></span>
+        <a class='resetFont' style='cursor: pointer; cursor: hand;'>Đặt lại cỡ chữ chuẩn </a><span class="font12">(Phím tắt  alt+r)</span><span class="cach"></span>
+    <a class='decreaseFont' style='cursor: pointer; cursor: hand;' title=''>Giảm kích cỡ chữ </a><span class="font12">(Phím tắt  alt+e)</span><span class="cach"></span></p>
+    <p><a href="huong-dan-su-dung.html#noidungnoidung">Hướng dẫn truy cập</a></p>
+    <p class="dsuh"><a href="danh-sach-ung-ho.html#noidungnoidung"><span>Danh sách ủng hộ</span></a> <span class="font12">(Phím tắt  alt+q)</span><span class="cach"></span></p>
+    
+    	<p class="ngonngu"><a href="http://www.drdvietnam.org/language.php?set=vn" title="">Tiếng Việt </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span>
+        <a href="http://www.drdvietnam.org/language.php?set=en" title="">English </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span></p>
+        <p class="slr"><a href="tim-kiem.html#noidungnoidung">Tìm kiếm</a><span class="cach"></span></p>
+        <p class="slr"><a href="tim-kiem-theo-tu-khoa.html#noidungnoidung">Tìm theo từ khóa</a><span class="cach"></span></p>
+        				                            
+        <p class="slr"><a href="dang-nhap.html#noidungnoidung" title="Phím tắt  alt+i">Đăng nhập</a><span class="cach"></span></p>
+        <p class="slr"><a href="dang-ky.html#noidungnoidung" title="Phím tắt  alt+u">Đăng ký</a></p>
+        			</div>
+		<section><p class="vitrihientai">Bạn đang ở: </p></section>
+        </header>
+        <p class="mntop" id="menutoptop"><span>Menu top</span> <span class="font16">( Phím tắt  <u>6</u> )</span></p>
+            <nav class="menutopp">
+            	<ul>
+                	<li><a class="" href="index.html#noidungnoidung">Trang chủ</a> <span class="padl5">(Phím tắt  <u>alt+a</u>)</span></li>
+                    <li><a class="" href="drd.html#noidungnoidung">Giới thiệu</a> <span class="padl5">(Phím tắt  <u>alt+j</u>)</span></li>
+                    <li><a class="" href="linh-vuc-hoat-dong.html#noidungnoidung">Lĩnh vực hoạt động</a> <span class="padl5">(Phím tắt  <u>alt+l</u>)</span></li>
+                    <li><a class="" href="hoi-quan.html#noidungnoidung">Hội quán Đời Rất Đẹp</a> <span class="padl5">(Phím tắt  <u>alt+c</u>)</span></li>
+                    <li><a class="" href="thu-vien-thong-tin.html#noidungnoidung">Tin tức</a> <span class="padl5">(Phím tắt  <u>alt+n</u>)</span></li>
+                    <li><a class="" href="video.html#noidungnoidung">Thư viện</a> <span class="padl5">(Phím tắt  <u>alt+m</u>)</span></li>
+                    <li><a class="" href="chinh-sach-phap-luat.html#noidungnoidung">Chính sách và pháp luật</a> <span class="padl5">(Phím tắt  <u>alt+p</u>)</span></li>
+                    <li><a class="" href="dien-dan.html#noidungnoidung">Diễn đàn</a> <span class="padl5">(Phím tắt  <u>alt+y</u>)</span></li>
+                    <li class="gotop"><a href="danh-sach-ung-ho-hoi-quan.html#gotop" class="font14">Lên trên</a></li>
+                </ul>
+            </nav>
+            <!--<div style="display:none;">
+                        	<div id="searchgoogle" class="searchgo"><gcse:searchbox></gcse:searchbox>
+<div style="visibility:hidden"><gcse:searchresults refinementStyle="link"></gcse:searchresults></div>
+                        </div>
+            </div>--><link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
+<script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
+<script>
+			$(document).ready(function(){
+				//Examples of how to assign the ColorBox event to elements
+				$(".inlineee").colorbox({inline:true, Maxwidth:"50%", Maxheight:"90%"});
+				
+			});
+		</script>
+        <p class="mntop" id="menumainmain"><span>Menu Chính</span> <span class="font16">( Phím tắt  <u>7</u> )</span></p>
+            <nav class="menutopp">
+            	<ul>
+                	
+			<li><a class="" href="gioi-thieu-ve-hoi-quan.html#noidungnoidung">Giới thiệu</a></li>
+                                <li><a class="" href="tin-hoat-dong-hoi-quan.html#noidungnoidung">Tin hoạt động</a></li>
+
+									<li class="menucon"><a class="" href="hoat-dong-hoi-quan/van-nghe.html#noidungnoidung">&raquo;&nbsp;Văn nghệ</a></li>
+									<li class="menucon"><a class="" href="hoat-dong-hoi-quan/san-choi-ket-noi.html#noidungnoidung">&raquo;&nbsp;Sân chơi kết nối</a></li>
+
+                                <li><a class="" href="cung-cap-cac-dich-vu.html#noidungnoidung">Cung cấp các dịch vụ</a></li>
+								<li><a class=" class="dangxem"" href="danh-sach-ung-ho-hoi-quan.html#noidungnoidung">Danh sách ủng hộ</a></li>
+                                <li><a class="" href="hoi-quan/lien-he.html#noidungnoidung">Liên hệ</a></li>
+		                    <li class="gotop"><a href="danh-sach-ung-ho-hoi-quan.html#gotop" class="font14">Lên trên</a></li>
+                </ul>
+            </nav>
+<script type="text/javascript" src="../js/jquery-responsiveTables.js"></script>
+
+<script type="text/javascript" src="../js/jquery.responsiveText.js"></script>
+
+<script type="text/javascript">
+
+      $(document).ready(function() {
+
+        $('.responsive').not('table').responsiveText();
+
+        $('table.responsive').responsiveTables();
+
+      });
+
+    </script>
+
+<script type="text/javascript" src="../js/tablefilter_all.js"></script>
+
+<p class="mntop" id="noidungnoidung"><span>Nội dung</span> <span class="font16">( Phím tắt  <u>9</u> )</span></p>
+
+            <section>
+
+            <!-- start noidung -->
+
+            	<div class="contenttiepcan" style="width: 98% !important; padding-right:2%;">
+					<p class="textright"><a href="thong-tin-ung-ho.html">Kênh ủng hộ</a></p> 
+                    <table width="100%" class="responsiveTable" data-min="11" data-max="30" cellpadding="0" cellspacing="0" id="table2" >
+
+<thead>
+
+<tr style="">
+
+<th style="width: 20%; text-align:center; vertical-align:middle; padding:0 0.2em; ">Họ tên / Cơ quan</th>
+
+<th style="width:13%; padding:0 0.2em; vertical-align:middle; " >Ghi chú</th>
+
+<th style="width:17%; padding:0 0.2em; vertical-align:middle;" >Loại đóng góp</th>
+
+<th style="width:14%; text-align:center; vertical-align:middle;" >PT thanh toán</th>
+
+<th style="width:10%; text-align:center; vertical-align:middle;" >Số tiền</th>
+
+<th style="width:7%; text-align:center; vertical-align:middle;" >Loại tiền</th>
+
+<th style="width:10%; text-align:center; vertical-align:middle; padding:0 0.2em;" >Ngày đóng góp</th>
+
+<th style="width:20%; text-align:center;border-right:0 !important; vertical-align:middle;">Hỗ trợ hoạt động</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>	<td class="nd ht">Anh Đức Huy</td>	<td class="nd gc">Tôn Hoa Sen</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">03-12-2014</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Việt Kiều Canada </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">400.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">04-11-2014</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Nhóm bạn Quỳnh Trang, Hoàng Long, Quý Vinh</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">21-05-2014</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Nhóm bạn Long, Trọng, Dung</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">11-04-2014</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Nhóm bạn Long, Trọng, Dung</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">22-02-2014</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Nhóm bạn Long, Trọng, Dung</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">21-01-2014</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Anh Lê Quang Toản</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">31-12-2013</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Nhóm bạn Phương Dung,Hoàng Long, Q.Trọng</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">31-12-2013</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Thầy Lee</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">31-12-2013</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Bác Sĩ Kiều Phương</td>	<td class="nd gc">Đà Nẵng</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">31-12-2013</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Phượng</td>	<td class="nd gc">Nha Trang</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">31-12-2013</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Thủy</td>	<td class="nd gc">Gò Vấp</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">31-12-2013</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Anh Hữu</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">31-12-2013</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Nghệ sỹ Thanh Thủy</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-12-2013</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">3 bạn Chí, Long , Văn</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.850.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-12-2013</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Lê Quang Toản</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">01-12-2013</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Ca sĩ Ngọc Mai</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">6.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">26-07-2013</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Thuần Lương</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">17-04-2013</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Minh Cầm</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">17-04-2013</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Nhà Đào và bạn</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200</td>	<td class="nd lt">USD</td>	<td class="nd ndg">17-04-2013</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Tú Nghi cùng bạn</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">100</td>	<td class="nd lt">USD</td>	<td class="nd ndg">01-01-2013</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Nhóm Người Việt Thiện Nguyện Rhein-Main-Neckar</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">13.700.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">17-12-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Thu Hương</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">400.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">15-11-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Uyên Thy</td>	<td class="nd gc">Nhóm Ngọc Trong Tim </td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">300</td>	<td class="nd lt">USD</td>	<td class="nd ndg">15-11-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Anh chị David và Linda</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">3.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">15-11-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Lê Quang Toản</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">15-11-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Người bạn</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">100.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">14-09-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Dì Oanh</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">14-09-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Trần Thị Bé</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">100</td>	<td class="nd lt">CAD</td>	<td class="nd ndg">10-08-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Anh Dũng</td>	<td class="nd gc">Vietlink</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">03-08-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Tạ Tú Nghi cùng bạn</td>	<td class="nd gc">Tặng 11 cây gậy dẫn đường (Gậy trắng cho người khiếm thị) và 19 đai Gối và đai lưng</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">0</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">03-08-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Cha Toma Tạ Anh Kiệt</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">100</td>	<td class="nd lt">USD</td>	<td class="nd ndg">03-08-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Nhàn Đào</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">150</td>	<td class="nd lt">USD</td>	<td class="nd ndg">03-08-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Tạ Vi Vân</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">250</td>	<td class="nd lt">USD</td>	<td class="nd ndg">03-08-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Nhóm từ thiện Hội Văn hoá Khoa học San Diego</td>	<td class="nd gc">USA</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">10.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">16-07-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Tạ Tú Nghi</td>	<td class="nd gc">USA</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200</td>	<td class="nd lt">USD</td>	<td class="nd ndg">31-05-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Ông Neal Newfield và sinh viên </td>	<td class="nd gc">Trường ĐH West Virginia  </td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200</td>	<td class="nd lt">USD</td>	<td class="nd ndg">21-05-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Trần Đình Thảo</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-04-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Huỳnh Công Hoài</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-04-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Mạnh thường quân giấu tên</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">13-03-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Nhóm nối vòng tay lớn</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">13-03-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Trần Thanh Liêm</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">300.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">13-03-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Người bạn </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">700.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-02-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">CHị Trần Thị Bé </td>	<td class="nd gc">Canada</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-02-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Người bạn dấu tên</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">700.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-02-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Anh Đào và các bạn </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">400</td>	<td class="nd lt">USD</td>	<td class="nd ndg">06-01-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Trang Thu Liên </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-01-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Anh Phương Dzũng </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-01-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Cô Thuần Lương </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-01-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Cô Thẳng </td>	<td class="nd gc">Vũng Tàu</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-01-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Nguyễn Ý Vân </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-01-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Hà Thu Thanh </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-01-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Kim </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-01-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Nhóm nối vòng tay lớn</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-01-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Cô Xuân Dung </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-01-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Ông Bà Thiện -Nhung </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-01-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Hội Đồng Hương Cảnh Cô </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">300.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">05-01-2012</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Anh Phú </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">26-09-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Quý Tỵ </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">300.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">23-08-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Thuần Lương </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">23-08-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Thuần Lương </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">23-08-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Vũ Quỳnh Châu </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">09-08-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Anh Toản </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">30-05-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Ca sĩ Đức Minh</td>	<td class="nd gc">từ Minishow tại Đời Rất Đẹp </td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">10.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">27-05-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Diễm Phương </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">27-05-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Anh Hiếu </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">100</td>	<td class="nd lt">USD</td>	<td class="nd ndg">11-05-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Trang Thu Liên </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">10.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">11-05-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Kim Cương </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">11-05-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Tâm </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">11-05-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Trường dạy lái xe Tiến Bộ </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">3.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">11-05-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Minh Cầm </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">11-05-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Ca sĩ Ngọc Mai </td>	<td class="nd gc">từ Minishow tại Đời Rất Đẹp</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">10.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">06-05-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Ông Quang Ngọc </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">26-04-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Ông Quang Ngọc </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200</td>	<td class="nd lt">USD</td>	<td class="nd ndg">26-04-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Ca sĩ Trường Thư</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">15-03-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Quỳnh </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">15-03-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Anh Kiếng Cận </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">15-03-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Anh chị Thanh Sơn </td>	<td class="nd gc">Tỉnh Thanh Hóa</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">15-03-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Rose A. Marino </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.500</td>	<td class="nd lt">USD</td>	<td class="nd ndg">15-03-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Bạn cô Yến </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">400.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">03-03-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Peter Lee </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200</td>	<td class="nd lt">USD</td>	<td class="nd ndg">21-02-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Cathy Trương </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">300.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">17-02-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Ông Cao Tiến Vị </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">5.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">15-02-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Bạn chị Tâm </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">15-02-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Võ Thị Ngọc Ánh </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">15-02-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Ông Bùi Chí Hiếu </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">100</td>	<td class="nd lt">USD</td>	<td class="nd ndg">15-02-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Ông Phan và Bà Vân </td>	<td class="nd gc">Đường Hoà Hưng</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-02-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Cô Mỹ Anh </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-02-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Anh Thi </td>	<td class="nd gc">Sai Gon Tourist</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-02-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Cô Loan và bạn </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-02-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Mẹ của Tiến Minh </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-02-2011</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Tiền Quyên góp</td>	<td class="nd gc">3 đêm nhạc "Chiều Trên
+Quê Hương tôi"</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">5.490.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">25-09-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Minh Cầm</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.700.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">23-09-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Dấu Tên</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">100</td>	<td class="nd lt">USD</td>	<td class="nd ndg">22-09-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Anh Nguyễn</td>	<td class="nd gc">Texas</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">20-09-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Anh Ngọc Quý</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">20-09-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Hương</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">20-09-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Anh Thành Liệu</td>	<td class="nd gc">Vũng Tàu</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">20-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Linh</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">20-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Cô Chú Vịêt Kiều Mỹ</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">20-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Cô Nga</td>	<td class="nd gc">Chợ An Đông</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">800.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">20-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Cô Oanh</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">100</td>	<td class="nd lt">USD</td>	<td class="nd ndg">20-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Hoàng Nhung</td>	<td class="nd gc">Ca sĩ ủng hộ tiền thù lao</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">150.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">19-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Dzoãnh Minh</td>	<td class="nd gc">Ca sỹ ủng hộ tiền thù lao</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">150.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">19-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Mạnh Cường</td>	<td class="nd gc">Ca sỹ ủng hộ tiền thù lao</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">150.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">19-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Trường Thư</td>	<td class="nd gc"> Ca sỹ ủng hộ tiền thù lao</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">150.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">19-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Tường Văn</td>	<td class="nd gc">Ca sỹ ủng hộ tiền thù lao</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">150.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">19-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Bích Ảnh</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Thuận Trinh</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">50</td>	<td class="nd lt">USD</td>	<td class="nd ndg">10-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Nhóm Dã Quỳ Ủng Hộ</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">750.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Giáo sư Neal Newfield</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">100</td>	<td class="nd lt">USD</td>	<td class="nd ndg">10-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Khách Sạn Hiền Anh</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">100</td>	<td class="nd lt">USD</td>	<td class="nd ndg">10-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Giáo sư Glen White</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">200</td>	<td class="nd lt">USD</td>	<td class="nd ndg">10-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Cô Võ Thị Mỹ Dung</td>	<td class="nd gc">Khoa GDĐB trường ĐHSP</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">300.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Lương Thể Liên</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Bán vé may mắn</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">8.700.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Thiên Hương</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Trang Thu Liên</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500</td>	<td class="nd lt">USD</td>	<td class="nd ndg">10-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Thủy Cúc</td>	<td class="nd gc">Báo Tuổi Trẻ</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Phạm Mai Hoa</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">09-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Đinh Thanh Hương</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">100</td>	<td class="nd lt">USD</td>	<td class="nd ndg">09-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Hoàng Văn Dương</td>	<td class="nd gc">Tư vấn độc lập</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">09-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Lưu Thị Ngọc Lan</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">08-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Joselyn Tran</td>	<td class="nd gc">Mast Company</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">2.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">07-08-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Thu Lương</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-07-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Bán áo thun </td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.350.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">07-07-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Nhu</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">19-05-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Nhóm Bác Sĩ Bích Ảnh</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-05-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Võ Đắc Danh</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-05-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Đoàn Chicago</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.500.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-05-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Đoàn Chicago</td>	<td class="nd gc"></td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">600</td>	<td class="nd lt">USD</td>	<td class="nd ndg">10-05-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">CHị Trần Thị Bé </td>	<td class="nd gc">Việt kiều Cannada</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.200.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">10-03-2010</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr><tr>	<td class="nd ht">Chị Lan</td>	<td class="nd gc">Hội Lăng Cô</td>	<td class="nd ldg">Những đóng góp riêng lẻ</td>	<td class="nd pttt">Nhận tiền mặt</td>	<td class="nd st">1.000.000</td>	<td class="nd lt">VNĐ</td>	<td class="nd ndg">00-00-0000</td>	<td class="nd hthd">Hội quán Đời Rất Đẹp</td></tr>
+</tbody>
+
+</table>    
+
+<script type="text/javascript">
+
+//<![CDATA[    
+
+    var table2_Props =  {        
+
+                    col_0: "none",
+
+                    col_1:"none",
+
+                    col_2: "select",
+
+                    col_3: "select",  
+
+                    col_4: "none",
+
+                    col_5: "select",
+
+                    col_7: "select",  
+
+                    display_all_text: " [ Xem tất cả ] ",  
+
+                    sort_select: true,
+
+                    paging: true,
+
+                    paging_length: 7,
+
+                    results_per_page: ['Hiển thị từng trang',[7,10,20,25,50,100]] ,
+
+                    page_selector_type: 'select',
+
+                    stylesheet: 'css/filtergrid.css',
+
+                    help_instructions: false,
+
+                    page_text: 'Trang',
+
+                    of_text: ' / ',
+
+                    rows_counter: true
+
+                    //grid_layout: true
+
+                    
+
+                };  
+
+    var tf2 = setFilterGrid( "table2",table2_Props );  
+
+    
+
+//]]>  
+
+</script>
+
+                </div>
+
+             </section><section>
+            	<footer>
+                	<div class="footer">
+                    	<div class="doitac">
+                        	  
+                        	<a href="http://www.fordfound.org/regions/vietnam/overview" target="_blank"><img src="../images/doitacdrd/f.png" alt="AP" title="Ford Foundation"></a>
+                                                        <img src="../images/doitacdrd/armcharm.png" alt="amcham vietnam" title="amcham vietnam">
+                              
+                        	<a href="http://www.atlanticphilanthropies.org/" target="_blank"><img src="../images/doitacdrd/atlantic.png" alt="The Atlantic Philantropies" title="The Atlantic Philantropies"></a>
+                              
+                        	<a href="http://www.irishaid.gov.ie/" target="_blank"><img src="../images/doitacdrd/irish.png" alt="Irish Aid" title="Irish Aid"></a>
+                              
+                        	<a href="http://www.nippon-foundation.or.jp/eng/" target="_blank"><img src="../images/doitacdrd/nippon.png" alt="Nippon" title="Nippon"></a>
+                              
+                        	<a href="http://www.invescohcm.com.vn/Quatrinhhinhthanh.html" target="_blank"><img src="../images/doitacdrd/invesco.png" alt="Invesco" title="Invesco"></a>
+                              
+                        	<a href="http://www.humancare1986.jp/english.html" target="_blank"><img src="../images/doitacdrd/hcare.png" alt="HumanCare" title="HumanCare"></a>
+                              
+                        	<a href="http://www.koica.go.kr/english/main.html" target="_blank"><img src="../images/doitacdrd/logokoica.jpg" alt="Koica" title="Koica"></a>
+                              
+                        	<a href="http://www.ableforum.com/" target="_blank"><img src="../images/doitacdrd/hq.png" alt="Ableforum" title="Ableforum"></a>
+                                                        <img src="../images/doitacdrd/dpi.png" alt="Khuyết tật" title="Khuyết tật">
+                              
+                        	<a href="http://australia.gov.au/" target="_blank"><img src="../images/doitacdrd/ausaid.png" alt="Australia Goverment" title="Australia Goverment"></a>
+                                                        <img src="../images/doitacdrd/vusta.png" alt="Vusta" title="Vusta">
+                              
+                        	<a href="http://www.pavietnam.vn/" target="_blank"><img src="../images/doitacdrd/PAvietnam.jpg" alt="Logo PAVietNam" title="PA Việt Nam"></a>
+                              
+                        	<a href="http://eqvn.net/" target="_blank"><img src="../images/doitacdrd/eqvn.jpg" alt="Học vien EQVN" title="Học vien EQVN"></a>
+                              
+                        	<a href="https://www.usaid.gov/vi/vietnam" target="_blank"><img src="../images/doitacdrd/USAID.jpg" alt="logo tổ chức USAID" title="USAID"></a>
+                              
+                        	<a href="http://moveability.icrc.org/" target="_blank"><img src="../images/doitacdrd/ICRC.jpg" alt=" Quỹ ICRC MoveAbility" title=" Quỹ ICRC MoveAbility"></a>
+                              
+                        	<a href="http://tamnguyenviet.vn/voi-ca-tam-tinh/" target="_blank"><img src="../images/doitacdrd/Tamnguyenviet01.jpg" alt="" title="Tâm nguyện Việt"></a>
+                                                        <p class="clr"></p>
+                        </div>
+                        <div class="copyright"><p style="text-align: left;float: left;"><img src="../images/icon_dien_thoai.png" alt="Điện thoại" style="margin:5px 5px 0 0;height:15px;" />028 6267 9911 - <img src="../images/icon_email.png" alt="Email" style="margin:5px 5px 0 0;height:15px;" /><a href="mailto:info@drdvietnam.com" style="color: #fff;;">info@drdvietnam.com</a></p><p style="float: right;">&copy; Power by DRD Vietnam. All right reserved.</p><p class="clr"></p></div>
+                    </div>
+                </footer>
+            </section>
+            
+		
+	</div>
+</section>
+</div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/58340a557bb7bf7f521ddde8/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+
+<!-- Mirrored from www.drdvietnam.org/accessibility/danh-sach-ung-ho-hoi-quan.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Oct 2017 13:17:38 GMT -->
+</html>
