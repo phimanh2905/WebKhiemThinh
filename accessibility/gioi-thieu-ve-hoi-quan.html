@@ -3,43 +3,43 @@
 
 <!-- Mirrored from www.drdvietnam.org/accessibility/gioi-thieu-ve-hoi-quan.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Oct 2017 13:17:14 GMT -->
 <head>
-<base   />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Giới thiệu về hội quán</title>
-<link rel="stylesheet" href="../css/style.css">
+    <base   />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu về hội quán</title>
+    <link rel="stylesheet" href="../css/style.css">
 <!--[if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
-<link href="http://www.drdvietnam.org/images/favico.ico" rel="shortcut icon" type="image/x-icon" />
-<script src="../js/jquery-1.8.1.min.js"></script>
-<link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
-<script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
-<script type="text/javascript" src="../js/greyscale.js"></script>
-<script type="text/javascript" src="../js/expancer.js"></script>
-<script type="text/javascript" src="../js/mousetrap.min.js"></script>
+    <link href="http://www.drdvietnam.org/images/favico.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="../js/jquery-1.8.1.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
+    <script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="../js/greyscale.js"></script>
+    <script type="text/javascript" src="../js/expancer.js"></script>
+    <script type="text/javascript" src="../js/mousetrap.min.js"></script>
 <!--
 <script type="text/javascript" src="http://www.trungtamtinhoc.edu.vn/api/snowstorm.js"></script>
 <script type="text/javascript" src="js/hoa-mai-roi.js"></script>
 -->
 <script>
-			$(document).ready(function(){
-				//Examples of how to assign the ColorBox event to elements
-				if ($(window).width() > 700) {
-					$(".inlinee").colorbox({inline:true, width:"30%", height:"20%"});
-				}
-				else {
-					if($(window).width()<700 && $(window).width()>500) {
-						$(".inlinee").colorbox({inline:true, width:"400px", height:"20%"});
-					}
-					else {
-						$(".inlinee").colorbox({inline:true, width:"220px", height:"20%"});
-					}
-				}
-				
-			});
-		</script>
-<script>
-$(document).ready(function(){
+    $(document).ready(function(){
+                //Examples of how to assign the ColorBox event to elements
+                if ($(window).width() > 700) {
+                    $(".inlinee").colorbox({inline:true, width:"30%", height:"20%"});
+                }
+                else {
+                    if($(window).width()<700 && $(window).width()>500) {
+                        $(".inlinee").colorbox({inline:true, width:"400px", height:"20%"});
+                    }
+                    else {
+                        $(".inlinee").colorbox({inline:true, width:"220px", height:"20%"});
+                    }
+                }
+                
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
 //ID, class and tag element that font size is adjustable in this array
 //Put in html or body if you want the font of the entire page adjustable
 var section = new Array('div.fontset','.section2');
@@ -47,75 +47,75 @@ section = section.join(',');
 // Reset Font Size
 var originalFontSize = $(section).css('font-size');
 $(".resetFont").click(function(){
-$(section).css('font-size', originalFontSize);
+    $(section).css('font-size', originalFontSize);
 });
 // Increase Font Size
 $(".increaseFont").click(function(){
-var currentFontSize = $(section).css('font-size');
-var currentFontSizeNum = parseFloat(currentFontSize, 10);
-var newFontSize = currentFontSizeNum*1.2;
-$(section).css('font-size', newFontSize);
-return false;
+    var currentFontSize = $(section).css('font-size');
+    var currentFontSizeNum = parseFloat(currentFontSize, 10);
+    var newFontSize = currentFontSizeNum*1.2;
+    $(section).css('font-size', newFontSize);
+    return false;
 });
 // Decrease Font Size
 $(".decreaseFont").click(function(){
-var currentFontSize = $(section).css('font-size');
-var currentFontSizeNum = parseFloat(currentFontSize, 10);
-var newFontSize = currentFontSizeNum*0.8;
-$(section).css('font-size', newFontSize);
-return false;
+    var currentFontSize = $(section).css('font-size');
+    var currentFontSizeNum = parseFloat(currentFontSize, 10);
+    var newFontSize = currentFontSizeNum*0.8;
+    $(section).css('font-size', newFontSize);
+    return false;
 });
-	// nhan 1 phim
-	// phim tat header 
-		Mousetrap.bind('alt+0', function() {window.location.assign("http://www.drdvietnam.org/highvisibility");}, 'keyup');
-				Mousetrap.bind('alt+1', function() {window.location.assign("http://www.drdvietnam.org/language.php?set=en");}, 'keyup');
-			Mousetrap.bind('alt+w', function() {
-		var currentFontSize = $(section).css('font-size');
-		var currentFontSizeNum = parseFloat(currentFontSize, 10);
-		var newFontSize = currentFontSizeNum*1.2;
-		$(section).css('font-size', newFontSize);
-		return false;
-	});
-	Mousetrap.bind('alt+r', function() {
-		$(section).css('font-size', originalFontSize);
-	});
-	Mousetrap.bind('alt+e', function() {
-		var currentFontSize = $(section).css('font-size');
-		var currentFontSizeNum = parseFloat(currentFontSize, 10);
-		var newFontSize = currentFontSizeNum*0.8;
-		$(section).css('font-size', newFontSize);
-		return false;
-	});
-	Mousetrap.bind('alt+q', function() {window.location.assign("danh-sach-ung-ho.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+i', function() {window.location.assign("dang-nhap.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+u', function() {window.location.assign("dang-ky.html#noidungnoidung");}, 'keyup');
-	
-	Mousetrap.bind('alt+a', function() {window.location.assign("index.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+j', function() {window.location.assign("drd.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+l', function() {window.location.assign("linh-vuc-hoat-dong.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+c', function() {window.location.assign("hoi-quan.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+n', function() {window.location.assign("thu-vien-thong-tin.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+m', function() {window.location.assign("video.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+p', function() {window.location.assign("chinh-sach-phap-luat.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+y', function() {window.location.assign("dien-dan.html#noidungnoidung");}, 'keyup');
-	
-	Mousetrap.bind('6', function() {window.location.assign("gioi-thieu-ve-hoi-quan.html#menutoptop");}, 'keyup');
-	Mousetrap.bind('7', function() {window.location.assign("gioi-thieu-ve-hoi-quan.html#menumainmain");}, 'keyup');
-	Mousetrap.bind('8', function() {window.location.assign("gioi-thieu-ve-hoi-quan.html#gotop");}, 'keyup');
-	Mousetrap.bind('9', function() {window.location.assign("gioi-thieu-ve-hoi-quan.html#noidungnoidung");}, 'keyup');
-	//Mousetrap.bind('alt+9', function() {$('html, body').animate({scrollTop: $("#noidungnoidung").offset().top}, 2000);}, 'keyup');
-	//Mousetrap.bind('alt+9', function() {$(document).scrollTo('#noidungnoidung');}, 'keyup');
+    // nhan 1 phim
+    // phim tat header 
+    Mousetrap.bind('alt+0', function() {window.location.assign("http://www.drdvietnam.org/highvisibility");}, 'keyup');
+    Mousetrap.bind('alt+1', function() {window.location.assign("http://www.drdvietnam.org/language.php?set=en");}, 'keyup');
+    Mousetrap.bind('alt+w', function() {
+        var currentFontSize = $(section).css('font-size');
+        var currentFontSizeNum = parseFloat(currentFontSize, 10);
+        var newFontSize = currentFontSizeNum*1.2;
+        $(section).css('font-size', newFontSize);
+        return false;
+    });
+    Mousetrap.bind('alt+r', function() {
+        $(section).css('font-size', originalFontSize);
+    });
+    Mousetrap.bind('alt+e', function() {
+        var currentFontSize = $(section).css('font-size');
+        var currentFontSizeNum = parseFloat(currentFontSize, 10);
+        var newFontSize = currentFontSizeNum*0.8;
+        $(section).css('font-size', newFontSize);
+        return false;
+    });
+    Mousetrap.bind('alt+q', function() {window.location.assign("danh-sach-ung-ho.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+i', function() {window.location.assign("dang-nhap.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+u', function() {window.location.assign("dang-ky.html#noidungnoidung");}, 'keyup');
+    
+    Mousetrap.bind('alt+a', function() {window.location.assign("index.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+j', function() {window.location.assign("drd.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+l', function() {window.location.assign("linh-vuc-hoat-dong.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+c', function() {window.location.assign("hoi-quan.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+n', function() {window.location.assign("thu-vien-thong-tin.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+m', function() {window.location.assign("video.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+p', function() {window.location.assign("chinh-sach-phap-luat.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+y', function() {window.location.assign("dien-dan.html#noidungnoidung");}, 'keyup');
+    
+    Mousetrap.bind('6', function() {window.location.assign("gioi-thieu-ve-hoi-quan.html#menutoptop");}, 'keyup');
+    Mousetrap.bind('7', function() {window.location.assign("gioi-thieu-ve-hoi-quan.html#menumainmain");}, 'keyup');
+    Mousetrap.bind('8', function() {window.location.assign("gioi-thieu-ve-hoi-quan.html#gotop");}, 'keyup');
+    Mousetrap.bind('9', function() {window.location.assign("gioi-thieu-ve-hoi-quan.html#noidungnoidung");}, 'keyup');
+    //Mousetrap.bind('alt+9', function() {$('html, body').animate({scrollTop: $("#noidungnoidung").offset().top}, 2000);}, 'keyup');
+    //Mousetrap.bind('alt+9', function() {$(document).scrollTo('#noidungnoidung');}, 'keyup');
 });
 </script>    
 <script type="text/javascript">
-	function setLocation(ev){
-		window.location.assign(ev);
-	}
+    function setLocation(ev){
+        window.location.assign(ev);
+    }
 </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-50073537-1', 'drdvietnam.org');
@@ -124,214 +124,214 @@ return false;
 </script>
 </head>
 <body class="normal" style="overflow-x: hidden;">
-<script>
-  (function() {
-    var cx = '004167217340609662241:rz4rgq9n_-m';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+    <script>
+      (function() {
+        var cx = '004167217340609662241:rz4rgq9n_-m';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
         '//www.google.com/cse/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
 </script><div id="gotop"></div>
 <div class="fontset">
-<section>
-	<div id="giaodientiepcan" class="normal">
-    	<header>
-        	<div id="tcheader">
-                <p class="gdtc"><a href="http://www.drdvietnam.org/">Giao diện chuẩn</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
-                <p class="gdtp"><a href="http://www.drdvietnam.org/highvisibility/" title="Giao diện này phù hợp với người khuyết tật về mắt">Tương phản cao</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
-                <p class="gdtc"><a href="http://www.drdvietnam.org/nightmode/" title="Chế độ này phù hợp với máy tính bảng và các thiết bị cầm tay vì tiết kiệm pin và các đoạn văn được hiển thị với phông nền tối, chữ sáng">Chế độ ban đêm</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
-        <p class="resize"><a class='increaseFont' style='cursor: pointer; cursor: hand;' title=''>Tăng kích cỡ chữ </a><span class="font12">(Phím tắt  alt+w)</span><span class="cach"></span>
-        <a class='resetFont' style='cursor: pointer; cursor: hand;'>Đặt lại cỡ chữ chuẩn </a><span class="font12">(Phím tắt  alt+r)</span><span class="cach"></span>
-    <a class='decreaseFont' style='cursor: pointer; cursor: hand;' title=''>Giảm kích cỡ chữ </a><span class="font12">(Phím tắt  alt+e)</span><span class="cach"></span></p>
-    <p><a href="huong-dan-su-dung.html#noidungnoidung">Hướng dẫn truy cập</a></p>
-    <p class="dsuh"><a href="danh-sach-ung-ho.html#noidungnoidung"><span>Danh sách ủng hộ</span></a> <span class="font12">(Phím tắt  alt+q)</span><span class="cach"></span></p>
-    
-    	<p class="ngonngu"><a href="http://www.drdvietnam.org/language.php?set=vn" title="">Tiếng Việt </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span>
-        <a href="http://www.drdvietnam.org/language.php?set=en" title="">English </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span></p>
-        <p class="slr"><a href="tim-kiem.html#noidungnoidung">Tìm kiếm</a><span class="cach"></span></p>
-        <p class="slr"><a href="tim-kiem-theo-tu-khoa.html#noidungnoidung">Tìm theo từ khóa</a><span class="cach"></span></p>
-        				                            
-        <p class="slr"><a href="dang-nhap.html#noidungnoidung" title="Phím tắt  alt+i">Đăng nhập</a><span class="cach"></span></p>
-        <p class="slr"><a href="dang-ky.html#noidungnoidung" title="Phím tắt  alt+u">Đăng ký</a></p>
-        			</div>
-		<section><p class="vitrihientai">Bạn đang ở: Hội quán&nbsp;&raquo;&nbsp;Giới thiệu</p></section>
-        </header>
-        <p class="mntop" id="menutoptop"><span>Menu top</span> <span class="font16">( Phím tắt  <u>6</u> )</span></p>
-            <nav class="menutopp">
-            	<ul>
-                	<li><a class="" href="index.html#noidungnoidung">Trang chủ</a> <span class="padl5">(Phím tắt  <u>alt+a</u>)</span></li>
-                    <li><a class="" href="drd.html#noidungnoidung">Giới thiệu</a> <span class="padl5">(Phím tắt  <u>alt+j</u>)</span></li>
-                    <li><a class="" href="linh-vuc-hoat-dong.html#noidungnoidung">Lĩnh vực hoạt động</a> <span class="padl5">(Phím tắt  <u>alt+l</u>)</span></li>
-                    <li><a class="dangxem" href="hoi-quan.html#noidungnoidung">Hội quán Đời Rất Đẹp</a> <span class="padl5">(Phím tắt  <u>alt+c</u>)</span></li>
-                    <li><a class="" href="thu-vien-thong-tin.html#noidungnoidung">Tin tức</a> <span class="padl5">(Phím tắt  <u>alt+n</u>)</span></li>
-                    <li><a class="" href="video.html#noidungnoidung">Thư viện</a> <span class="padl5">(Phím tắt  <u>alt+m</u>)</span></li>
-                    <li><a class="" href="chinh-sach-phap-luat.html#noidungnoidung">Chính sách và pháp luật</a> <span class="padl5">(Phím tắt  <u>alt+p</u>)</span></li>
-                    <li><a class="" href="dien-dan.html#noidungnoidung">Diễn đàn</a> <span class="padl5">(Phím tắt  <u>alt+y</u>)</span></li>
-                    <li class="gotop"><a href="gioi-thieu-ve-hoi-quan.html#gotop" class="font14">Lên trên</a></li>
-                </ul>
-            </nav>
+    <section>
+        <div id="giaodientiepcan" class="normal">
+            <header>
+                <div id="tcheader">
+                    <p class="gdtc"><a href="http://www.drdvietnam.org/">Giao diện chuẩn</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+                    <p class="gdtp"><a href="http://www.drdvietnam.org/highvisibility/" title="Giao diện này phù hợp với người khuyết tật về mắt">Tương phản cao</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+                    <p class="gdtc"><a href="http://www.drdvietnam.org/nightmode/" title="Chế độ này phù hợp với máy tính bảng và các thiết bị cầm tay vì tiết kiệm pin và các đoạn văn được hiển thị với phông nền tối, chữ sáng">Chế độ ban đêm</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+                    <p class="resize"><a class='increaseFont' style='cursor: pointer; cursor: hand;' title=''>Tăng kích cỡ chữ </a><span class="font12">(Phím tắt  alt+w)</span><span class="cach"></span>
+                        <a class='resetFont' style='cursor: pointer; cursor: hand;'>Đặt lại cỡ chữ chuẩn </a><span class="font12">(Phím tắt  alt+r)</span><span class="cach"></span>
+                        <a class='decreaseFont' style='cursor: pointer; cursor: hand;' title=''>Giảm kích cỡ chữ </a><span class="font12">(Phím tắt  alt+e)</span><span class="cach"></span></p>
+                        <p><a href="huong-dan-su-dung.html#noidungnoidung">Hướng dẫn truy cập</a></p>
+                        <p class="dsuh"><a href="danh-sach-ung-ho.html#noidungnoidung"><span>Danh sách ủng hộ</span></a> <span class="font12">(Phím tắt  alt+q)</span><span class="cach"></span></p>
+                        
+                        <p class="ngonngu"><a href="http://www.drdvietnam.org/language.php?set=vn" title="">Tiếng Việt </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span>
+                            <a href="http://www.drdvietnam.org/language.php?set=en" title="">English </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span></p>
+                            <p class="slr"><a href="tim-kiem.html#noidungnoidung">Tìm kiếm</a><span class="cach"></span></p>
+                            <p class="slr"><a href="tim-kiem-theo-tu-khoa.html#noidungnoidung">Tìm theo từ khóa</a><span class="cach"></span></p>
+                            
+                            <p class="slr"><a href="dang-nhap.html#noidungnoidung" title="Phím tắt  alt+i">Đăng nhập</a><span class="cach"></span></p>
+                            <p class="slr"><a href="dang-ky.html#noidungnoidung" title="Phím tắt  alt+u">Đăng ký</a></p>
+                        </div>
+                        <section><p class="vitrihientai">Bạn đang ở: Hội quán&nbsp;&raquo;&nbsp;Giới thiệu</p></section>
+                    </header>
+                    <p class="mntop" id="menutoptop"><span>Menu top</span> <span class="font16">( Phím tắt  <u>6</u> )</span></p>
+                    <nav class="menutopp">
+                        <ul>
+                            <li><a class="" href="index.html#noidungnoidung">Trang chủ</a> <span class="padl5">(Phím tắt  <u>alt+a</u>)</span></li>
+                            <li><a class="" href="drd.html#noidungnoidung">Giới thiệu</a> <span class="padl5">(Phím tắt  <u>alt+j</u>)</span></li>
+                            <li><a class="" href="linh-vuc-hoat-dong.html#noidungnoidung">Lĩnh vực hoạt động</a> <span class="padl5">(Phím tắt  <u>alt+l</u>)</span></li>
+                            <li><a class="dangxem" href="hoi-quan.html#noidungnoidung">Hội quán Đời Rất Đẹp</a> <span class="padl5">(Phím tắt  <u>alt+c</u>)</span></li>
+                            <li><a class="" href="thu-vien-thong-tin.html#noidungnoidung">Tin tức</a> <span class="padl5">(Phím tắt  <u>alt+n</u>)</span></li>
+                            <li><a class="" href="video.html#noidungnoidung">Thư viện</a> <span class="padl5">(Phím tắt  <u>alt+m</u>)</span></li>
+                            <li><a class="" href="chinh-sach-phap-luat.html#noidungnoidung">Chính sách và pháp luật</a> <span class="padl5">(Phím tắt  <u>alt+p</u>)</span></li>
+                            <li><a class="" href="dien-dan.html#noidungnoidung">Diễn đàn</a> <span class="padl5">(Phím tắt  <u>alt+y</u>)</span></li>
+                            <li class="gotop"><a href="gioi-thieu-ve-hoi-quan.html#gotop" class="font14">Lên trên</a></li>
+                        </ul>
+                    </nav>
             <!--<div style="display:none;">
-                        	<div id="searchgoogle" class="searchgo"><gcse:searchbox></gcse:searchbox>
+                            <div id="searchgoogle" class="searchgo"><gcse:searchbox></gcse:searchbox>
 <div style="visibility:hidden"><gcse:searchresults refinementStyle="link"></gcse:searchresults></div>
                         </div>
-            </div>--><link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
-<script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
-<script>
-			$(document).ready(function(){
-				//Examples of how to assign the ColorBox event to elements
-				$(".inlineee").colorbox({inline:true, Maxwidth:"50%", Maxheight:"90%"});
-				
-			});
-		</script>
+                    </div>--><link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
+                    <script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
+                    <script>
+                        $(document).ready(function(){
+                //Examples of how to assign the ColorBox event to elements
+                $(".inlineee").colorbox({inline:true, Maxwidth:"50%", Maxheight:"90%"});
+                
+            });
+        </script>
         <p class="mntop" id="menumainmain"><span>Menu Chính</span> <span class="font16">( Phím tắt  <u>7</u> )</span></p>
-            <nav class="menutopp">
-            	<ul>
-                	
-			<li><a class=" dangxem" href="gioi-thieu-ve-hoi-quan.html#noidungnoidung">Giới thiệu</a></li>
-                                <li><a class="" href="tin-hoat-dong-hoi-quan.html#noidungnoidung">Tin hoạt động</a></li>
+        <nav class="menutopp">
+            <ul>
+                
+                <li><a class=" dangxem" href="gioi-thieu-ve-hoi-quan.html#noidungnoidung">Giới thiệu</a></li>
+                <li><a class="" href="tin-hoat-dong-hoi-quan.html#noidungnoidung">Tin hoạt động</a></li>
 
-									<li class="menucon"><a class="" href="hoat-dong-hoi-quan/van-nghe.html#noidungnoidung">&raquo;&nbsp;Văn nghệ</a></li>
-									<li class="menucon"><a class="" href="hoat-dong-hoi-quan/san-choi-ket-noi.html#noidungnoidung">&raquo;&nbsp;Sân chơi kết nối</a></li>
+                <li class="menucon"><a class="" href="hoat-dong-hoi-quan/van-nghe.html#noidungnoidung">&raquo;&nbsp;Văn nghệ</a></li>
+                <li class="menucon"><a class="" href="hoat-dong-hoi-quan/san-choi-ket-noi.html#noidungnoidung">&raquo;&nbsp;Sân chơi kết nối</a></li>
 
-                                <li><a class="" href="cung-cap-cac-dich-vu.html#noidungnoidung">Cung cấp các dịch vụ</a></li>
-								<li><a class="" href="danh-sach-ung-ho-hoi-quan.html#noidungnoidung">Danh sách ủng hộ</a></li>
-                                <li><a class="" href="hoi-quan/lien-he.html#noidungnoidung">Liên hệ</a></li>
-		                    <li class="gotop"><a href="gioi-thieu-ve-hoi-quan.html#gotop" class="font14">Lên trên</a></li>
-                </ul>
-            </nav>
+                <li><a class="" href="cung-cap-cac-dich-vu.html#noidungnoidung">Cung cấp các dịch vụ</a></li>
+                <li><a class="" href="danh-sach-ung-ho-hoi-quan.html#noidungnoidung">Danh sách ủng hộ</a></li>
+                <li><a class="" href="hoi-quan/lien-he.html#noidungnoidung">Liên hệ</a></li>
+                <li class="gotop"><a href="gioi-thieu-ve-hoi-quan.html#gotop" class="font14">Lên trên</a></li>
+            </ul>
+        </nav>
 
-<p class="mntop" id="noidungnoidung"><span>Nội dung</span> <span class="font16">( Phím tắt  <u>9</u> )</span></p>
-            <section>
+        <p class="mntop" id="noidungnoidung"><span>Nội dung</span> <span class="font16">( Phím tắt  <u>9</u> )</span></p>
+        <section>
             <!-- start noidung -->
-            	<div class="contenttiepcan">
-                	                    <div class="font14"><h4><span style="font-family: Arial;">1. Mong muốn nhất khi th&agrave;nh lập hội qu&aacute;n l&agrave; g&igrave;?</span></h4>
-<p align="center"><span style="font-family: Arial;"><img src="../images/hinh%20tin/2014/01/1176372_521123527956632_689302863_n.jpg" alt="1176372_521123527956632_689302863_n" />&nbsp;</span></p>
-<p style="padding-left: 30px;" align="justify"><span style="font-family: Arial;">Hội qu&aacute;n DRD &ndash; Đời Rất Đẹp l&agrave; &yacute; tưởng của người s&aacute;ng lập DRD- Chương tr&igrave;nh Khuyết tật v&agrave; Ph&aacute;t triển (Disability Resource and Development) v&agrave; được sự đồng t&igrave;nh ủng hộ của tất cả c&aacute;c th&agrave;nh vi&ecirc;n của DRD v&agrave; bạn b&egrave; th&acirc;n hữu. Đời Rất Đẹp nhằm tạo một s&acirc;n chơi cho NKT, một nơi NKT c&oacute; thể gặp gỡ, trao đổi, tham gia sinh hoạt với những người bạn kh&ocirc;ng khuyết tật tr&ecirc;n cơ sở b&igrave;nh đằng về cơ hội v&agrave; c&ugrave;ng gi&uacute;p nhau ph&aacute;t triển. Bao năm qua ch&uacute;ng ta vẫn k&ecirc;u gọi NKT h&ograve;a nhập XH, khuyến kh&iacute;ch v&agrave; kh&iacute;ch lệ c&aacute;c th&agrave;nh vi&ecirc;n kh&aacute;c trong XH tạo điều kiện để NKT h&ograve;a nhập. Nhưng h&ograve;a nhập thế n&agrave;o được khi m&agrave; m&ocirc;i trường sinh hoạt c&ograve;n đầy r&agrave;o cản, c&aacute;c nơi sinh hoạt vẫn kh&ocirc;ng thể n&agrave;o tiếp cận được, khi vẫn c&ograve;n nhiều người nh&igrave;n NKT với &aacute;nh mặt tội nghiệp hay kh&ocirc;ng thoải m&aacute;i với cảm gi&aacute;c bị l&agrave;m phiền khi NKT cần gi&uacute;p đỡ.</span></p>
-<p style="padding-left: 30px;" align="justify"><span style="font-family: Arial;">Khi NKT đến hội qu&aacute;n họ sẽ cảm nhận được đ&acirc;y l&agrave; &ldquo;nơi của họ&rdquo;, một nơi để họ cảm thấy rằng m&igrave;nh kh&ocirc;ng hề đơn độc, một nơi họ c&oacute; thể thể hiện khả năng/ t&agrave;i năng của m&igrave;nh, một nơi họ c&oacute; thể chia sẻ những kh&aacute;t khao về cuộc sống.Người kh&ocirc;ng khuyết tật đến với hội qu&aacute;n để thấy rằng NKT kh&ocirc;ng hề thiếu khả năng, kh&ocirc;ng phải chỉ l&agrave; g&aacute;nh nặng cho gia đ&igrave;nh hay x&atilde; hội m&agrave; họ vẫn c&oacute; thể vui sống, l&agrave;m việc, v&agrave; cống hiến nếu họ c&oacute; được cơ hội.</span></p>
-<p style="padding-left: 30px;" align="justify"><span style="font-family: Arial;">Khi đến với hội qu&aacute;n, tham gia c&aacute;c sinh hoạt, thật sự chia sẻ v&agrave; thật sự lắng nghe - nghĩa l&agrave; thật sự mở rộng tr&aacute;i tim để c&oacute; thể đến được với nhau - ta sẽ cảm nhận được rằng Đời Rất Đẹp chứ kh&ocirc;ng kh&ocirc;ng phải &ldquo;Đời sao m&agrave; ch&aacute;n qu&aacute;!&rdquo; như ta vẫn thường nghĩ khi cảm thấy c&ocirc; đơn, hay trong khi tuyệt vọng.</span></p>
-<h4><span style="font-family: Arial;">2. Hội qu&aacute;n sẽ hướng v&agrave;o những hoạt động ch&iacute;nh n&agrave;o v&agrave; sẽ c&oacute; những hoạt động g&igrave; để quảng b&aacute; cho mọi người biết nhiều hơn? Thời gian sinh hoạt của Hội qu&aacute;n sẽ diễn ra như thế n&agrave;o?</span></h4>
-<p align="center"><span style="font-family: Arial;"><img src="../images/stories/drd/lamut100000/hoiquan2.jpg" alt="alt" /><br /> </span></p>
-<p style="padding-left: 30px;"><span style="font-family: Arial;">Với mục ti&ecirc;u &ldquo;kết nối những tr&aacute;i tim&rdquo; để tạo một s&acirc;n chơi t&iacute;ch cực gi&uacute;p thay đổi những cuộc đời, Đời Rất Đẹp thực sự l&agrave; một trung t&acirc;m c&ocirc;ng t&aacute;c x&atilde; hội với c&aacute;c hoạt động nhắm đến mục ti&ecirc;u đ&oacute;.</span></p>
-<p style="padding-left: 60px; text-align: justify;"><span style="font-family: Arial;"><strong>Hđ 1:</strong> l &agrave; nơi để c&aacute;c em chậm ph&aacute;t triển c&oacute; nơi để tiếp tục sinh hoạt v&agrave; ph&aacute;t triển v&igrave; chậm ph&aacute;t triển nghĩa l&agrave; ph&aacute;t triển chậm hơn người kh&aacute;c chứ kh&ocirc;ng c&oacute; nghĩa l&agrave; c&aacute;c em kh&ocirc;ng tiếp tục ph&aacute;t triển. Nhưng thường th&igrave; đến một độ tuổi n&agrave;o đ&oacute; th&igrave; c&aacute;c em kh&ocirc;ng c&ograve;n được đến trường nữa &ndash; nơi duy nhất m&agrave; c&aacute;c em vẫn được học tập v&agrave; sinh hoạt - v&agrave; như thế sự ph&aacute;t triển của c&aacute;c em sẽ bị dừng lại hoặc thục l&ugrave;i khi kh&ocirc;ng c&ograve;n c&oacute; cơ hội để tiếp tục trao dồi.</span></p>
-<div style="padding-left: 30px;" align="justify">
-<p style="padding-left: 30px;">&nbsp;</p>
-<p style="padding-left: 30px;"><span style="font-family: Arial;"><strong>Hđ 2:</strong> khi tham gia sinh hoạt với c&aacute;c em khiếm th&iacute;nh ch&uacute;ng t&ocirc;i mới biết rằng c&aacute;c em l&agrave; nh&oacute;m kh&oacute; t&igrave;m được việc l&agrave;m nhất v&igrave; r&agrave;o cản của c&aacute;c em l&agrave; kh&ocirc;ng thể giao tiếp bằng ng&ocirc;n ngữ bằng lời th&ocirc;ng thường. Nh&igrave;n c&aacute;c em ta thấy x&oacute;t xa. C&aacute;c em đẹp đẽ, th&ocirc;ng minh, chịu kh&oacute;,&hellip; nhưng hầu như chỉ g&oacute;i gọn sinh hoạt của m&igrave;nh trong cộng đồng người khiếm th&iacute;nh. V&igrave; vậy ch&uacute;ng t&ocirc;i muốn gi&uacute;p c&aacute;c em học pha chế v&agrave; phục vụ b&agrave;n. Đời Rất Đẹp sẽ l&agrave; nơi để c&aacute;c em học tốt nghề rồi đ&agrave;o tạo gi&uacute;p lại những em kh&aacute;c. Ch&uacute;ng t&ocirc;i hy vọng rằng mọi người đến với hội qu&aacute;n sẽ chịu kh&oacute; trao đổi với c&aacute;c em, nh&igrave;n thấy c&aacute;c em l&agrave;m việc, g&oacute;p &yacute; th&ecirc;m cho c&aacute;c em, v&agrave; giới thiệu c&aacute;c em đến với mọi người để mở rộng th&ecirc;m cơ hội việc l&agrave;m cho c&aacute;c em ở những nơi kh&aacute;c. Khi giới thiệu được một nh&oacute;m đi l&agrave;m ở những nơi kh&aacute;c, ch&uacute;ng t&ocirc;i lại nhận th&ecirc;m những em mới để đ&agrave;o tạo, v&agrave; cứ tiếp tục như thế.</span></p>
-</div>
-<p style="padding-left: 30px;"><span style="font-family: Arial;">Dĩ nhi&ecirc;n l&agrave; ngo&agrave;i việc học nghề, c&aacute;c em c&ograve;n được tham gia những sinh hoạt kh&aacute;c ở DRD để ph&aacute;t triển th&ecirc;m những kỹ năng x&atilde; hội cần thiết.</span></p>
-<p style="padding-left: 60px; text-align: justify;"><span style="font-family: Arial;"><strong>Hđ 3:</strong> hội qu&aacute;n c&ograve;n l&agrave; nơi gi&uacute;p trưng b&agrave;y v&agrave; giới thiệu sản phẩm của NKT. Đời Rất Đẹp chỉ nhận trưng b&agrave;y v&agrave; giới thiệu những sản phẩm thực sự chất lượng v&igrave; ch&uacute;ng t&ocirc;i kh&ocirc;ng muốn c&aacute;c bạn KT chỉ l&agrave;m v&agrave; b&aacute;n sản phẩm với suy nghĩ rằng người kh&aacute;c mua gi&uacute;p m&igrave;nh v&igrave; m&igrave;nh l&agrave; NKT. Những sản phẩm mua v&igrave; l&ograve;ng từ thiện như thế chỉ c&oacute; thể b&aacute;n được 1 lần, v&agrave; gi&aacute; trị của NKT sẽ vẫn tiếp tục ở vị trị thấp trong l&ograve;ng người mua gi&uacute;p. DRD muốn rằng người quan t&acirc;m sẽ c&ocirc;ng nhận vẻ đẹp v&agrave; chất lượng của c&aacute;c sản phẩm trưng b&agrave;y ở hội qu&aacute;n, mua ch&uacute;ng v&igrave; th&iacute;ch v&agrave; muốn sử dụng, v&agrave; c&oacute; thể tự tin giới thiệu ch&uacute;ng đến với mọi người. Những NKT hoặc tổ chức NKT n&agrave;o c&oacute; đủ sản phẩm để trưng b&agrave;y ri&ecirc;ng, th&igrave; DRD cũng c&oacute; thể cho mượn mặt bằng để trưng b&agrave;y trong 1 th&aacute;ng.</span></p>
-<div style="padding-left: 30px;" align="justify">
-<p style="padding-left: 30px;">&nbsp;</p>
-<p style="padding-left: 30px;"><span style="font-family: Arial;"><strong>Hđ 4:</strong> &Acirc;m nhạc vẫn lu&ocirc;n l&agrave; sợi d&acirc;y kết nối tr&aacute;i tim nhanh nhất. V&igrave; vậy Đời Rất Đẹp được x&acirc;y dựng như một s&acirc;n chơi để những bạn KT c&oacute; khả năng &acirc;m nhạc biểu diễn v&agrave; giao lưu với mọi người. Ch&uacute;ng t&ocirc;i hy vọng rằng s&acirc;n chơi n&agrave;y sẽ gi&uacute;p DRD ph&aacute;t hiện th&ecirc;m những t&agrave;i năng c&ograve;n ẩn dấu trong cộng đồng NKT. Ch&uacute;ng t&ocirc;i c&oacute; những đ&ecirc;m thứ Năm v&agrave; thứ S&aacute;u h&aacute;t với nhau, những đ&ecirc;m giao lưu với c&aacute;c anh chị văn nghệ sĩ, v&agrave; thỉnh thoảng sẽ c&oacute; những đ&ecirc;m với chương tr&igrave;nh được d&agrave;n dựng c&ocirc;ng phu hơn.</span></p>
-<p style="padding-left: 30px;">&nbsp;</p>
-<p style="padding-left: 30px;"><span style="font-family: Arial;"><strong>Hđ 5</strong>: Với mong muốn tạo một s&acirc;n chơi t&iacute;ch cực, DRD đ&atilde; v&agrave; vẫn đang t&igrave;m kiếm những cơ hội mời được c&aacute;c chuy&ecirc;n gia c&ocirc;ng t&aacute;c XH, t&acirc;m l&yacute;, gi&aacute;o dục, ph&aacute;t triển cộng đồng,&hellip; gi&agrave;nh ch&uacute;t thời gian đến chia sẻ với c&aacute;c em sinh vi&ecirc;n v&agrave; những người quan t&acirc;m. Dĩ nhi&ecirc;n l&agrave; ho&agrave;n to&agrave;n miễn ph&iacute; v&igrave; DRD kh&ocirc;ng c&oacute; ng&acirc;n s&aacute;ch cho hoạt động n&agrave;y. Hiện giờ th&igrave; mục ti&ecirc;u n&agrave;y đ&atilde; được gửi đi v&agrave; nhận được sự quan t&acirc;m v&agrave; ủng hộ của rất nhiều bạn b&egrave; tr&ecirc;n thế giới. Hy vọng l&agrave; những buổi chuy&ecirc;n đề n&agrave;y sẽ được tổ chức thường xuy&ecirc;n hơn để gi&uacute;p cho c&aacute;c em sinh vi&ecirc;n, những người hoạt động chuy&ecirc;n m&ocirc;n c&oacute; cơ hội tăng th&ecirc;m kiến thức li&ecirc;n quan đến việc học tập v&agrave; c&ocirc;ng t&aacute;c của m&igrave;nh.</span></p>
-</div>
-<p style="padding-left: 30px;" align="justify"><span style="font-family: Arial;">Sinh vi&ecirc;n c&aacute;c ng&agrave;nh khoa học x&atilde; hội cũng c&oacute; thể x&acirc;y dưng những buổi sinh hoạt chuy&ecirc;n đề của m&igrave;nh ở hội qu&aacute;n. Nếu c&aacute;c em c&oacute; &yacute; tưởng v&agrave; muốn thực hiện, DRD sẽ cố gắng - trong khả năng của m&igrave;nh - gi&uacute;p c&aacute;c em l&ecirc;n chương tr&igrave;nh v&agrave; tổ chức thực hiện. S&acirc;n chơi n&agrave;y cũng gi&agrave;nh cho cả những bậc cha mẹ, c&aacute;c gi&aacute;o vi&ecirc;n, hoặc nh&acirc;n vi&ecirc;n x&atilde; hội. Từ những hoạt động chuy&ecirc;n đề n&agrave;y, những nh&oacute;m đồng cảnh (những người đang gặp khủng hoảng v&igrave; c&aacute;c nguy&ecirc;n nh&acirc;n kh&aacute;c nhau) c&oacute; thể dần được h&igrave;nh th&agrave;nh v&agrave; hỗ trợ nhau vượt qua kh&oacute; khăn.</span></p>
-<div align="justify">
-<p>&nbsp;</p>
-<p style="padding-left: 60px;"><span style="font-family: Arial;"><strong>Hđ 6:</strong> DRD cũng t&igrave;m c&aacute;ch tăng cường mối li&ecirc;n kết với c&aacute;c tổ chức kh&aacute;c để thực hiện thường xuy&ecirc;n hơn những buổi hội thảo tại hội qu&aacute;n.</span></p>
-</div>
-<p style="padding-left: 30px;" align="justify"><span style="font-family: Arial;">Tất cả những buổi sinh hoạt chuy&ecirc;n đề, những chương tr&igrave;nh đặc biệt sẽ được th&ocirc;ng b&aacute;o tr&ecirc;n trang web của DRD, cũng như được gửi cho những người đ&atilde; đăng k&yacute; v&agrave;o mailing list của DRD. DRD cũng hy vọng rằng c&aacute;c b&aacute;o, đ&agrave;i gi&uacute;p ch&uacute;ng t&ocirc;i chuyển th&ocirc;ng tin đến với những người quan t&acirc;m.</span></p>
-<h4><span style="font-family: Arial;">3. Những kh&oacute; khăn của hội qu&aacute;n?</span></h4>
-<p style="padding-left: 30px;" align="justify"><span style="font-family: Arial;">&Yacute; tưởng đẹp (như mọi người vẫn n&oacute;i) n&ecirc;n cần một mặt bằng ph&ugrave; hợp. M&agrave; mặt bằng ph&ugrave; hợp cũng c&oacute; nghĩa l&agrave; ng&acirc;n s&aacute;ch ph&ugrave; hợp. Đ&acirc;y l&agrave; điều l&agrave;m ch&uacute;ng t&ocirc;i lo lắng nhất. Một hội qu&aacute;n x&atilde; hội th&igrave; kh&ocirc;ng thể thuần kinh doanh, v&igrave; vậy để c&oacute; được thu nhập từ kinh doanh m&agrave; kh&ocirc;ng hy sinh đi mục đ&iacute;ch x&atilde; hội ban đầu l&agrave; một điều cực kỳ kh&oacute; khăn. Ch&uacute;ng t&ocirc;i vẫn đang t&igrave;m th&ecirc;m &yacute; tưởng để duy tr&igrave; hoạt động của hội qu&aacute;n.</span></p>
-<p style="padding-left: 30px;" align="justify"><span style="font-family: Arial;">Kh&oacute; khăn nữa l&agrave; t&igrave;m được những t&igrave;nh nguy&ecirc;n vi&ecirc;n c&oacute; chuy&ecirc;n m&ocirc;n li&ecirc;n quan để gi&uacute;p ch&uacute;ng t&ocirc;i thực hiện được &yacute; tưởng của m&igrave;nh. Một v&agrave;i th&iacute; dụ, <br /> - Với c&aacute;c em chậm ph&aacute;t triển ch&uacute;ng t&ocirc;i muốn t&igrave;m những chuy&ecirc;n gia về nghệ thuật trị liệu (art-therapy) để gi&uacute;p ph&aacute;t triển những chương tr&igrave;nh sinh hoạt cho c&aacute;c em, nhưng ở VN ta hầu như kh&ocirc;ng dễ t&igrave;m được những t&igrave;nh nguyện vi&ecirc;n như thế <br /> - Với những buổi chuy&ecirc;n đề mời được chuy&ecirc;n gia nước ngo&agrave;i, ch&uacute;ng t&ocirc;i cũng cần những t&igrave;nh nguyện vi&ecirc;n gi&uacute;p cho phần phi&ecirc;n dịch. Nhưng t&igrave;m được người dịch chuy&ecirc;n nghiệp miễn ph&iacute; th&igrave; kh&ocirc;ng dễ ch&uacute;t n&agrave;o, c&ograve;n những người dịch kh&ocirc;ng chuy&ecirc;n thường kh&ocirc;ng chuyển được hết &yacute; của diễn giả, m&agrave; như thế th&igrave; thật tiếc cho những người đang muốn học.</span></p>
-<h4><span style="font-family: Arial;">4. Hội qu&aacute;n đ&atilde; được những tấm l&ograve;ng hảo t&acirc;m trợ gi&uacute;p ra sao?</span></h4>
-<p style="padding-left: 30px;" align="justify"><span style="font-family: Arial;">Kh&oacute; khăn như thế, nhưng điều l&agrave;m ch&uacute;ng t&ocirc;i vui v&agrave; tin tưởng hơn v&agrave;o con đường m&igrave;nh đ&atilde; chọn l&agrave; đ&atilde; c&oacute; nhiều người đ&oacute;ng g&oacute;p &iacute;t nhiều khi nghe ch&uacute;ng t&ocirc;i chia sẻ &yacute; tưởng &ldquo;liều lĩnh&rdquo; của m&igrave;nh v&agrave; những kh&oacute; khăn đang đối mặt. Họ l&agrave; những người đến từ c&aacute;c tổ chức x&atilde; hội, c&aacute;c c&aacute; nh&acirc;n, v&agrave; cả những văn nghệ sĩ, những nh&agrave; b&aacute;o. Mọi người b&agrave;y tỏ niềm y&ecirc;u th&iacute;ch của họ với &yacute; tưởng Đời rất Đẹp, v&agrave; hứa sẽ giới thiệu DRD đến với bạn b&egrave; v&agrave; người th&acirc;n của m&igrave;nh. Nhờ thế m&agrave; niềm vui được nh&acirc;n l&ecirc;n, v&agrave; nỗi lo được chia ra, v&agrave; cũng ch&iacute;nh v&igrave; thế m&agrave; Đời rất Đẹp! </span></p>
-<p align="justify"><strong><span style="font-family: Arial;">5. C&aacute;c nh&oacute;m kết nối tại hội qu&aacute;n</span></strong></p>
-<table style="height: 288px; width: 747px; margin-left: auto; margin-right: auto;" border="1" width="738" cellpadding="5">
-<tbody>
-<tr>
-<td align="center" width="25%"><strong>T&ecirc;n Nh&oacute;m</strong></td>
-<td align="center" width="60%"><strong>Mục ti&ecirc;u</strong></td>
-<td align="center" width="15%"><strong>Tin hoạt động</strong></td>
-</tr>
-<tr>
-<td>CLB Phụ Nữ Khuyết tật</td>
-<td>Với&nbsp;mục ti&ecirc;u&nbsp;Th&uacute;c đầy b&igrave;nh đẳng cơ hội&nbsp;cho&nbsp;Phụ&nbsp;Nữ&nbsp;Khuyết&nbsp;Tật&nbsp;( PNKT) tr&ecirc;n địa b&agrave;n TP.HCM, v&agrave;o năm 2009 C&acirc;u lạc bộ&nbsp;Phụ&nbsp;Nữ&nbsp;Khuyết&nbsp;Tật&nbsp;(CLB&nbsp;PNKT) được th&agrave;nh lập. Đến năm 2013&nbsp;CLB&nbsp;PNKT thu h&uacute;t 50 PNKT tham gia sinh hoạt định kỳ h&agrave;ng th&aacute;ng với nhiều hoạt động do&nbsp;CLB&nbsp;tổ chức như: tập huấn kỹ năng, sinh hoạt chuy&ecirc;n đề, học&nbsp;nữ&nbsp;c&ocirc;ng gia ch&aacute;nh, hỗ trợ th&agrave;nh vi&ecirc;n kinh doanh nhỏ...nhằm gi&uacute;p PNKT n&acirc;ng cao năng lực, tự tin h&ograve;a nhập cộng đồng</td>
-<td>&nbsp;<a href="http://www.drdvietnam.org/tag/298/clb-phu-nu.html">Xem chi tiết</a></td>
-</tr>
-<tr>
-<td>&nbsp;CLB Nhiếp Ảnh Đời Rất Đẹp</td>
-<td>- Là những người bạn cùng có đam m&ecirc; đặc bi&ecirc;̣t với b&ocirc;̣ m&ocirc;n ngh&ecirc;̣ thu&acirc;̣t Nhi&ecirc;́p ảnh, v&agrave; c&ugrave;ng th&iacute;ch giao lưu, chia sẻ, học hỏi kinh nghiệm.&nbsp;<br />- Là những người quan t&acirc;m nhi&ecirc;̀u đ&ecirc;́n v&acirc;́n đ&ecirc;̀ Khuy&ecirc;́t t&acirc;̣t tại Vi&ecirc;̣t Nam và đ&ecirc;̀u có mong mu&ocirc;́n góp ph&acirc;̀n nhỏ vào vi&ecirc;̣c đưa hình ảnh Người khuy&ecirc;́t t&acirc;̣t giàu nghị lực, bi&ecirc;́t vươn l&ecirc;n vượt qua mọi khó khăn v&agrave; h&ograve;a nhập với cộng đồng.</td>
-<td>&nbsp;<a href="http://www.drdvietnam.org/tag/301/clb-nhiep-anh.html">Xem chi tiết</a></td>
-</tr>
-<tr>
-<td>CLB Học qua Phim</td>
-<td>Tạo th&ecirc;m s&acirc;n chơi l&agrave;nh mạnh cho mọi đối tượng y&ecirc;u th&iacute;ch m&ocirc;n Nghệ thuật thứ 7. Ngo&agrave;i việc xem những bộ phim chứa đựng &yacute; nghĩa s&acirc;u sắc, kh&aacute;n giả sẽ c&oacute; dịp thảo luận về nội dung phim c&ugrave;ng với những huấn luyện vi&ecirc;n gi&aacute; trị sống nhiều năm kinh nghiệm để c&oacute; c&aacute;i nh&igrave;n đa chiều hơn về c&aacute;c bộ phim&nbsp;</td>
-<td>&nbsp;&nbsp;<a href="http://www.drdvietnam.org/tag/302/hoc-qua-phim.html">Xem chi tiết</a></td>
-</tr>
-<tr>
-<td>Lớp My Future</td>
-<td>Đang cập nhật</td>
-<td>&nbsp;<a href="http://www.drdvietnam.org/tag/133/myfuture.html">&nbsp;Xem chi tiết</a></td>
-</tr>
-</tbody>
-</table>
-<p style="padding-left: 30px;" align="justify">&nbsp;</p>
-<p style="padding-left: 30px;" align="justify">&nbsp;</p>
-<h4><span style="font-family: Arial;"><strong>Hội qu&aacute;n Đời Rất Đẹp </strong><br /> </span></h4><br></div>
+            <div class="contenttiepcan">
+                <div class="font14"><h4><span style="font-family: Arial;">1. Mong muốn nhất khi th&agrave;nh lập hội qu&aacute;n l&agrave; g&igrave;?</span></h4>
+                    <p align="center"><span style="font-family: Arial;"><img src="../images/hinh%20tin/2014/01/1176372_521123527956632_689302863_n.jpg" alt="1176372_521123527956632_689302863_n" />&nbsp;</span></p>
+                    <p style="padding-left: 30px;" align="justify"><span style="font-family: Arial;">Hội qu&aacute;n DRD &ndash; Đời Rất Đẹp l&agrave; &yacute; tưởng của người s&aacute;ng lập DRD- Chương tr&igrave;nh Khuyết tật v&agrave; Ph&aacute;t triển (Disability Resource and Development) v&agrave; được sự đồng t&igrave;nh ủng hộ của tất cả c&aacute;c th&agrave;nh vi&ecirc;n của DRD v&agrave; bạn b&egrave; th&acirc;n hữu. Đời Rất Đẹp nhằm tạo một s&acirc;n chơi cho NKT, một nơi NKT c&oacute; thể gặp gỡ, trao đổi, tham gia sinh hoạt với những người bạn kh&ocirc;ng khuyết tật tr&ecirc;n cơ sở b&igrave;nh đằng về cơ hội v&agrave; c&ugrave;ng gi&uacute;p nhau ph&aacute;t triển. Bao năm qua ch&uacute;ng ta vẫn k&ecirc;u gọi NKT h&ograve;a nhập XH, khuyến kh&iacute;ch v&agrave; kh&iacute;ch lệ c&aacute;c th&agrave;nh vi&ecirc;n kh&aacute;c trong XH tạo điều kiện để NKT h&ograve;a nhập. Nhưng h&ograve;a nhập thế n&agrave;o được khi m&agrave; m&ocirc;i trường sinh hoạt c&ograve;n đầy r&agrave;o cản, c&aacute;c nơi sinh hoạt vẫn kh&ocirc;ng thể n&agrave;o tiếp cận được, khi vẫn c&ograve;n nhiều người nh&igrave;n NKT với &aacute;nh mặt tội nghiệp hay kh&ocirc;ng thoải m&aacute;i với cảm gi&aacute;c bị l&agrave;m phiền khi NKT cần gi&uacute;p đỡ.</span></p>
+                    <p style="padding-left: 30px;" align="justify"><span style="font-family: Arial;">Khi NKT đến hội qu&aacute;n họ sẽ cảm nhận được đ&acirc;y l&agrave; &ldquo;nơi của họ&rdquo;, một nơi để họ cảm thấy rằng m&igrave;nh kh&ocirc;ng hề đơn độc, một nơi họ c&oacute; thể thể hiện khả năng/ t&agrave;i năng của m&igrave;nh, một nơi họ c&oacute; thể chia sẻ những kh&aacute;t khao về cuộc sống.Người kh&ocirc;ng khuyết tật đến với hội qu&aacute;n để thấy rằng NKT kh&ocirc;ng hề thiếu khả năng, kh&ocirc;ng phải chỉ l&agrave; g&aacute;nh nặng cho gia đ&igrave;nh hay x&atilde; hội m&agrave; họ vẫn c&oacute; thể vui sống, l&agrave;m việc, v&agrave; cống hiến nếu họ c&oacute; được cơ hội.</span></p>
+                    <p style="padding-left: 30px;" align="justify"><span style="font-family: Arial;">Khi đến với hội qu&aacute;n, tham gia c&aacute;c sinh hoạt, thật sự chia sẻ v&agrave; thật sự lắng nghe - nghĩa l&agrave; thật sự mở rộng tr&aacute;i tim để c&oacute; thể đến được với nhau - ta sẽ cảm nhận được rằng Đời Rất Đẹp chứ kh&ocirc;ng kh&ocirc;ng phải &ldquo;Đời sao m&agrave; ch&aacute;n qu&aacute;!&rdquo; như ta vẫn thường nghĩ khi cảm thấy c&ocirc; đơn, hay trong khi tuyệt vọng.</span></p>
+                    <h4><span style="font-family: Arial;">2. Hội qu&aacute;n sẽ hướng v&agrave;o những hoạt động ch&iacute;nh n&agrave;o v&agrave; sẽ c&oacute; những hoạt động g&igrave; để quảng b&aacute; cho mọi người biết nhiều hơn? Thời gian sinh hoạt của Hội qu&aacute;n sẽ diễn ra như thế n&agrave;o?</span></h4>
+                    <p align="center"><span style="font-family: Arial;"><img src="../images/stories/drd/lamut100000/hoiquan2.jpg" alt="alt" /><br /> </span></p>
+                    <p style="padding-left: 30px;"><span style="font-family: Arial;">Với mục ti&ecirc;u &ldquo;kết nối những tr&aacute;i tim&rdquo; để tạo một s&acirc;n chơi t&iacute;ch cực gi&uacute;p thay đổi những cuộc đời, Đời Rất Đẹp thực sự l&agrave; một trung t&acirc;m c&ocirc;ng t&aacute;c x&atilde; hội với c&aacute;c hoạt động nhắm đến mục ti&ecirc;u đ&oacute;.</span></p>
+                    <p style="padding-left: 60px; text-align: justify;"><span style="font-family: Arial;"><strong>Hđ 1:</strong> l &agrave; nơi để c&aacute;c em chậm ph&aacute;t triển c&oacute; nơi để tiếp tục sinh hoạt v&agrave; ph&aacute;t triển v&igrave; chậm ph&aacute;t triển nghĩa l&agrave; ph&aacute;t triển chậm hơn người kh&aacute;c chứ kh&ocirc;ng c&oacute; nghĩa l&agrave; c&aacute;c em kh&ocirc;ng tiếp tục ph&aacute;t triển. Nhưng thường th&igrave; đến một độ tuổi n&agrave;o đ&oacute; th&igrave; c&aacute;c em kh&ocirc;ng c&ograve;n được đến trường nữa &ndash; nơi duy nhất m&agrave; c&aacute;c em vẫn được học tập v&agrave; sinh hoạt - v&agrave; như thế sự ph&aacute;t triển của c&aacute;c em sẽ bị dừng lại hoặc thục l&ugrave;i khi kh&ocirc;ng c&ograve;n c&oacute; cơ hội để tiếp tục trao dồi.</span></p>
+                    <div style="padding-left: 30px;" align="justify">
+                        <p style="padding-left: 30px;">&nbsp;</p>
+                        <p style="padding-left: 30px;"><span style="font-family: Arial;"><strong>Hđ 2:</strong> khi tham gia sinh hoạt với c&aacute;c em khiếm th&iacute;nh ch&uacute;ng t&ocirc;i mới biết rằng c&aacute;c em l&agrave; nh&oacute;m kh&oacute; t&igrave;m được việc l&agrave;m nhất v&igrave; r&agrave;o cản của c&aacute;c em l&agrave; kh&ocirc;ng thể giao tiếp bằng ng&ocirc;n ngữ bằng lời th&ocirc;ng thường. Nh&igrave;n c&aacute;c em ta thấy x&oacute;t xa. C&aacute;c em đẹp đẽ, th&ocirc;ng minh, chịu kh&oacute;,&hellip; nhưng hầu như chỉ g&oacute;i gọn sinh hoạt của m&igrave;nh trong cộng đồng người khiếm th&iacute;nh. V&igrave; vậy ch&uacute;ng t&ocirc;i muốn gi&uacute;p c&aacute;c em học pha chế v&agrave; phục vụ b&agrave;n. Đời Rất Đẹp sẽ l&agrave; nơi để c&aacute;c em học tốt nghề rồi đ&agrave;o tạo gi&uacute;p lại những em kh&aacute;c. Ch&uacute;ng t&ocirc;i hy vọng rằng mọi người đến với hội qu&aacute;n sẽ chịu kh&oacute; trao đổi với c&aacute;c em, nh&igrave;n thấy c&aacute;c em l&agrave;m việc, g&oacute;p &yacute; th&ecirc;m cho c&aacute;c em, v&agrave; giới thiệu c&aacute;c em đến với mọi người để mở rộng th&ecirc;m cơ hội việc l&agrave;m cho c&aacute;c em ở những nơi kh&aacute;c. Khi giới thiệu được một nh&oacute;m đi l&agrave;m ở những nơi kh&aacute;c, ch&uacute;ng t&ocirc;i lại nhận th&ecirc;m những em mới để đ&agrave;o tạo, v&agrave; cứ tiếp tục như thế.</span></p>
+                    </div>
+                    <p style="padding-left: 30px;"><span style="font-family: Arial;">Dĩ nhi&ecirc;n l&agrave; ngo&agrave;i việc học nghề, c&aacute;c em c&ograve;n được tham gia những sinh hoạt kh&aacute;c ở DRD để ph&aacute;t triển th&ecirc;m những kỹ năng x&atilde; hội cần thiết.</span></p>
+                    <p style="padding-left: 60px; text-align: justify;"><span style="font-family: Arial;"><strong>Hđ 3:</strong> hội qu&aacute;n c&ograve;n l&agrave; nơi gi&uacute;p trưng b&agrave;y v&agrave; giới thiệu sản phẩm của NKT. Đời Rất Đẹp chỉ nhận trưng b&agrave;y v&agrave; giới thiệu những sản phẩm thực sự chất lượng v&igrave; ch&uacute;ng t&ocirc;i kh&ocirc;ng muốn c&aacute;c bạn KT chỉ l&agrave;m v&agrave; b&aacute;n sản phẩm với suy nghĩ rằng người kh&aacute;c mua gi&uacute;p m&igrave;nh v&igrave; m&igrave;nh l&agrave; NKT. Những sản phẩm mua v&igrave; l&ograve;ng từ thiện như thế chỉ c&oacute; thể b&aacute;n được 1 lần, v&agrave; gi&aacute; trị của NKT sẽ vẫn tiếp tục ở vị trị thấp trong l&ograve;ng người mua gi&uacute;p. DRD muốn rằng người quan t&acirc;m sẽ c&ocirc;ng nhận vẻ đẹp v&agrave; chất lượng của c&aacute;c sản phẩm trưng b&agrave;y ở hội qu&aacute;n, mua ch&uacute;ng v&igrave; th&iacute;ch v&agrave; muốn sử dụng, v&agrave; c&oacute; thể tự tin giới thiệu ch&uacute;ng đến với mọi người. Những NKT hoặc tổ chức NKT n&agrave;o c&oacute; đủ sản phẩm để trưng b&agrave;y ri&ecirc;ng, th&igrave; DRD cũng c&oacute; thể cho mượn mặt bằng để trưng b&agrave;y trong 1 th&aacute;ng.</span></p>
+                    <div style="padding-left: 30px;" align="justify">
+                        <p style="padding-left: 30px;">&nbsp;</p>
+                        <p style="padding-left: 30px;"><span style="font-family: Arial;"><strong>Hđ 4:</strong> &Acirc;m nhạc vẫn lu&ocirc;n l&agrave; sợi d&acirc;y kết nối tr&aacute;i tim nhanh nhất. V&igrave; vậy Đời Rất Đẹp được x&acirc;y dựng như một s&acirc;n chơi để những bạn KT c&oacute; khả năng &acirc;m nhạc biểu diễn v&agrave; giao lưu với mọi người. Ch&uacute;ng t&ocirc;i hy vọng rằng s&acirc;n chơi n&agrave;y sẽ gi&uacute;p DRD ph&aacute;t hiện th&ecirc;m những t&agrave;i năng c&ograve;n ẩn dấu trong cộng đồng NKT. Ch&uacute;ng t&ocirc;i c&oacute; những đ&ecirc;m thứ Năm v&agrave; thứ S&aacute;u h&aacute;t với nhau, những đ&ecirc;m giao lưu với c&aacute;c anh chị văn nghệ sĩ, v&agrave; thỉnh thoảng sẽ c&oacute; những đ&ecirc;m với chương tr&igrave;nh được d&agrave;n dựng c&ocirc;ng phu hơn.</span></p>
+                        <p style="padding-left: 30px;">&nbsp;</p>
+                        <p style="padding-left: 30px;"><span style="font-family: Arial;"><strong>Hđ 5</strong>: Với mong muốn tạo một s&acirc;n chơi t&iacute;ch cực, DRD đ&atilde; v&agrave; vẫn đang t&igrave;m kiếm những cơ hội mời được c&aacute;c chuy&ecirc;n gia c&ocirc;ng t&aacute;c XH, t&acirc;m l&yacute;, gi&aacute;o dục, ph&aacute;t triển cộng đồng,&hellip; gi&agrave;nh ch&uacute;t thời gian đến chia sẻ với c&aacute;c em sinh vi&ecirc;n v&agrave; những người quan t&acirc;m. Dĩ nhi&ecirc;n l&agrave; ho&agrave;n to&agrave;n miễn ph&iacute; v&igrave; DRD kh&ocirc;ng c&oacute; ng&acirc;n s&aacute;ch cho hoạt động n&agrave;y. Hiện giờ th&igrave; mục ti&ecirc;u n&agrave;y đ&atilde; được gửi đi v&agrave; nhận được sự quan t&acirc;m v&agrave; ủng hộ của rất nhiều bạn b&egrave; tr&ecirc;n thế giới. Hy vọng l&agrave; những buổi chuy&ecirc;n đề n&agrave;y sẽ được tổ chức thường xuy&ecirc;n hơn để gi&uacute;p cho c&aacute;c em sinh vi&ecirc;n, những người hoạt động chuy&ecirc;n m&ocirc;n c&oacute; cơ hội tăng th&ecirc;m kiến thức li&ecirc;n quan đến việc học tập v&agrave; c&ocirc;ng t&aacute;c của m&igrave;nh.</span></p>
+                    </div>
+                    <p style="padding-left: 30px;" align="justify"><span style="font-family: Arial;">Sinh vi&ecirc;n c&aacute;c ng&agrave;nh khoa học x&atilde; hội cũng c&oacute; thể x&acirc;y dưng những buổi sinh hoạt chuy&ecirc;n đề của m&igrave;nh ở hội qu&aacute;n. Nếu c&aacute;c em c&oacute; &yacute; tưởng v&agrave; muốn thực hiện, DRD sẽ cố gắng - trong khả năng của m&igrave;nh - gi&uacute;p c&aacute;c em l&ecirc;n chương tr&igrave;nh v&agrave; tổ chức thực hiện. S&acirc;n chơi n&agrave;y cũng gi&agrave;nh cho cả những bậc cha mẹ, c&aacute;c gi&aacute;o vi&ecirc;n, hoặc nh&acirc;n vi&ecirc;n x&atilde; hội. Từ những hoạt động chuy&ecirc;n đề n&agrave;y, những nh&oacute;m đồng cảnh (những người đang gặp khủng hoảng v&igrave; c&aacute;c nguy&ecirc;n nh&acirc;n kh&aacute;c nhau) c&oacute; thể dần được h&igrave;nh th&agrave;nh v&agrave; hỗ trợ nhau vượt qua kh&oacute; khăn.</span></p>
+                    <div align="justify">
+                        <p>&nbsp;</p>
+                        <p style="padding-left: 60px;"><span style="font-family: Arial;"><strong>Hđ 6:</strong> DRD cũng t&igrave;m c&aacute;ch tăng cường mối li&ecirc;n kết với c&aacute;c tổ chức kh&aacute;c để thực hiện thường xuy&ecirc;n hơn những buổi hội thảo tại hội qu&aacute;n.</span></p>
+                    </div>
+                    <p style="padding-left: 30px;" align="justify"><span style="font-family: Arial;">Tất cả những buổi sinh hoạt chuy&ecirc;n đề, những chương tr&igrave;nh đặc biệt sẽ được th&ocirc;ng b&aacute;o tr&ecirc;n trang web của DRD, cũng như được gửi cho những người đ&atilde; đăng k&yacute; v&agrave;o mailing list của DRD. DRD cũng hy vọng rằng c&aacute;c b&aacute;o, đ&agrave;i gi&uacute;p ch&uacute;ng t&ocirc;i chuyển th&ocirc;ng tin đến với những người quan t&acirc;m.</span></p>
+                    <h4><span style="font-family: Arial;">3. Những kh&oacute; khăn của hội qu&aacute;n?</span></h4>
+                    <p style="padding-left: 30px;" align="justify"><span style="font-family: Arial;">&Yacute; tưởng đẹp (như mọi người vẫn n&oacute;i) n&ecirc;n cần một mặt bằng ph&ugrave; hợp. M&agrave; mặt bằng ph&ugrave; hợp cũng c&oacute; nghĩa l&agrave; ng&acirc;n s&aacute;ch ph&ugrave; hợp. Đ&acirc;y l&agrave; điều l&agrave;m ch&uacute;ng t&ocirc;i lo lắng nhất. Một hội qu&aacute;n x&atilde; hội th&igrave; kh&ocirc;ng thể thuần kinh doanh, v&igrave; vậy để c&oacute; được thu nhập từ kinh doanh m&agrave; kh&ocirc;ng hy sinh đi mục đ&iacute;ch x&atilde; hội ban đầu l&agrave; một điều cực kỳ kh&oacute; khăn. Ch&uacute;ng t&ocirc;i vẫn đang t&igrave;m th&ecirc;m &yacute; tưởng để duy tr&igrave; hoạt động của hội qu&aacute;n.</span></p>
+                    <p style="padding-left: 30px;" align="justify"><span style="font-family: Arial;">Kh&oacute; khăn nữa l&agrave; t&igrave;m được những t&igrave;nh nguy&ecirc;n vi&ecirc;n c&oacute; chuy&ecirc;n m&ocirc;n li&ecirc;n quan để gi&uacute;p ch&uacute;ng t&ocirc;i thực hiện được &yacute; tưởng của m&igrave;nh. Một v&agrave;i th&iacute; dụ, <br /> - Với c&aacute;c em chậm ph&aacute;t triển ch&uacute;ng t&ocirc;i muốn t&igrave;m những chuy&ecirc;n gia về nghệ thuật trị liệu (art-therapy) để gi&uacute;p ph&aacute;t triển những chương tr&igrave;nh sinh hoạt cho c&aacute;c em, nhưng ở VN ta hầu như kh&ocirc;ng dễ t&igrave;m được những t&igrave;nh nguyện vi&ecirc;n như thế <br /> - Với những buổi chuy&ecirc;n đề mời được chuy&ecirc;n gia nước ngo&agrave;i, ch&uacute;ng t&ocirc;i cũng cần những t&igrave;nh nguyện vi&ecirc;n gi&uacute;p cho phần phi&ecirc;n dịch. Nhưng t&igrave;m được người dịch chuy&ecirc;n nghiệp miễn ph&iacute; th&igrave; kh&ocirc;ng dễ ch&uacute;t n&agrave;o, c&ograve;n những người dịch kh&ocirc;ng chuy&ecirc;n thường kh&ocirc;ng chuyển được hết &yacute; của diễn giả, m&agrave; như thế th&igrave; thật tiếc cho những người đang muốn học.</span></p>
+                    <h4><span style="font-family: Arial;">4. Hội qu&aacute;n đ&atilde; được những tấm l&ograve;ng hảo t&acirc;m trợ gi&uacute;p ra sao?</span></h4>
+                    <p style="padding-left: 30px;" align="justify"><span style="font-family: Arial;">Kh&oacute; khăn như thế, nhưng điều l&agrave;m ch&uacute;ng t&ocirc;i vui v&agrave; tin tưởng hơn v&agrave;o con đường m&igrave;nh đ&atilde; chọn l&agrave; đ&atilde; c&oacute; nhiều người đ&oacute;ng g&oacute;p &iacute;t nhiều khi nghe ch&uacute;ng t&ocirc;i chia sẻ &yacute; tưởng &ldquo;liều lĩnh&rdquo; của m&igrave;nh v&agrave; những kh&oacute; khăn đang đối mặt. Họ l&agrave; những người đến từ c&aacute;c tổ chức x&atilde; hội, c&aacute;c c&aacute; nh&acirc;n, v&agrave; cả những văn nghệ sĩ, những nh&agrave; b&aacute;o. Mọi người b&agrave;y tỏ niềm y&ecirc;u th&iacute;ch của họ với &yacute; tưởng Đời rất Đẹp, v&agrave; hứa sẽ giới thiệu DRD đến với bạn b&egrave; v&agrave; người th&acirc;n của m&igrave;nh. Nhờ thế m&agrave; niềm vui được nh&acirc;n l&ecirc;n, v&agrave; nỗi lo được chia ra, v&agrave; cũng ch&iacute;nh v&igrave; thế m&agrave; Đời rất Đẹp! </span></p>
+                    <p align="justify"><strong><span style="font-family: Arial;">5. C&aacute;c nh&oacute;m kết nối tại hội qu&aacute;n</span></strong></p>
+                    <table style="height: 288px; width: 747px; margin-left: auto; margin-right: auto;" border="1" width="738" cellpadding="5">
+                        <tbody>
+                            <tr>
+                                <td align="center" width="25%"><strong>T&ecirc;n Nh&oacute;m</strong></td>
+                                <td align="center" width="60%"><strong>Mục ti&ecirc;u</strong></td>
+                                <td align="center" width="15%"><strong>Tin hoạt động</strong></td>
+                            </tr>
+                            <tr>
+                                <td>CLB Phụ Nữ Khuyết tật</td>
+                                <td>Với&nbsp;mục ti&ecirc;u&nbsp;Th&uacute;c đầy b&igrave;nh đẳng cơ hội&nbsp;cho&nbsp;Phụ&nbsp;Nữ&nbsp;Khuyết&nbsp;Tật&nbsp;( PNKT) tr&ecirc;n địa b&agrave;n TP.HCM, v&agrave;o năm 2009 C&acirc;u lạc bộ&nbsp;Phụ&nbsp;Nữ&nbsp;Khuyết&nbsp;Tật&nbsp;(CLB&nbsp;PNKT) được th&agrave;nh lập. Đến năm 2013&nbsp;CLB&nbsp;PNKT thu h&uacute;t 50 PNKT tham gia sinh hoạt định kỳ h&agrave;ng th&aacute;ng với nhiều hoạt động do&nbsp;CLB&nbsp;tổ chức như: tập huấn kỹ năng, sinh hoạt chuy&ecirc;n đề, học&nbsp;nữ&nbsp;c&ocirc;ng gia ch&aacute;nh, hỗ trợ th&agrave;nh vi&ecirc;n kinh doanh nhỏ...nhằm gi&uacute;p PNKT n&acirc;ng cao năng lực, tự tin h&ograve;a nhập cộng đồng</td>
+                                <td>&nbsp;<a href="http://www.drdvietnam.org/tag/298/clb-phu-nu.html">Xem chi tiết</a></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;CLB Nhiếp Ảnh Đời Rất Đẹp</td>
+                                <td>- Là những người bạn cùng có đam m&ecirc; đặc bi&ecirc;̣t với b&ocirc;̣ m&ocirc;n ngh&ecirc;̣ thu&acirc;̣t Nhi&ecirc;́p ảnh, v&agrave; c&ugrave;ng th&iacute;ch giao lưu, chia sẻ, học hỏi kinh nghiệm.&nbsp;<br />- Là những người quan t&acirc;m nhi&ecirc;̀u đ&ecirc;́n v&acirc;́n đ&ecirc;̀ Khuy&ecirc;́t t&acirc;̣t tại Vi&ecirc;̣t Nam và đ&ecirc;̀u có mong mu&ocirc;́n góp ph&acirc;̀n nhỏ vào vi&ecirc;̣c đưa hình ảnh Người khuy&ecirc;́t t&acirc;̣t giàu nghị lực, bi&ecirc;́t vươn l&ecirc;n vượt qua mọi khó khăn v&agrave; h&ograve;a nhập với cộng đồng.</td>
+                                <td>&nbsp;<a href="http://www.drdvietnam.org/tag/301/clb-nhiep-anh.html">Xem chi tiết</a></td>
+                            </tr>
+                            <tr>
+                                <td>CLB Học qua Phim</td>
+                                <td>Tạo th&ecirc;m s&acirc;n chơi l&agrave;nh mạnh cho mọi đối tượng y&ecirc;u th&iacute;ch m&ocirc;n Nghệ thuật thứ 7. Ngo&agrave;i việc xem những bộ phim chứa đựng &yacute; nghĩa s&acirc;u sắc, kh&aacute;n giả sẽ c&oacute; dịp thảo luận về nội dung phim c&ugrave;ng với những huấn luyện vi&ecirc;n gi&aacute; trị sống nhiều năm kinh nghiệm để c&oacute; c&aacute;i nh&igrave;n đa chiều hơn về c&aacute;c bộ phim&nbsp;</td>
+                                <td>&nbsp;&nbsp;<a href="http://www.drdvietnam.org/tag/302/hoc-qua-phim.html">Xem chi tiết</a></td>
+                            </tr>
+                            <tr>
+                                <td>Lớp My Future</td>
+                                <td>Đang cập nhật</td>
+                                <td>&nbsp;<a href="http://www.drdvietnam.org/tag/133/myfuture.html">&nbsp;Xem chi tiết</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="padding-left: 30px;" align="justify">&nbsp;</p>
+                    <p style="padding-left: 30px;" align="justify">&nbsp;</p>
+                    <h4><span style="font-family: Arial;"><strong>Hội qu&aacute;n Đời Rất Đẹp </strong><br /> </span></h4><br></div>
                 </div>
-            
+                
             </section><section>
-            	<footer>
-                	<div class="footer">
-                    	<div class="doitac">
-                        	  
-                        	<a href="http://www.fordfound.org/regions/vietnam/overview" target="_blank"><img src="../images/doitacdrd/f.png" alt="AP" title="Ford Foundation"></a>
+<!--                <footer>
+                    <div class="footer">
+                        <div class="doitac">
+                              
+                            <a href="http://www.fordfound.org/regions/vietnam/overview" target="_blank"><img src="../images/doitacdrd/f.png" alt="AP" title="Ford Foundation"></a>
                                                         <img src="../images/doitacdrd/armcharm.png" alt="amcham vietnam" title="amcham vietnam">
                               
-                        	<a href="http://www.atlanticphilanthropies.org/" target="_blank"><img src="../images/doitacdrd/atlantic.png" alt="The Atlantic Philantropies" title="The Atlantic Philantropies"></a>
+                            <a href="http://www.atlanticphilanthropies.org/" target="_blank"><img src="../images/doitacdrd/atlantic.png" alt="The Atlantic Philantropies" title="The Atlantic Philantropies"></a>
                               
-                        	<a href="http://www.irishaid.gov.ie/" target="_blank"><img src="../images/doitacdrd/irish.png" alt="Irish Aid" title="Irish Aid"></a>
+                            <a href="http://www.irishaid.gov.ie/" target="_blank"><img src="../images/doitacdrd/irish.png" alt="Irish Aid" title="Irish Aid"></a>
                               
-                        	<a href="http://www.nippon-foundation.or.jp/eng/" target="_blank"><img src="../images/doitacdrd/nippon.png" alt="Nippon" title="Nippon"></a>
+                            <a href="http://www.nippon-foundation.or.jp/eng/" target="_blank"><img src="../images/doitacdrd/nippon.png" alt="Nippon" title="Nippon"></a>
                               
-                        	<a href="http://www.invescohcm.com.vn/Quatrinhhinhthanh.html" target="_blank"><img src="../images/doitacdrd/invesco.png" alt="Invesco" title="Invesco"></a>
+                            <a href="http://www.invescohcm.com.vn/Quatrinhhinhthanh.html" target="_blank"><img src="../images/doitacdrd/invesco.png" alt="Invesco" title="Invesco"></a>
                               
-                        	<a href="http://www.humancare1986.jp/english.html" target="_blank"><img src="../images/doitacdrd/hcare.png" alt="HumanCare" title="HumanCare"></a>
+                            <a href="http://www.humancare1986.jp/english.html" target="_blank"><img src="../images/doitacdrd/hcare.png" alt="HumanCare" title="HumanCare"></a>
                               
-                        	<a href="http://www.koica.go.kr/english/main.html" target="_blank"><img src="../images/doitacdrd/logokoica.jpg" alt="Koica" title="Koica"></a>
+                            <a href="http://www.koica.go.kr/english/main.html" target="_blank"><img src="../images/doitacdrd/logokoica.jpg" alt="Koica" title="Koica"></a>
                               
-                        	<a href="http://www.ableforum.com/" target="_blank"><img src="../images/doitacdrd/hq.png" alt="Ableforum" title="Ableforum"></a>
+                            <a href="http://www.ableforum.com/" target="_blank"><img src="../images/doitacdrd/hq.png" alt="Ableforum" title="Ableforum"></a>
                                                         <img src="../images/doitacdrd/dpi.png" alt="Khuyết tật" title="Khuyết tật">
                               
-                        	<a href="http://australia.gov.au/" target="_blank"><img src="../images/doitacdrd/ausaid.png" alt="Australia Goverment" title="Australia Goverment"></a>
+                            <a href="http://australia.gov.au/" target="_blank"><img src="../images/doitacdrd/ausaid.png" alt="Australia Goverment" title="Australia Goverment"></a>
                                                         <img src="../images/doitacdrd/vusta.png" alt="Vusta" title="Vusta">
                               
-                        	<a href="http://www.pavietnam.vn/" target="_blank"><img src="../images/doitacdrd/PAvietnam.jpg" alt="Logo PAVietNam" title="PA Việt Nam"></a>
+                            <a href="http://www.pavietnam.vn/" target="_blank"><img src="../images/doitacdrd/PAvietnam.jpg" alt="Logo PAVietNam" title="PA Việt Nam"></a>
                               
-                        	<a href="http://eqvn.net/" target="_blank"><img src="../images/doitacdrd/eqvn.jpg" alt="Học vien EQVN" title="Học vien EQVN"></a>
+                            <a href="http://eqvn.net/" target="_blank"><img src="../images/doitacdrd/eqvn.jpg" alt="Học vien EQVN" title="Học vien EQVN"></a>
                               
-                        	<a href="https://www.usaid.gov/vi/vietnam" target="_blank"><img src="../images/doitacdrd/USAID.jpg" alt="logo tổ chức USAID" title="USAID"></a>
+                            <a href="https://www.usaid.gov/vi/vietnam" target="_blank"><img src="../images/doitacdrd/USAID.jpg" alt="logo tổ chức USAID" title="USAID"></a>
                               
-                        	<a href="http://moveability.icrc.org/" target="_blank"><img src="../images/doitacdrd/ICRC.jpg" alt=" Quỹ ICRC MoveAbility" title=" Quỹ ICRC MoveAbility"></a>
+                            <a href="http://moveability.icrc.org/" target="_blank"><img src="../images/doitacdrd/ICRC.jpg" alt=" Quỹ ICRC MoveAbility" title=" Quỹ ICRC MoveAbility"></a>
                               
-                        	<a href="http://tamnguyenviet.vn/voi-ca-tam-tinh/" target="_blank"><img src="../images/doitacdrd/Tamnguyenviet01.jpg" alt="" title="Tâm nguyện Việt"></a>
+                            <a href="http://tamnguyenviet.vn/voi-ca-tam-tinh/" target="_blank"><img src="../images/doitacdrd/Tamnguyenviet01.jpg" alt="" title="Tâm nguyện Việt"></a>
                                                         <p class="clr"></p>
                         </div>
                         <div class="copyright"><p style="text-align: left;float: left;"><img src="../images/icon_dien_thoai.png" alt="Điện thoại" style="margin:5px 5px 0 0;height:15px;" />028 6267 9911 - <img src="../images/icon_email.png" alt="Email" style="margin:5px 5px 0 0;height:15px;" /><a href="mailto:info@drdvietnam.com" style="color: #fff;;">info@drdvietnam.com</a></p><p style="float: right;">&copy; Power by DRD Vietnam. All right reserved.</p><p class="clr"></p></div>
                     </div>
-                </footer>
+                </footer> -->
             </section>
             
-		
-	</div>
-</section>
+            
+        </div>
+    </section>
 </div>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/58340a557bb7bf7f521ddde8/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/58340a557bb7bf7f521ddde8/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
 </script>
 <!--End of Tawk.to Script-->
 </body>

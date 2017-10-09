@@ -3,43 +3,43 @@
 
 <!-- Mirrored from www.drdvietnam.org/accessibility/gioi-thieu-drd.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Oct 2017 13:14:36 GMT -->
 <head>
-<base   />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DRD Việt Nam - Trung Tâm Khuyết Tật và Phát Triển</title>
-<link rel="stylesheet" href="../css/style.css">
+    <base   />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRD Việt Nam - Trung Tâm Khuyết Tật và Phát Triển</title>
+    <link rel="stylesheet" href="../css/style.css">
 <!--[if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
-<link href="http://www.drdvietnam.org/images/favico.ico" rel="shortcut icon" type="image/x-icon" />
-<script src="../js/jquery-1.8.1.min.js"></script>
-<link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
-<script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
-<script type="text/javascript" src="../js/greyscale.js"></script>
-<script type="text/javascript" src="../js/expancer.js"></script>
-<script type="text/javascript" src="../js/mousetrap.min.js"></script>
+    <link href="http://www.drdvietnam.org/images/favico.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="../js/jquery-1.8.1.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
+    <script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="../js/greyscale.js"></script>
+    <script type="text/javascript" src="../js/expancer.js"></script>
+    <script type="text/javascript" src="../js/mousetrap.min.js"></script>
 <!--
 <script type="text/javascript" src="http://www.trungtamtinhoc.edu.vn/api/snowstorm.js"></script>
 <script type="text/javascript" src="js/hoa-mai-roi.js"></script>
 -->
 <script>
-			$(document).ready(function(){
-				//Examples of how to assign the ColorBox event to elements
-				if ($(window).width() > 700) {
-					$(".inlinee").colorbox({inline:true, width:"30%", height:"20%"});
-				}
-				else {
-					if($(window).width()<700 && $(window).width()>500) {
-						$(".inlinee").colorbox({inline:true, width:"400px", height:"20%"});
-					}
-					else {
-						$(".inlinee").colorbox({inline:true, width:"220px", height:"20%"});
-					}
-				}
-				
-			});
-		</script>
-<script>
-$(document).ready(function(){
+    $(document).ready(function(){
+                //Examples of how to assign the ColorBox event to elements
+                if ($(window).width() > 700) {
+                    $(".inlinee").colorbox({inline:true, width:"30%", height:"20%"});
+                }
+                else {
+                    if($(window).width()<700 && $(window).width()>500) {
+                        $(".inlinee").colorbox({inline:true, width:"400px", height:"20%"});
+                    }
+                    else {
+                        $(".inlinee").colorbox({inline:true, width:"220px", height:"20%"});
+                    }
+                }
+                
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
 //ID, class and tag element that font size is adjustable in this array
 //Put in html or body if you want the font of the entire page adjustable
 var section = new Array('div.fontset','.section2');
@@ -47,75 +47,75 @@ section = section.join(',');
 // Reset Font Size
 var originalFontSize = $(section).css('font-size');
 $(".resetFont").click(function(){
-$(section).css('font-size', originalFontSize);
+    $(section).css('font-size', originalFontSize);
 });
 // Increase Font Size
 $(".increaseFont").click(function(){
-var currentFontSize = $(section).css('font-size');
-var currentFontSizeNum = parseFloat(currentFontSize, 10);
-var newFontSize = currentFontSizeNum*1.2;
-$(section).css('font-size', newFontSize);
-return false;
+    var currentFontSize = $(section).css('font-size');
+    var currentFontSizeNum = parseFloat(currentFontSize, 10);
+    var newFontSize = currentFontSizeNum*1.2;
+    $(section).css('font-size', newFontSize);
+    return false;
 });
 // Decrease Font Size
 $(".decreaseFont").click(function(){
-var currentFontSize = $(section).css('font-size');
-var currentFontSizeNum = parseFloat(currentFontSize, 10);
-var newFontSize = currentFontSizeNum*0.8;
-$(section).css('font-size', newFontSize);
-return false;
+    var currentFontSize = $(section).css('font-size');
+    var currentFontSizeNum = parseFloat(currentFontSize, 10);
+    var newFontSize = currentFontSizeNum*0.8;
+    $(section).css('font-size', newFontSize);
+    return false;
 });
-	// nhan 1 phim
-	// phim tat header 
-		Mousetrap.bind('alt+0', function() {window.location.assign("http://www.drdvietnam.org/highvisibility");}, 'keyup');
-				Mousetrap.bind('alt+1', function() {window.location.assign("http://www.drdvietnam.org/language.php?set=en");}, 'keyup');
-			Mousetrap.bind('alt+w', function() {
-		var currentFontSize = $(section).css('font-size');
-		var currentFontSizeNum = parseFloat(currentFontSize, 10);
-		var newFontSize = currentFontSizeNum*1.2;
-		$(section).css('font-size', newFontSize);
-		return false;
-	});
-	Mousetrap.bind('alt+r', function() {
-		$(section).css('font-size', originalFontSize);
-	});
-	Mousetrap.bind('alt+e', function() {
-		var currentFontSize = $(section).css('font-size');
-		var currentFontSizeNum = parseFloat(currentFontSize, 10);
-		var newFontSize = currentFontSizeNum*0.8;
-		$(section).css('font-size', newFontSize);
-		return false;
-	});
-	Mousetrap.bind('alt+q', function() {window.location.assign("danh-sach-ung-ho.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+i', function() {window.location.assign("dang-nhap.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+u', function() {window.location.assign("dang-ky.html#noidungnoidung");}, 'keyup');
-	
-	Mousetrap.bind('alt+a', function() {window.location.assign("index.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+j', function() {window.location.assign("drd.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+l', function() {window.location.assign("linh-vuc-hoat-dong.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+c', function() {window.location.assign("hoi-quan.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+n', function() {window.location.assign("thu-vien-thong-tin.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+m', function() {window.location.assign("video.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+p', function() {window.location.assign("chinh-sach-phap-luat.html#noidungnoidung");}, 'keyup');
-	Mousetrap.bind('alt+y', function() {window.location.assign("dien-dan.html#noidungnoidung");}, 'keyup');
-	
-	Mousetrap.bind('6', function() {window.location.assign("gioi-thieu-drd.html#menutoptop");}, 'keyup');
-	Mousetrap.bind('7', function() {window.location.assign("gioi-thieu-drd.html#menumainmain");}, 'keyup');
-	Mousetrap.bind('8', function() {window.location.assign("gioi-thieu-drd.html#gotop");}, 'keyup');
-	Mousetrap.bind('9', function() {window.location.assign("gioi-thieu-drd.html#noidungnoidung");}, 'keyup');
-	//Mousetrap.bind('alt+9', function() {$('html, body').animate({scrollTop: $("#noidungnoidung").offset().top}, 2000);}, 'keyup');
-	//Mousetrap.bind('alt+9', function() {$(document).scrollTo('#noidungnoidung');}, 'keyup');
+    // nhan 1 phim
+    // phim tat header 
+    Mousetrap.bind('alt+0', function() {window.location.assign("http://www.drdvietnam.org/highvisibility");}, 'keyup');
+    Mousetrap.bind('alt+1', function() {window.location.assign("http://www.drdvietnam.org/language.php?set=en");}, 'keyup');
+    Mousetrap.bind('alt+w', function() {
+        var currentFontSize = $(section).css('font-size');
+        var currentFontSizeNum = parseFloat(currentFontSize, 10);
+        var newFontSize = currentFontSizeNum*1.2;
+        $(section).css('font-size', newFontSize);
+        return false;
+    });
+    Mousetrap.bind('alt+r', function() {
+        $(section).css('font-size', originalFontSize);
+    });
+    Mousetrap.bind('alt+e', function() {
+        var currentFontSize = $(section).css('font-size');
+        var currentFontSizeNum = parseFloat(currentFontSize, 10);
+        var newFontSize = currentFontSizeNum*0.8;
+        $(section).css('font-size', newFontSize);
+        return false;
+    });
+    Mousetrap.bind('alt+q', function() {window.location.assign("danh-sach-ung-ho.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+i', function() {window.location.assign("dang-nhap.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+u', function() {window.location.assign("dang-ky.html#noidungnoidung");}, 'keyup');
+    
+    Mousetrap.bind('alt+a', function() {window.location.assign("index.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+j', function() {window.location.assign("drd.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+l', function() {window.location.assign("linh-vuc-hoat-dong.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+c', function() {window.location.assign("hoi-quan.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+n', function() {window.location.assign("thu-vien-thong-tin.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+m', function() {window.location.assign("video.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+p', function() {window.location.assign("chinh-sach-phap-luat.html#noidungnoidung");}, 'keyup');
+    Mousetrap.bind('alt+y', function() {window.location.assign("dien-dan.html#noidungnoidung");}, 'keyup');
+    
+    Mousetrap.bind('6', function() {window.location.assign("gioi-thieu-drd.html#menutoptop");}, 'keyup');
+    Mousetrap.bind('7', function() {window.location.assign("gioi-thieu-drd.html#menumainmain");}, 'keyup');
+    Mousetrap.bind('8', function() {window.location.assign("gioi-thieu-drd.html#gotop");}, 'keyup');
+    Mousetrap.bind('9', function() {window.location.assign("gioi-thieu-drd.html#noidungnoidung");}, 'keyup');
+    //Mousetrap.bind('alt+9', function() {$('html, body').animate({scrollTop: $("#noidungnoidung").offset().top}, 2000);}, 'keyup');
+    //Mousetrap.bind('alt+9', function() {$(document).scrollTo('#noidungnoidung');}, 'keyup');
 });
 </script>    
 <script type="text/javascript">
-	function setLocation(ev){
-		window.location.assign(ev);
-	}
+    function setLocation(ev){
+        window.location.assign(ev);
+    }
 </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-50073537-1', 'drdvietnam.org');
@@ -124,224 +124,224 @@ return false;
 </script>
 </head>
 <body class="normal" style="overflow-x: hidden;">
-<script>
-  (function() {
-    var cx = '004167217340609662241:rz4rgq9n_-m';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+    <script>
+      (function() {
+        var cx = '004167217340609662241:rz4rgq9n_-m';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
         '//www.google.com/cse/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
 </script><div id="gotop"></div>
 <div class="fontset">
-<section>
-	<div id="giaodientiepcan" class="normal">
-    	<header>
-        	<div id="tcheader">
-                <p class="gdtc"><a href="http://www.drdvietnam.org/">Giao diện chuẩn</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
-                <p class="gdtp"><a href="http://www.drdvietnam.org/highvisibility/" title="Giao diện này phù hợp với người khuyết tật về mắt">Tương phản cao</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
-                <p class="gdtc"><a href="http://www.drdvietnam.org/nightmode/" title="Chế độ này phù hợp với máy tính bảng và các thiết bị cầm tay vì tiết kiệm pin và các đoạn văn được hiển thị với phông nền tối, chữ sáng">Chế độ ban đêm</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
-        <p class="resize"><a class='increaseFont' style='cursor: pointer; cursor: hand;' title=''>Tăng kích cỡ chữ </a><span class="font12">(Phím tắt  alt+w)</span><span class="cach"></span>
-        <a class='resetFont' style='cursor: pointer; cursor: hand;'>Đặt lại cỡ chữ chuẩn </a><span class="font12">(Phím tắt  alt+r)</span><span class="cach"></span>
-    <a class='decreaseFont' style='cursor: pointer; cursor: hand;' title=''>Giảm kích cỡ chữ </a><span class="font12">(Phím tắt  alt+e)</span><span class="cach"></span></p>
-    <p><a href="huong-dan-su-dung.html#noidungnoidung">Hướng dẫn truy cập</a></p>
-    <p class="dsuh"><a href="danh-sach-ung-ho.html#noidungnoidung"><span>Danh sách ủng hộ</span></a> <span class="font12">(Phím tắt  alt+q)</span><span class="cach"></span></p>
-    
-    	<p class="ngonngu"><a href="http://www.drdvietnam.org/language.php?set=vn" title="">Tiếng Việt </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span>
-        <a href="http://www.drdvietnam.org/language.php?set=en" title="">English </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span></p>
-        <p class="slr"><a href="tim-kiem.html#noidungnoidung">Tìm kiếm</a><span class="cach"></span></p>
-        <p class="slr"><a href="tim-kiem-theo-tu-khoa.html#noidungnoidung">Tìm theo từ khóa</a><span class="cach"></span></p>
-        				                            
-        <p class="slr"><a href="dang-nhap.html#noidungnoidung" title="Phím tắt  alt+i">Đăng nhập</a><span class="cach"></span></p>
-        <p class="slr"><a href="dang-ky.html#noidungnoidung" title="Phím tắt  alt+u">Đăng ký</a></p>
-        			</div>
-		<section><p class="vitrihientai">Bạn đang ở: Giới thiệu</p></section>
-        </header>
-        <p class="mntop" id="menutoptop"><span>Menu top</span> <span class="font16">( Phím tắt  <u>6</u> )</span></p>
-            <nav class="menutopp">
-            	<ul>
-                	<li><a class="" href="index.html#noidungnoidung">Trang chủ</a> <span class="padl5">(Phím tắt  <u>alt+a</u>)</span></li>
-                    <li><a class="dangxem" href="drd.html#noidungnoidung">Giới thiệu</a> <span class="padl5">(Phím tắt  <u>alt+j</u>)</span></li>
-                    <li><a class="" href="linh-vuc-hoat-dong.html#noidungnoidung">Lĩnh vực hoạt động</a> <span class="padl5">(Phím tắt  <u>alt+l</u>)</span></li>
-                    <li><a class="" href="hoi-quan.html#noidungnoidung">Hội quán Đời Rất Đẹp</a> <span class="padl5">(Phím tắt  <u>alt+c</u>)</span></li>
-                    <li><a class="" href="thu-vien-thong-tin.html#noidungnoidung">Tin tức</a> <span class="padl5">(Phím tắt  <u>alt+n</u>)</span></li>
-                    <li><a class="" href="video.html#noidungnoidung">Thư viện</a> <span class="padl5">(Phím tắt  <u>alt+m</u>)</span></li>
-                    <li><a class="" href="chinh-sach-phap-luat.html#noidungnoidung">Chính sách và pháp luật</a> <span class="padl5">(Phím tắt  <u>alt+p</u>)</span></li>
-                    <li><a class="" href="dien-dan.html#noidungnoidung">Diễn đàn</a> <span class="padl5">(Phím tắt  <u>alt+y</u>)</span></li>
-                    <li class="gotop"><a href="gioi-thieu-drd.html#gotop" class="font14">Lên trên</a></li>
-                </ul>
-            </nav>
+    <section>
+        <div id="giaodientiepcan" class="normal">
+            <header>
+                <div id="tcheader">
+                    <p class="gdtc"><a href="http://www.drdvietnam.org/">Giao diện chuẩn</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+                    <p class="gdtp"><a href="http://www.drdvietnam.org/highvisibility/" title="Giao diện này phù hợp với người khuyết tật về mắt">Tương phản cao</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+                    <p class="gdtc"><a href="http://www.drdvietnam.org/nightmode/" title="Chế độ này phù hợp với máy tính bảng và các thiết bị cầm tay vì tiết kiệm pin và các đoạn văn được hiển thị với phông nền tối, chữ sáng">Chế độ ban đêm</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+                    <p class="resize"><a class='increaseFont' style='cursor: pointer; cursor: hand;' title=''>Tăng kích cỡ chữ </a><span class="font12">(Phím tắt  alt+w)</span><span class="cach"></span>
+                        <a class='resetFont' style='cursor: pointer; cursor: hand;'>Đặt lại cỡ chữ chuẩn </a><span class="font12">(Phím tắt  alt+r)</span><span class="cach"></span>
+                        <a class='decreaseFont' style='cursor: pointer; cursor: hand;' title=''>Giảm kích cỡ chữ </a><span class="font12">(Phím tắt  alt+e)</span><span class="cach"></span></p>
+                        <p><a href="huong-dan-su-dung.html#noidungnoidung">Hướng dẫn truy cập</a></p>
+                        <p class="dsuh"><a href="danh-sach-ung-ho.html#noidungnoidung"><span>Danh sách ủng hộ</span></a> <span class="font12">(Phím tắt  alt+q)</span><span class="cach"></span></p>
+                        
+                        <p class="ngonngu"><a href="http://www.drdvietnam.org/language.php?set=vn" title="">Tiếng Việt </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span>
+                            <a href="http://www.drdvietnam.org/language.php?set=en" title="">English </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span></p>
+                            <p class="slr"><a href="tim-kiem.html#noidungnoidung">Tìm kiếm</a><span class="cach"></span></p>
+                            <p class="slr"><a href="tim-kiem-theo-tu-khoa.html#noidungnoidung">Tìm theo từ khóa</a><span class="cach"></span></p>
+                            
+                            <p class="slr"><a href="dang-nhap.html#noidungnoidung" title="Phím tắt  alt+i">Đăng nhập</a><span class="cach"></span></p>
+                            <p class="slr"><a href="dang-ky.html#noidungnoidung" title="Phím tắt  alt+u">Đăng ký</a></p>
+                        </div>
+                        <section><p class="vitrihientai">Bạn đang ở: Giới thiệu</p></section>
+                    </header>
+                    <p class="mntop" id="menutoptop"><span>Menu top</span> <span class="font16">( Phím tắt  <u>6</u> )</span></p>
+                    <nav class="menutopp">
+                        <ul>
+                            <li><a class="" href="index.html#noidungnoidung">Trang chủ</a> <span class="padl5">(Phím tắt  <u>alt+a</u>)</span></li>
+                            <li><a class="dangxem" href="drd.html#noidungnoidung">Giới thiệu</a> <span class="padl5">(Phím tắt  <u>alt+j</u>)</span></li>
+                            <li><a class="" href="linh-vuc-hoat-dong.html#noidungnoidung">Lĩnh vực hoạt động</a> <span class="padl5">(Phím tắt  <u>alt+l</u>)</span></li>
+                            <li><a class="" href="hoi-quan.html#noidungnoidung">Hội quán Đời Rất Đẹp</a> <span class="padl5">(Phím tắt  <u>alt+c</u>)</span></li>
+                            <li><a class="" href="thu-vien-thong-tin.html#noidungnoidung">Tin tức</a> <span class="padl5">(Phím tắt  <u>alt+n</u>)</span></li>
+                            <li><a class="" href="video.html#noidungnoidung">Thư viện</a> <span class="padl5">(Phím tắt  <u>alt+m</u>)</span></li>
+                            <li><a class="" href="chinh-sach-phap-luat.html#noidungnoidung">Chính sách và pháp luật</a> <span class="padl5">(Phím tắt  <u>alt+p</u>)</span></li>
+                            <li><a class="" href="dien-dan.html#noidungnoidung">Diễn đàn</a> <span class="padl5">(Phím tắt  <u>alt+y</u>)</span></li>
+                            <li class="gotop"><a href="gioi-thieu-drd.html#gotop" class="font14">Lên trên</a></li>
+                        </ul>
+                    </nav>
             <!--<div style="display:none;">
-                        	<div id="searchgoogle" class="searchgo"><gcse:searchbox></gcse:searchbox>
+                            <div id="searchgoogle" class="searchgo"><gcse:searchbox></gcse:searchbox>
 <div style="visibility:hidden"><gcse:searchresults refinementStyle="link"></gcse:searchresults></div>
                         </div>
-            </div>--><link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
-<script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
-<script>
-			$(document).ready(function(){
-				//Examples of how to assign the ColorBox event to elements
-				$(".inlineee").colorbox({inline:true, Maxwidth:"50%", Maxheight:"90%"});
-				
-			});
-		</script>
+                    </div>--><link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
+                    <script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
+                    <script>
+                        $(document).ready(function(){
+                //Examples of how to assign the ColorBox event to elements
+                $(".inlineee").colorbox({inline:true, Maxwidth:"50%", Maxheight:"90%"});
+                
+            });
+        </script>
         <p class="mntop" id="menumainmain"><span>Menu Chính</span> <span class="font16">( Phím tắt  <u>7</u> )</span></p>
-            <nav class="menutopp">
-            	<ul>
-                	
-			<li><a class=" dangxem" href="gioi-thieu-drd.html#noidungnoidung">Giới thiệu</a></li>
-			<li class="menucon"><a class="" href="drd/lich-su-hinh-thanh.html#noidungnoidung">&raquo;&nbsp;Lịch sử hình thành</a></li>
-				<li class="menucon"><a class="" href="drd/tam-nhin.html#noidungnoidung">&raquo;&nbsp;Tầm nhìn</a></li>
-				<li class="menucon"><a class="" href="drd/gia-tri.html#noidungnoidung">&raquo;&nbsp;Giá trị</a></li>
-				<li class="menucon"><a class="" href="drd/muc-tieu.html#noidungnoidung">&raquo;&nbsp;Mục tiêu</a></li>
-				<li class="menucon"><a class="" href="drd/thanh-tuu.html#noidungnoidung">&raquo;&nbsp;Thành tựu</a></li>
-				<li class="menucon"><a class="" href="drd/so-do-to-chuc.html#noidungnoidung">&raquo;&nbsp;Sơ đồ tổ chức - hoạt động</a></li>
-			<li><a class="" href="tai-lieu/an-pham-do-drd-phat-hanh.html#noidungnoidung">Ấn phẩm đã phát hành</a></li>
-                                <li><a class="" href="tai-lieu/bao-cao-hoat-dong-drd.html#noidungnoidung">Báo cáo hoạt động</a></li>
-								<li><a class="" href="nhan-vien-drd.html#noidungnoidung">Nhân viên DRD</a></li>
+        <nav class="menutopp">
+            <ul>
+                
+                <li><a class=" dangxem" href="gioi-thieu-drd.html#noidungnoidung">Giới thiệu</a></li>
+                <li class="menucon"><a class="" href="drd/lich-su-hinh-thanh.html#noidungnoidung">&raquo;&nbsp;Lịch sử hình thành</a></li>
+                <li class="menucon"><a class="" href="drd/tam-nhin.html#noidungnoidung">&raquo;&nbsp;Tầm nhìn</a></li>
+                <li class="menucon"><a class="" href="drd/gia-tri.html#noidungnoidung">&raquo;&nbsp;Giá trị</a></li>
+                <li class="menucon"><a class="" href="drd/muc-tieu.html#noidungnoidung">&raquo;&nbsp;Mục tiêu</a></li>
+                <li class="menucon"><a class="" href="drd/thanh-tuu.html#noidungnoidung">&raquo;&nbsp;Thành tựu</a></li>
+                <li class="menucon"><a class="" href="drd/so-do-to-chuc.html#noidungnoidung">&raquo;&nbsp;Sơ đồ tổ chức - hoạt động</a></li>
+                <li><a class="" href="tai-lieu/an-pham-do-drd-phat-hanh.html#noidungnoidung">Ấn phẩm đã phát hành</a></li>
+                <li><a class="" href="tai-lieu/bao-cao-hoat-dong-drd.html#noidungnoidung">Báo cáo hoạt động</a></li>
+                <li><a class="" href="nhan-vien-drd.html#noidungnoidung">Nhân viên DRD</a></li>
 
-									<li class="menucon"><a class="" href="nhan-vien/nhan-vien.html#noidungnoidung">&raquo;&nbsp;Nhân viên</a></li>
-									<li class="menucon"><a class="" href="nhan-vien/cuu-nhan-vien.html#noidungnoidung">&raquo;&nbsp;Cựu nhân viên</a></li>
+                <li class="menucon"><a class="" href="nhan-vien/nhan-vien.html#noidungnoidung">&raquo;&nbsp;Nhân viên</a></li>
+                <li class="menucon"><a class="" href="nhan-vien/cuu-nhan-vien.html#noidungnoidung">&raquo;&nbsp;Cựu nhân viên</a></li>
 
-								<li><a class="" href="drd/lien-he.html#noidungnoidung">Liên hệ</a></li>
-		                    <li class="gotop"><a href="gioi-thieu-drd.html#gotop" class="font14">Lên trên</a></li>
-                </ul>
-            </nav>
-<p class="mntop" id="noidungnoidung"><span>Nội dung</span> <span class="font16">( Phím tắt  <u>9</u> )</span></p>
-<section>
-    	<div id="ndtrangchon">
-        	<section>
-            	<div id="col_1">
-                	<div class="noidung">
-                    
-                    	<div class="gioithieu font12"><p style="text-align: justify;"><strong>Th&ocirc;ng điệp 10 năm của DRD</strong></p>
-<p style="text-align: justify; padding-left: 30px;"><em><strong>&ldquo;T&ocirc;i thay đổi t&ocirc;i v&agrave; thế giới&hellip;&rdquo;</strong> </em></p>
-<p style="padding-left: 30px; text-align: justify;"><em>Thưa bạn b&egrave; đồng nghiệp v&agrave; đối t&aacute;c, <br /></em></p>
-<p style="padding-left: 30px; text-align: justify;"><em>DRD tin rằng, mọi thay đổi trong thế giới m&agrave; ch&uacute;ng ta đang sống, được tạo ra bởi sự thay đổi từ ch&iacute;nh ch&uacute;ng ta &ndash; bạn v&agrave; t&ocirc;i. <br /></em></p>
-<p style="padding-left: 30px; text-align: justify;"><em>Khi người khuyết tật (NKT) đ&oacute;ng g&oacute;p gi&aacute; trị của m&igrave;nh v&agrave;o ph&aacute;t triển kinh tế x&atilde; hội của đất nước, th&igrave; sự tham gia b&igrave;nh đẳng của NKT v&agrave; c&aacute;c cơ hội c&ocirc;ng bằng cho NKT thực sự c&oacute; &yacute; nghĩa. <br /></em></p>
-<p style="padding-left: 30px; text-align: justify;"><em>Hơn 10 năm qua, với DRD, bạn v&agrave; t&ocirc;i phấn đấu kh&ocirc;ng mệt mỏi cho cuộc sống tốt đẹp hơn của NKT. DRD trở th&agrave;nh m&aacute;i nh&agrave; ấm &aacute;p nơi vun đắp c&aacute;c nỗ lực của c&aacute; nh&acirc;n, cộng đồng NKT, c&aacute;c đối t&aacute;c, bạn b&egrave;, người th&acirc;n của họ. C&aacute;c hoạt động của DRD gi&uacute;p bạn v&agrave; t&ocirc;i tự tin hơn v&agrave;o năng lực của ch&iacute;nh m&igrave;nh, g&oacute;p phần thay đổi nhận thức, h&agrave;nh vi c&aacute;c cơ quan, tổ chức, doanh nghiệp, cộng đồng địa phương, cũng như gia đ&igrave;nh, người th&acirc;n v&agrave; bạn b&egrave; của ch&uacute;ng ta, g&oacute;p phần thay đổi m&ocirc;i trường sống v&agrave; l&agrave;m việc của mọi người. <br /></em></p>
-<p style="padding-left: 30px; text-align: justify;"><em>Trong chặng đường 10 năm trước mắt, DRD nh&igrave;n thấy c&aacute;c cơ hội c&ugrave;ng những th&aacute;ch thức lớn đối với NKT khi Việt Nam đ&atilde; vươn l&ecirc;n nh&oacute;m c&aacute;c quốc gia c&oacute; thu nhập trung b&igrave;nh. H&agrave;ng chục hiệp định thương mại tự do với nhiều nước v&agrave; khu vực tr&ecirc;n thế giới bao gồm c&aacute;c thoả thuận với Đối t&aacute;c Xuy&ecirc;n Th&aacute;i B&igrave;nh Dương (TPP) đưa Việt Nam hội nhập s&acirc;u rộng với quốc tế, trong khi c&aacute;c nh&agrave; t&agrave;i trợ l&ugrave;i dần để nhường chỗ cho c&aacute;c quan hệ thương mại v&agrave; đầu tư. Đặc biệt, C&ocirc;ng ước Quốc tế về Quyền của NKT v&agrave; Chiến lược Incheon m&agrave; Việt Nam đ&atilde; ph&ecirc; chuẩn v&agrave; cam kết tham gia sẽ l&agrave; khu&ocirc;n khổ định hướng cho c&aacute;c nỗ lực của ch&uacute;ng ta. Bạn v&agrave; t&ocirc;i sẽ cần được chuẩn bị tốt hơn để c&oacute; thể sống vui v&agrave; đ&oacute;ng g&oacute;p cho x&atilde; hội trong bối cảnh mới như vậy. </em></p>
-<p style="text-align: right;"><strong>Tập thể DRD</strong></p>
-<p style="text-align: right;"><a href="http://www.drdvietnam.org/images/baiviet/An Pham/ToiThayDoiToi&amp;TheGioi(DRD-2016).pdf"><strong><span style="color: #ff9900;"><strong><span style="color: #ff9900;">&gt;&gt;Đọc th&ecirc;m Kế hoạch chiến lược 10 năm tới của DRD</span></strong></span></strong></a></p>
-<p>&nbsp;</p>
-<p><strong>Lịch sử h&igrave;nh th&agrave;nh</strong></p>
-<p style="padding-left: 30px; text-align: justify;">Trung t&acirc;m Khuyết tật v&agrave; Ph&aacute;t triển (DRD) l&agrave; tổ chức phi lợi nhuận được th&agrave;nh lập ng&agrave;y 3 th&aacute;ng 12 năm 2005 dưới sự hỗ trợ ban đầu của Quỹ Ford. Cho tới nay DRD trực thuộc Li&ecirc;n Hiệp C&aacute;c Hội Khoa Học V&agrave; Kĩ Thuật Việt Nam (VUSTA).&nbsp;</p>
-<p style="padding-left: 30px; text-align: justify;">DRD nỗ lực từng ng&agrave;y g&oacute;p phần x&acirc;y dựng một x&atilde; hội c&ocirc;ng bằng v&agrave; kh&ocirc;ng c&oacute; r&agrave;o cản cho người khuyết tật (NKT). 10 năm qua,&nbsp;với sự hỗ trợ v&agrave; đồng h&agrave;nh của c&aacute;c nh&agrave; t&agrave;i trợ v&agrave; c&aacute;c đối t&aacute;c, DRD đ&atilde; đạt được những kết quả đầu ti&ecirc;n từ nỗ lực n&acirc;ng cao năng lực v&agrave; h&ograve;a nhập x&atilde; hội cho cộng đồng người khuyết tật.&nbsp;</p>
-<p style="padding-left: 30px; text-align: justify;">&nbsp;</p>
-<p style="text-align: justify;"><strong>Tầm nh&igrave;n năm 2025</strong></p>
-<p style="padding-left: 30px;">DRD phấn đấu cho một x&atilde; hội ho&agrave; nhập, kh&ocirc;ng r&agrave;o cản nơi NKT c&oacute; đủ năng lực tham gia v&agrave;o c&aacute;c hoạt động x&atilde; hội một c&aacute;ch c&ocirc;ng bằng &amp; b&igrave;nh đẳng.&nbsp;</p>
-<p style="padding-left: 30px;">&nbsp;</p><p><strong>Sứ mạng của DRD</strong></p>
-<p style="padding-left: 30px; text-align: justify;">DRD hoạt động gi&uacute;p NKT tự tin, n&acirc;ng cao chất lượng cuộc sống trong m&ocirc;i trường kh&ocirc;ng ph&acirc;n biệt đối xử bằng c&aacute;ch n&acirc;ng cao năng lực cho cộng đồng NKT v&agrave; vận động ch&iacute;nh s&aacute;ch.</p>
-<p style="padding-left: 30px; text-align: justify;">&nbsp;</p><p><strong>Gi&aacute; trị cốt l&otilde;i<br /></strong></p>
-<p style="padding-left: 30px; text-align: justify;">DRD đảm nhận sứ mệnh như vậy, dựa tr&ecirc;n những th&agrave;nh tựu v&agrave; gi&aacute; trị con người v&agrave; tổ chức, được đ&uacute;c kết qua 10 năm hoạt động.</p>
-<p style="padding-left: 30px; text-align: justify;"><strong>V&igrave; NKT:</strong> DRD l&agrave; một tổ chức của NKT v&agrave; v&igrave; NKT, thể hiện tr&ecirc;n c&aacute;c kh&iacute;a cạnh quyền của NKT, năng lực của NKT, cơ hội b&igrave;nh đẳng cho NKT, v&agrave; sự tham gia c&ocirc;ng bằng của NKT trong c&aacute;c hoạt động kinh tế, văn ho&aacute;, ch&iacute;nh trị, x&atilde; hội&hellip;</p>
-<p style="padding-left: 30px; text-align: justify;"><strong>T&ocirc;n trọng gi&aacute; trị v&agrave; khả năng của NKT:</strong> DRD l&agrave; m&ocirc;i trường ứng dụng c&ocirc;ng t&aacute;c x&atilde; hội nơi m&agrave; gi&aacute; trị v&agrave; khả năng của NKT được t&ocirc;n trọng.</p>
-<p style="padding-left: 30px; text-align: justify;"><strong>Truyền cảm hứng cho NKT v&agrave; c&ocirc;ng ch&uacute;ng:</strong> DRD khuyến kh&iacute;ch c&aacute;ch tiếp cận s&aacute;ng tạo, mang lại niềm tin v&agrave; những g&oacute;c nh&igrave;n mới về NKT v&agrave; th&uacute;c đẩy đ&oacute;ng g&oacute;p của họ.</p>
-<p style="padding-left: 30px; text-align: justify;"><strong>Minh bạch:</strong> Mọi hoạt động của DRD đều được thiết kế, thẩm định, thực hiện, theo d&otilde;i v&agrave; đ&aacute;nh gi&aacute; một c&aacute;ch minh bạch, v&agrave; được b&aacute;o c&aacute;o đầy đủ, rộng r&atilde;i tới c&aacute;c b&ecirc;n li&ecirc;n quan cũng như c&ocirc;ng ch&uacute;ng.</p>
-<p style="padding-left: 30px; text-align: justify;"><strong>Uy t&iacute;n &amp; Chất lượng:</strong> Kết quả 10 năm phấn đấu đ&atilde; mang lại uy t&iacute;n cho DRD thể hiện qua chất lượng dịch vụ, chất lượng c&aacute;c đề xuất ch&iacute;nh s&aacute;ch v&agrave; chất lượng con người trong đội ngũ DRD.</p>
-<p style="padding-left: 30px; text-align: justify;">&nbsp;</p><p><strong>Mục ti&ecirc;u tổng thể<br /></strong></p>
-<p style="padding-left: 30px;">DRD tạo cơ hội cho người khuyết tật ho&agrave; nhập x&atilde; hội v&agrave; n&acirc;ng cao chất lượng cuộc sống.</p>
-<p style="padding-left: 30px;"><strong>Mục ti&ecirc;u 1:</strong> Nhận thức cho NKT v&agrave; cộng đồng về Quyền của NKT</p>
-<p style="padding-left: 30px;"><strong>Mục ti&ecirc;u 2:</strong> Cơ hội c&ocirc;ng bằng cho NKT</p>
-<p style="padding-left: 30px;"><strong>Mục ti&ecirc;u 3:</strong> Sự tham gia b&igrave;nh đẳng của NKT trong mọi kh&iacute;a cạnh x&atilde; hội</p>
-<p style="padding-left: 30px;"><strong>Mục ti&ecirc;u 4:</strong> Ph&aacute;t triển năng lực của DRD</p>
-<p style="padding-left: 30px;">&nbsp;</p><p style="text-align: justify;"><strong>Những th&agrave;nh tựu đạt được (t&iacute;nh đến 11/2016)</strong></p>
-<p style="text-align: justify; padding-left: 30px;">Kể từ ng&agrave;y bắt đầu hoạt động,&nbsp;<span style="color: #ff9900;"><strong>với sự hỗ trợ v&agrave; đồng h&agrave;nh của c&aacute;c nh&agrave; t&agrave;i trợ v&agrave; c&aacute;c đối t&aacute;c</strong></span>, DRD đ&atilde; đạt được nhiều kết quả trong nỗ lực n&acirc;ng cao năng lực v&agrave; h&ograve;a nhập x&atilde; hội cho cộng đồng người khuyết tật. Ch&uacute;ng t&ocirc;i lu&ocirc;n mong muốn sẽ tiếp tục nhận được sự đ&oacute;ng g&oacute;p v&agrave; đồng h&agrave;nh&nbsp;từ qu&yacute; vị để duy tr&igrave; v&agrave; ph&aacute;t triển những&nbsp;hoạt động&nbsp;v&igrave;cộng đồng. Sau đ&acirc;y l&agrave; một số kết quả đạt được (t&iacute;nh đến 11/2016):</p>
-<p style="text-align: justify; padding-left: 30px;"><strong>H&ograve;a nhập x&atilde; hội</strong></p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>93%</strong></span>&nbsp;NKT được n&acirc;ng cao nhận thức,</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>92%</strong></span> tự tin v&agrave;o bản th&acirc;n,</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>83%</strong></span>&nbsp;NKT tăng khả năng tự lập,</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>81%</strong></span> NKT tăng khả năng ứng ph&oacute; với t&igrave;nh huống,</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>93%</strong></span> NKT được tăng năng lực.</p>
-<p style="padding-left: 30px;"><strong>Tiếp cận v&agrave; kết nối</strong></p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>256</strong></span> m&aacute;y t&iacute;nh đ&atilde; được trao tặng cho c&aacute;c bạn thanh ni&ecirc;n khuyết tật.</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>432</strong></span> NKT nhận xe lăn, xe lắc, nạng, nẹp,&hellip;</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>500</strong></span> NKT được học Luật giao th&ocirc;ng đường bộ v&agrave; c&oacute; giấy chứng nhận.</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>2,744</strong></span> lượt tham vấn đồng cảnh.</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>40,024</strong></span> lượt dịch vụ hỗ trợ motobike taxi cho <span style="color: #ff9900;"><strong>455</strong></span> NKT với nhiều dạng tật kh&aacute;c nhau đi học, đi l&agrave;m, tham gia sinh hoạt đội nh&oacute;m v&agrave; kh&aacute;m chữa bệnh.</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>35</strong></span> hội nh&oacute;m NKT khắp miền Nam Việt Nam được kết nối v&agrave; trở th&agrave;nh mạng lưới bao gồm 3500 th&agrave;nh vi&ecirc;n.</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>3,513</strong></span> NKT v&agrave; c&aacute;c l&atilde;nh đạo của tổ chức NKT tham gia c&aacute;c chương tr&igrave;nh tập huấn, hội thảo, v&agrave; chia sẻ kinh nghiệm do DRD thực hiện.</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>10</strong></span> dự &aacute;n nhỏ của mạng lưới hội nh&oacute;m NKT được t&agrave;i trợ.</p>
-<p style="padding-left: 30px;"><strong>Học tập v&agrave; việc l&agrave;m</strong></p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>345</strong></span> sinh vi&ecirc;n khuyết tật được hỗ trợ học bổng h&agrave;ng th&aacute;ng cho đến l&uacute;c ra trường, tập huấn c&aacute;c kỹ năng x&atilde; hội, tạo điều kiện đi thực tập v&agrave; t&igrave;m việc l&agrave;m sau khi tốt nghiệp.</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>1,540</strong> </span>NKT được hướng nghiệp, tập huấn về kỹ năng t&igrave;m việc, giới thiệu v&agrave; gi&uacute;p duy tr&igrave; việc l&agrave;m mỗi năm.</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>374</strong></span> NKT c&oacute; được việc l&agrave;m.</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>344</strong> </span>doanh nghiệp tham gia mạng lưới tuyển dụng NKT tại DRD.</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>24</strong></span> doanh nghiệp NKT ở TP.HCM v&agrave; L&acirc;m Đồng được tư vấn kỹ thuật kinh doanh</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>15</strong></span> dự &aacute;n nhỏ về ph&aacute;t triển kinh doanh được t&agrave;i trợ.</p>
-<p style="padding-left: 30px;"><strong>DRD với c&ocirc;ng ch&uacute;ng</strong></p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>12,448</strong></span> lượt truy cập v&agrave;o trang web của DRD mỗi th&aacute;ng. (http://www.drdvietnam.org)</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>7,868</strong></span> lượt Like tr&ecirc;n Fanpage DRD. (<a href="https://www.facebook.com/drdvietnam/">https://www.facebook.com/drdvietnam</a>)</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>1,050,670</strong></span> lượt xem tr&ecirc;n k&ecirc;nh youtube của DRD v&agrave; c&oacute; <span style="color: #ff9900;"><strong>1,154</strong></span> người đăng k&yacute; theo d&otilde;i k&ecirc;nh thường xuy&ecirc;n. (<a href="https://www.youtube.com/user/videodrdvietnam">https://www.youtube.com/user/videodrdvietnam</a>)</p>
-<p style="padding-left: 30px;">- Khoảng <span style="color: #ff9900;"><strong>2,024</strong></span> tin b&agrave;i, ph&oacute;ng sự, tr&ecirc;n c&aacute;c phương tiện truyền th&ocirc;ng đại ch&uacute;ng.</p>
-<p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>5</strong></span> giải thưởng quốc tế, <span style="color: #ff9900;"><strong>14</strong></span> giải thưởng/bằng khen cấp th&agrave;nh phố.</p>
-<p style="padding-left: 30px;"><a href="http://www.drdvietnam.org/images/baiviet/An Pham/ToiThayDoiToi&amp;TheGioi(DRD-2016).pdf"><span style="color: #ff9900;"><strong><span style="color: #ff9900;">&gt;&gt;Đọc th&ecirc;m Kế hoạch chiến lược DRD</span></strong></span></a></p>
-<p style="padding-left: 30px;"><strong><em>(Số liệu tr&ecirc;n dựa v&agrave;o khảo s&aacute;t v&agrave; thống k&ecirc; do DRD thực hiện)</em></strong></p>
-<p>&nbsp;</p></div>
-                    </div>
-                </div>
-            
-            </section><section>
-            	<footer>
-                	<div class="footer">
-                    	<div class="doitac">
-                        	  
-                        	<a href="http://www.fordfound.org/regions/vietnam/overview" target="_blank"><img src="../images/doitacdrd/f.png" alt="AP" title="Ford Foundation"></a>
-                                                        <img src="../images/doitacdrd/armcharm.png" alt="amcham vietnam" title="amcham vietnam">
-                              
-                        	<a href="http://www.atlanticphilanthropies.org/" target="_blank"><img src="../images/doitacdrd/atlantic.png" alt="The Atlantic Philantropies" title="The Atlantic Philantropies"></a>
-                              
-                        	<a href="http://www.irishaid.gov.ie/" target="_blank"><img src="../images/doitacdrd/irish.png" alt="Irish Aid" title="Irish Aid"></a>
-                              
-                        	<a href="http://www.nippon-foundation.or.jp/eng/" target="_blank"><img src="../images/doitacdrd/nippon.png" alt="Nippon" title="Nippon"></a>
-                              
-                        	<a href="http://www.invescohcm.com.vn/Quatrinhhinhthanh.html" target="_blank"><img src="../images/doitacdrd/invesco.png" alt="Invesco" title="Invesco"></a>
-                              
-                        	<a href="http://www.humancare1986.jp/english.html" target="_blank"><img src="../images/doitacdrd/hcare.png" alt="HumanCare" title="HumanCare"></a>
-                              
-                        	<a href="http://www.koica.go.kr/english/main.html" target="_blank"><img src="../images/doitacdrd/logokoica.jpg" alt="Koica" title="Koica"></a>
-                              
-                        	<a href="http://www.ableforum.com/" target="_blank"><img src="../images/doitacdrd/hq.png" alt="Ableforum" title="Ableforum"></a>
-                                                        <img src="../images/doitacdrd/dpi.png" alt="Khuyết tật" title="Khuyết tật">
-                              
-                        	<a href="http://australia.gov.au/" target="_blank"><img src="../images/doitacdrd/ausaid.png" alt="Australia Goverment" title="Australia Goverment"></a>
-                                                        <img src="../images/doitacdrd/vusta.png" alt="Vusta" title="Vusta">
-                              
-                        	<a href="http://www.pavietnam.vn/" target="_blank"><img src="../images/doitacdrd/PAvietnam.jpg" alt="Logo PAVietNam" title="PA Việt Nam"></a>
-                              
-                        	<a href="http://eqvn.net/" target="_blank"><img src="../images/doitacdrd/eqvn.jpg" alt="Học vien EQVN" title="Học vien EQVN"></a>
-                              
-                        	<a href="https://www.usaid.gov/vi/vietnam" target="_blank"><img src="../images/doitacdrd/USAID.jpg" alt="logo tổ chức USAID" title="USAID"></a>
-                              
-                        	<a href="http://moveability.icrc.org/" target="_blank"><img src="../images/doitacdrd/ICRC.jpg" alt=" Quỹ ICRC MoveAbility" title=" Quỹ ICRC MoveAbility"></a>
-                              
-                        	<a href="http://tamnguyenviet.vn/voi-ca-tam-tinh/" target="_blank"><img src="../images/doitacdrd/Tamnguyenviet01.jpg" alt="" title="Tâm nguyện Việt"></a>
-                                                        <p class="clr"></p>
+                <li><a class="" href="drd/lien-he.html#noidungnoidung">Liên hệ</a></li>
+                <li class="gotop"><a href="gioi-thieu-drd.html#gotop" class="font14">Lên trên</a></li>
+            </ul>
+        </nav>
+        <p class="mntop" id="noidungnoidung"><span>Nội dung</span> <span class="font16">( Phím tắt  <u>9</u> )</span></p>
+        <section>
+            <div id="ndtrangchon">
+                <section>
+                    <div id="col_1">
+                        <div class="noidung">
+                            
+                            <div class="gioithieu font12"><p style="text-align: justify;"><strong>Th&ocirc;ng điệp 10 năm của DRD</strong></p>
+                                <p style="text-align: justify; padding-left: 30px;"><em><strong>&ldquo;T&ocirc;i thay đổi t&ocirc;i v&agrave; thế giới&hellip;&rdquo;</strong> </em></p>
+                                <p style="padding-left: 30px; text-align: justify;"><em>Thưa bạn b&egrave; đồng nghiệp v&agrave; đối t&aacute;c, <br /></em></p>
+                                <p style="padding-left: 30px; text-align: justify;"><em>DRD tin rằng, mọi thay đổi trong thế giới m&agrave; ch&uacute;ng ta đang sống, được tạo ra bởi sự thay đổi từ ch&iacute;nh ch&uacute;ng ta &ndash; bạn v&agrave; t&ocirc;i. <br /></em></p>
+                                <p style="padding-left: 30px; text-align: justify;"><em>Khi người khuyết tật (NKT) đ&oacute;ng g&oacute;p gi&aacute; trị của m&igrave;nh v&agrave;o ph&aacute;t triển kinh tế x&atilde; hội của đất nước, th&igrave; sự tham gia b&igrave;nh đẳng của NKT v&agrave; c&aacute;c cơ hội c&ocirc;ng bằng cho NKT thực sự c&oacute; &yacute; nghĩa. <br /></em></p>
+                                <p style="padding-left: 30px; text-align: justify;"><em>Hơn 10 năm qua, với DRD, bạn v&agrave; t&ocirc;i phấn đấu kh&ocirc;ng mệt mỏi cho cuộc sống tốt đẹp hơn của NKT. DRD trở th&agrave;nh m&aacute;i nh&agrave; ấm &aacute;p nơi vun đắp c&aacute;c nỗ lực của c&aacute; nh&acirc;n, cộng đồng NKT, c&aacute;c đối t&aacute;c, bạn b&egrave;, người th&acirc;n của họ. C&aacute;c hoạt động của DRD gi&uacute;p bạn v&agrave; t&ocirc;i tự tin hơn v&agrave;o năng lực của ch&iacute;nh m&igrave;nh, g&oacute;p phần thay đổi nhận thức, h&agrave;nh vi c&aacute;c cơ quan, tổ chức, doanh nghiệp, cộng đồng địa phương, cũng như gia đ&igrave;nh, người th&acirc;n v&agrave; bạn b&egrave; của ch&uacute;ng ta, g&oacute;p phần thay đổi m&ocirc;i trường sống v&agrave; l&agrave;m việc của mọi người. <br /></em></p>
+                                <p style="padding-left: 30px; text-align: justify;"><em>Trong chặng đường 10 năm trước mắt, DRD nh&igrave;n thấy c&aacute;c cơ hội c&ugrave;ng những th&aacute;ch thức lớn đối với NKT khi Việt Nam đ&atilde; vươn l&ecirc;n nh&oacute;m c&aacute;c quốc gia c&oacute; thu nhập trung b&igrave;nh. H&agrave;ng chục hiệp định thương mại tự do với nhiều nước v&agrave; khu vực tr&ecirc;n thế giới bao gồm c&aacute;c thoả thuận với Đối t&aacute;c Xuy&ecirc;n Th&aacute;i B&igrave;nh Dương (TPP) đưa Việt Nam hội nhập s&acirc;u rộng với quốc tế, trong khi c&aacute;c nh&agrave; t&agrave;i trợ l&ugrave;i dần để nhường chỗ cho c&aacute;c quan hệ thương mại v&agrave; đầu tư. Đặc biệt, C&ocirc;ng ước Quốc tế về Quyền của NKT v&agrave; Chiến lược Incheon m&agrave; Việt Nam đ&atilde; ph&ecirc; chuẩn v&agrave; cam kết tham gia sẽ l&agrave; khu&ocirc;n khổ định hướng cho c&aacute;c nỗ lực của ch&uacute;ng ta. Bạn v&agrave; t&ocirc;i sẽ cần được chuẩn bị tốt hơn để c&oacute; thể sống vui v&agrave; đ&oacute;ng g&oacute;p cho x&atilde; hội trong bối cảnh mới như vậy. </em></p>
+                                <p style="text-align: right;"><strong>Tập thể DRD</strong></p>
+                                <p style="text-align: right;"><a href="http://www.drdvietnam.org/images/baiviet/An Pham/ToiThayDoiToi&amp;TheGioi(DRD-2016).pdf"><strong><span style="color: #ff9900;"><strong><span style="color: #ff9900;">&gt;&gt;Đọc th&ecirc;m Kế hoạch chiến lược 10 năm tới của DRD</span></strong></span></strong></a></p>
+                                <p>&nbsp;</p>
+                                <p><strong>Lịch sử h&igrave;nh th&agrave;nh</strong></p>
+                                <p style="padding-left: 30px; text-align: justify;">Trung t&acirc;m Khuyết tật v&agrave; Ph&aacute;t triển (DRD) l&agrave; tổ chức phi lợi nhuận được th&agrave;nh lập ng&agrave;y 3 th&aacute;ng 12 năm 2005 dưới sự hỗ trợ ban đầu của Quỹ Ford. Cho tới nay DRD trực thuộc Li&ecirc;n Hiệp C&aacute;c Hội Khoa Học V&agrave; Kĩ Thuật Việt Nam (VUSTA).&nbsp;</p>
+                                <p style="padding-left: 30px; text-align: justify;">DRD nỗ lực từng ng&agrave;y g&oacute;p phần x&acirc;y dựng một x&atilde; hội c&ocirc;ng bằng v&agrave; kh&ocirc;ng c&oacute; r&agrave;o cản cho người khuyết tật (NKT). 10 năm qua,&nbsp;với sự hỗ trợ v&agrave; đồng h&agrave;nh của c&aacute;c nh&agrave; t&agrave;i trợ v&agrave; c&aacute;c đối t&aacute;c, DRD đ&atilde; đạt được những kết quả đầu ti&ecirc;n từ nỗ lực n&acirc;ng cao năng lực v&agrave; h&ograve;a nhập x&atilde; hội cho cộng đồng người khuyết tật.&nbsp;</p>
+                                <p style="padding-left: 30px; text-align: justify;">&nbsp;</p>
+                                <p style="text-align: justify;"><strong>Tầm nh&igrave;n năm 2025</strong></p>
+                                <p style="padding-left: 30px;">DRD phấn đấu cho một x&atilde; hội ho&agrave; nhập, kh&ocirc;ng r&agrave;o cản nơi NKT c&oacute; đủ năng lực tham gia v&agrave;o c&aacute;c hoạt động x&atilde; hội một c&aacute;ch c&ocirc;ng bằng &amp; b&igrave;nh đẳng.&nbsp;</p>
+                                <p style="padding-left: 30px;">&nbsp;</p><p><strong>Sứ mạng của DRD</strong></p>
+                                <p style="padding-left: 30px; text-align: justify;">DRD hoạt động gi&uacute;p NKT tự tin, n&acirc;ng cao chất lượng cuộc sống trong m&ocirc;i trường kh&ocirc;ng ph&acirc;n biệt đối xử bằng c&aacute;ch n&acirc;ng cao năng lực cho cộng đồng NKT v&agrave; vận động ch&iacute;nh s&aacute;ch.</p>
+                                <p style="padding-left: 30px; text-align: justify;">&nbsp;</p><p><strong>Gi&aacute; trị cốt l&otilde;i<br /></strong></p>
+                                <p style="padding-left: 30px; text-align: justify;">DRD đảm nhận sứ mệnh như vậy, dựa tr&ecirc;n những th&agrave;nh tựu v&agrave; gi&aacute; trị con người v&agrave; tổ chức, được đ&uacute;c kết qua 10 năm hoạt động.</p>
+                                <p style="padding-left: 30px; text-align: justify;"><strong>V&igrave; NKT:</strong> DRD l&agrave; một tổ chức của NKT v&agrave; v&igrave; NKT, thể hiện tr&ecirc;n c&aacute;c kh&iacute;a cạnh quyền của NKT, năng lực của NKT, cơ hội b&igrave;nh đẳng cho NKT, v&agrave; sự tham gia c&ocirc;ng bằng của NKT trong c&aacute;c hoạt động kinh tế, văn ho&aacute;, ch&iacute;nh trị, x&atilde; hội&hellip;</p>
+                                <p style="padding-left: 30px; text-align: justify;"><strong>T&ocirc;n trọng gi&aacute; trị v&agrave; khả năng của NKT:</strong> DRD l&agrave; m&ocirc;i trường ứng dụng c&ocirc;ng t&aacute;c x&atilde; hội nơi m&agrave; gi&aacute; trị v&agrave; khả năng của NKT được t&ocirc;n trọng.</p>
+                                <p style="padding-left: 30px; text-align: justify;"><strong>Truyền cảm hứng cho NKT v&agrave; c&ocirc;ng ch&uacute;ng:</strong> DRD khuyến kh&iacute;ch c&aacute;ch tiếp cận s&aacute;ng tạo, mang lại niềm tin v&agrave; những g&oacute;c nh&igrave;n mới về NKT v&agrave; th&uacute;c đẩy đ&oacute;ng g&oacute;p của họ.</p>
+                                <p style="padding-left: 30px; text-align: justify;"><strong>Minh bạch:</strong> Mọi hoạt động của DRD đều được thiết kế, thẩm định, thực hiện, theo d&otilde;i v&agrave; đ&aacute;nh gi&aacute; một c&aacute;ch minh bạch, v&agrave; được b&aacute;o c&aacute;o đầy đủ, rộng r&atilde;i tới c&aacute;c b&ecirc;n li&ecirc;n quan cũng như c&ocirc;ng ch&uacute;ng.</p>
+                                <p style="padding-left: 30px; text-align: justify;"><strong>Uy t&iacute;n &amp; Chất lượng:</strong> Kết quả 10 năm phấn đấu đ&atilde; mang lại uy t&iacute;n cho DRD thể hiện qua chất lượng dịch vụ, chất lượng c&aacute;c đề xuất ch&iacute;nh s&aacute;ch v&agrave; chất lượng con người trong đội ngũ DRD.</p>
+                                <p style="padding-left: 30px; text-align: justify;">&nbsp;</p><p><strong>Mục ti&ecirc;u tổng thể<br /></strong></p>
+                                <p style="padding-left: 30px;">DRD tạo cơ hội cho người khuyết tật ho&agrave; nhập x&atilde; hội v&agrave; n&acirc;ng cao chất lượng cuộc sống.</p>
+                                <p style="padding-left: 30px;"><strong>Mục ti&ecirc;u 1:</strong> Nhận thức cho NKT v&agrave; cộng đồng về Quyền của NKT</p>
+                                <p style="padding-left: 30px;"><strong>Mục ti&ecirc;u 2:</strong> Cơ hội c&ocirc;ng bằng cho NKT</p>
+                                <p style="padding-left: 30px;"><strong>Mục ti&ecirc;u 3:</strong> Sự tham gia b&igrave;nh đẳng của NKT trong mọi kh&iacute;a cạnh x&atilde; hội</p>
+                                <p style="padding-left: 30px;"><strong>Mục ti&ecirc;u 4:</strong> Ph&aacute;t triển năng lực của DRD</p>
+                                <p style="padding-left: 30px;">&nbsp;</p><p style="text-align: justify;"><strong>Những th&agrave;nh tựu đạt được (t&iacute;nh đến 11/2016)</strong></p>
+                                <p style="text-align: justify; padding-left: 30px;">Kể từ ng&agrave;y bắt đầu hoạt động,&nbsp;<span style="color: #ff9900;"><strong>với sự hỗ trợ v&agrave; đồng h&agrave;nh của c&aacute;c nh&agrave; t&agrave;i trợ v&agrave; c&aacute;c đối t&aacute;c</strong></span>, DRD đ&atilde; đạt được nhiều kết quả trong nỗ lực n&acirc;ng cao năng lực v&agrave; h&ograve;a nhập x&atilde; hội cho cộng đồng người khuyết tật. Ch&uacute;ng t&ocirc;i lu&ocirc;n mong muốn sẽ tiếp tục nhận được sự đ&oacute;ng g&oacute;p v&agrave; đồng h&agrave;nh&nbsp;từ qu&yacute; vị để duy tr&igrave; v&agrave; ph&aacute;t triển những&nbsp;hoạt động&nbsp;v&igrave;cộng đồng. Sau đ&acirc;y l&agrave; một số kết quả đạt được (t&iacute;nh đến 11/2016):</p>
+                                <p style="text-align: justify; padding-left: 30px;"><strong>H&ograve;a nhập x&atilde; hội</strong></p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>93%</strong></span>&nbsp;NKT được n&acirc;ng cao nhận thức,</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>92%</strong></span> tự tin v&agrave;o bản th&acirc;n,</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>83%</strong></span>&nbsp;NKT tăng khả năng tự lập,</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>81%</strong></span> NKT tăng khả năng ứng ph&oacute; với t&igrave;nh huống,</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>93%</strong></span> NKT được tăng năng lực.</p>
+                                <p style="padding-left: 30px;"><strong>Tiếp cận v&agrave; kết nối</strong></p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>256</strong></span> m&aacute;y t&iacute;nh đ&atilde; được trao tặng cho c&aacute;c bạn thanh ni&ecirc;n khuyết tật.</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>432</strong></span> NKT nhận xe lăn, xe lắc, nạng, nẹp,&hellip;</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>500</strong></span> NKT được học Luật giao th&ocirc;ng đường bộ v&agrave; c&oacute; giấy chứng nhận.</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>2,744</strong></span> lượt tham vấn đồng cảnh.</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>40,024</strong></span> lượt dịch vụ hỗ trợ motobike taxi cho <span style="color: #ff9900;"><strong>455</strong></span> NKT với nhiều dạng tật kh&aacute;c nhau đi học, đi l&agrave;m, tham gia sinh hoạt đội nh&oacute;m v&agrave; kh&aacute;m chữa bệnh.</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>35</strong></span> hội nh&oacute;m NKT khắp miền Nam Việt Nam được kết nối v&agrave; trở th&agrave;nh mạng lưới bao gồm 3500 th&agrave;nh vi&ecirc;n.</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>3,513</strong></span> NKT v&agrave; c&aacute;c l&atilde;nh đạo của tổ chức NKT tham gia c&aacute;c chương tr&igrave;nh tập huấn, hội thảo, v&agrave; chia sẻ kinh nghiệm do DRD thực hiện.</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>10</strong></span> dự &aacute;n nhỏ của mạng lưới hội nh&oacute;m NKT được t&agrave;i trợ.</p>
+                                <p style="padding-left: 30px;"><strong>Học tập v&agrave; việc l&agrave;m</strong></p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>345</strong></span> sinh vi&ecirc;n khuyết tật được hỗ trợ học bổng h&agrave;ng th&aacute;ng cho đến l&uacute;c ra trường, tập huấn c&aacute;c kỹ năng x&atilde; hội, tạo điều kiện đi thực tập v&agrave; t&igrave;m việc l&agrave;m sau khi tốt nghiệp.</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>1,540</strong> </span>NKT được hướng nghiệp, tập huấn về kỹ năng t&igrave;m việc, giới thiệu v&agrave; gi&uacute;p duy tr&igrave; việc l&agrave;m mỗi năm.</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>374</strong></span> NKT c&oacute; được việc l&agrave;m.</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>344</strong> </span>doanh nghiệp tham gia mạng lưới tuyển dụng NKT tại DRD.</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>24</strong></span> doanh nghiệp NKT ở TP.HCM v&agrave; L&acirc;m Đồng được tư vấn kỹ thuật kinh doanh</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>15</strong></span> dự &aacute;n nhỏ về ph&aacute;t triển kinh doanh được t&agrave;i trợ.</p>
+                                <p style="padding-left: 30px;"><strong>DRD với c&ocirc;ng ch&uacute;ng</strong></p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>12,448</strong></span> lượt truy cập v&agrave;o trang web của DRD mỗi th&aacute;ng. (http://www.drdvietnam.org)</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>7,868</strong></span> lượt Like tr&ecirc;n Fanpage DRD. (<a href="https://www.facebook.com/drdvietnam/">https://www.facebook.com/drdvietnam</a>)</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>1,050,670</strong></span> lượt xem tr&ecirc;n k&ecirc;nh youtube của DRD v&agrave; c&oacute; <span style="color: #ff9900;"><strong>1,154</strong></span> người đăng k&yacute; theo d&otilde;i k&ecirc;nh thường xuy&ecirc;n. (<a href="https://www.youtube.com/user/videodrdvietnam">https://www.youtube.com/user/videodrdvietnam</a>)</p>
+                                <p style="padding-left: 30px;">- Khoảng <span style="color: #ff9900;"><strong>2,024</strong></span> tin b&agrave;i, ph&oacute;ng sự, tr&ecirc;n c&aacute;c phương tiện truyền th&ocirc;ng đại ch&uacute;ng.</p>
+                                <p style="padding-left: 30px;">- <span style="color: #ff9900;"><strong>5</strong></span> giải thưởng quốc tế, <span style="color: #ff9900;"><strong>14</strong></span> giải thưởng/bằng khen cấp th&agrave;nh phố.</p>
+                                <p style="padding-left: 30px;"><a href="http://www.drdvietnam.org/images/baiviet/An Pham/ToiThayDoiToi&amp;TheGioi(DRD-2016).pdf"><span style="color: #ff9900;"><strong><span style="color: #ff9900;">&gt;&gt;Đọc th&ecirc;m Kế hoạch chiến lược DRD</span></strong></span></a></p>
+                                <p style="padding-left: 30px;"><strong><em>(Số liệu tr&ecirc;n dựa v&agrave;o khảo s&aacute;t v&agrave; thống k&ecirc; do DRD thực hiện)</em></strong></p>
+                                <p>&nbsp;</p></div>
+                            </div>
                         </div>
-                        <div class="copyright"><p style="text-align: left;float: left;"><img src="../images/icon_dien_thoai.png" alt="Điện thoại" style="margin:5px 5px 0 0;height:15px;" />028 6267 9911 - <img src="../images/icon_email.png" alt="Email" style="margin:5px 5px 0 0;height:15px;" /><a href="mailto:info@drdvietnam.com" style="color: #fff;;">info@drdvietnam.com</a></p><p style="float: right;">&copy; Power by DRD Vietnam. All right reserved.</p><p class="clr"></p></div>
-                    </div>
-                </footer>
-            </section>
-            
-		
-	</div>
-</section>
-</div>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/58340a557bb7bf7f521ddde8/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+                        
+                    </section><section>
+<!--                     <footer>
+                        <div class="footer">
+                            <div class="doitac">
+                              
+                                <a href="http://www.fordfound.org/regions/vietnam/overview" target="_blank"><img src="../images/doitacdrd/f.png" alt="AP" title="Ford Foundation"></a>
+                                <img src="../images/doitacdrd/armcharm.png" alt="amcham vietnam" title="amcham vietnam">
+                                
+                                <a href="http://www.atlanticphilanthropies.org/" target="_blank"><img src="../images/doitacdrd/atlantic.png" alt="The Atlantic Philantropies" title="The Atlantic Philantropies"></a>
+                                
+                                <a href="http://www.irishaid.gov.ie/" target="_blank"><img src="../images/doitacdrd/irish.png" alt="Irish Aid" title="Irish Aid"></a>
+                                
+                                <a href="http://www.nippon-foundation.or.jp/eng/" target="_blank"><img src="../images/doitacdrd/nippon.png" alt="Nippon" title="Nippon"></a>
+                                
+                                <a href="http://www.invescohcm.com.vn/Quatrinhhinhthanh.html" target="_blank"><img src="../images/doitacdrd/invesco.png" alt="Invesco" title="Invesco"></a>
+                                
+                                <a href="http://www.humancare1986.jp/english.html" target="_blank"><img src="../images/doitacdrd/hcare.png" alt="HumanCare" title="HumanCare"></a>
+                                
+                                <a href="http://www.koica.go.kr/english/main.html" target="_blank"><img src="../images/doitacdrd/logokoica.jpg" alt="Koica" title="Koica"></a>
+                                
+                                <a href="http://www.ableforum.com/" target="_blank"><img src="../images/doitacdrd/hq.png" alt="Ableforum" title="Ableforum"></a>
+                                <img src="../images/doitacdrd/dpi.png" alt="Khuyết tật" title="Khuyết tật">
+                                
+                                <a href="http://australia.gov.au/" target="_blank"><img src="../images/doitacdrd/ausaid.png" alt="Australia Goverment" title="Australia Goverment"></a>
+                                <img src="../images/doitacdrd/vusta.png" alt="Vusta" title="Vusta">
+                                
+                                <a href="http://www.pavietnam.vn/" target="_blank"><img src="../images/doitacdrd/PAvietnam.jpg" alt="Logo PAVietNam" title="PA Việt Nam"></a>
+                                
+                                <a href="http://eqvn.net/" target="_blank"><img src="../images/doitacdrd/eqvn.jpg" alt="Học vien EQVN" title="Học vien EQVN"></a>
+                                
+                                <a href="https://www.usaid.gov/vi/vietnam" target="_blank"><img src="../images/doitacdrd/USAID.jpg" alt="logo tổ chức USAID" title="USAID"></a>
+                                
+                                <a href="http://moveability.icrc.org/" target="_blank"><img src="../images/doitacdrd/ICRC.jpg" alt=" Quỹ ICRC MoveAbility" title=" Quỹ ICRC MoveAbility"></a>
+                                
+                                <a href="http://tamnguyenviet.vn/voi-ca-tam-tinh/" target="_blank"><img src="../images/doitacdrd/Tamnguyenviet01.jpg" alt="" title="Tâm nguyện Việt"></a>
+                                <p class="clr"></p>
+                            </div>
+                            <div class="copyright"><p style="text-align: left;float: left;"><img src="../images/icon_dien_thoai.png" alt="Điện thoại" style="margin:5px 5px 0 0;height:15px;" />028 6267 9911 - <img src="../images/icon_email.png" alt="Email" style="margin:5px 5px 0 0;height:15px;" /><a href="mailto:info@drdvietnam.com" style="color: #fff;;">info@drdvietnam.com</a></p><p style="float: right;">&copy; Power by DRD Vietnam. All right reserved.</p><p class="clr"></p></div>
+                        </div>
+                    </footer> -->
+                </section>
+                
+                
+            </div>
+        </section>
+    </div>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/58340a557bb7bf7f521ddde8/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 
 <!-- Mirrored from www.drdvietnam.org/accessibility/gioi-thieu-drd.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Oct 2017 13:14:36 GMT -->
