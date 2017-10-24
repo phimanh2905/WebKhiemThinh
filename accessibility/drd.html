@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/style.css">
 <!--[if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
-    <link href="http://www.drdvietnam.org/images/favico.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="../images/favico.ico" rel="shortcut icon" type="image/x-icon" />
     <script src="../js/jquery-1.8.1.min.js"></script>
     <link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
     <script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
@@ -68,8 +68,8 @@ $(".decreaseFont").click(function(){
 });
     // nhan 1 phim
     // phim tat header 
-    Mousetrap.bind('alt+0', function() {window.location.assign("http://www.drdvietnam.org/highvisibility");}, 'keyup');
-    Mousetrap.bind('alt+1', function() {window.location.assign("http://www.drdvietnam.org/language.php?set=en");}, 'keyup');
+    /*Mousetrap.bind('alt+0', function() {window.location.assign("http://www.drdvietnam.org/highvisibility");}, 'keyup');
+    Mousetrap.bind('alt+1', function() {window.location.assign("http://www.drdvietnam.org/language.php?set=en");}, 'keyup');*/
     Mousetrap.bind('alt+w', function() {
         var currentFontSize = $(section).css('font-size');
         var currentFontSizeNum = parseFloat(currentFontSize, 10);
@@ -117,7 +117,7 @@ $(".decreaseFont").click(function(){
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+    })(window,document,'script','../js/analytics.js','ga');
 
     ga('create', 'UA-50073537-1', 'drdvietnam.org');
     ga('send', 'pageview');
@@ -142,36 +142,40 @@ $(".decreaseFont").click(function(){
             <div id="giaodientiepcan" class="normal">
                 <header>
                     <div id="tcheader">
-                        <p class="gdtc"><a href="http://www.drdvietnam.org/">Giao diện chuẩn</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
-                        <p class="gdtp"><a href="http://www.drdvietnam.org/highvisibility/" title="Giao diện này phù hợp với người khuyết tật về mắt">Tương phản cao</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
-                        <p class="gdtc"><a href="http://www.drdvietnam.org/nightmode/" title="Chế độ này phù hợp với máy tính bảng và các thiết bị cầm tay vì tiết kiệm pin và các đoạn văn được hiển thị với phông nền tối, chữ sáng">Chế độ ban đêm</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
-                        <p class="resize"><a class='increaseFont' style='cursor: pointer; cursor: hand;' title=''>Tăng kích cỡ chữ </a><span class="font12">(Phím tắt  alt+w)</span><span class="cach"></span>
-                            <a class='resetFont' style='cursor: pointer; cursor: hand;'>Đặt lại cỡ chữ chuẩn </a><span class="font12">(Phím tắt  alt+r)</span><span class="cach"></span>
-                            <a class='decreaseFont' style='cursor: pointer; cursor: hand;' title=''>Giảm kích cỡ chữ </a><span class="font12">(Phím tắt  alt+e)</span><span class="cach"></span></p>
-                            <p><a href="huong-dan-su-dung.html#noidungnoidung">Hướng dẫn truy cập</a></p>
-                            <p class="dsuh"><a href="danh-sach-ung-ho.html#noidungnoidung"><span>Danh sách ủng hộ</span></a> <span class="font12">(Phím tắt  alt+q)</span><span class="cach"></span></p>
-                            
-                            <p class="ngonngu"><a href="http://www.drdvietnam.org/language.php?set=vn" title="">Tiếng Việt </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span>
-                                <a href="http://www.drdvietnam.org/language.php?set=en" title="">English </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span></p>
-                                <p class="slr"><a href="tim-kiem.html#noidungnoidung">Tìm kiếm</a><span class="cach"></span></p>
-                                <p class="slr"><a href="tim-kiem-theo-tu-khoa.html#noidungnoidung">Tìm theo từ khóa</a><span class="cach"></span></p>
-                                
-                                <p class="slr"><a href="dang-nhap.html#noidungnoidung" title="Phím tắt  alt+i">Đăng nhập</a><span class="cach"></span></p>
-                                <p class="slr"><a href="dang-ky.html#noidungnoidung" title="Phím tắt  alt+u">Đăng ký</a></p>
+                        <p class="gdtc"><a onmouseover="PlayGiaoDienChuan.playclip()" href="http://localhost:8080/WebKhiemThinh/accessibility/index.html">Giao diện chuẩn</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+                        <!-- <p class="gdtp"><a href="http://www.drdvietnam.org/highvisibility/" title="Giao diện này phù hợp với người khuyết tật về mắt">Tương phản cao</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p> -->
+                        <!-- <p class="gdtc"><a href="http://www.drdvietnam.org/nightmode/" title="Chế độ này phù hợp với máy tính bảng và các thiết bị cầm tay vì tiết kiệm pin và các đoạn văn được hiển thị với phông nền tối, chữ sáng">Chế độ ban đêm</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p> -->
+                        <p class="resize">
+                            <a onmouseover="PlayTangKichCoChu.playclip()" class='increaseFont' style='cursor: pointer; cursor: hand;' title=''>Tăng kích cỡ chữ </a><span class="font12">(Phím tắt  alt+w)</span><span class="cach"></span>
+                            <a onmouseover="PlayDatLaiCoChu.playclip()" class='resetFont' style='cursor: pointer; cursor: hand;'>Đặt lại cỡ chữ chuẩn </a><span class="font12">(Phím tắt  alt+r)</span><span class="cach"></span>
+                            <a onmouseover="PlayGiamKichCoChu.playclip()" class='decreaseFont' style='cursor: pointer; cursor: hand;' title=''>Giảm kích cỡ chữ </a><span class="font12">(Phím tắt  alt+e)</span><span class="cach"></span>
+                        </p>
+                        <p><a onmouseover="PlayHuongDanTruyCap.playclip()" href="huong-dan-su-dung.html#noidungnoidung">Hướng dẫn truy cập</a></p>
+                        <p class="dsuh"><a onmouseover="PlayDanhSachUngHo.playclip()" href="danh-sach-ung-ho.html#noidungnoidung"><span>Danh sách ủng hộ</span></a> <span class="font12">(Phím tắt  alt+q)</span><span class="cach"></span></p>
+
+                        <p class="ngonngu">
+                            <a onmouseover="PlayTiengViet.playclip()" href="http://www.drdvietnam.org/language.php?set=vn" title="">Tiếng Việt </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span>
+                            <a onmouseover="PlayEnglish.playclip()" href="http://www.drdvietnam.org/language.php?set=en" title="">English </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span>
+                        </p>
+                        <p class="slr"><a onmouseover="PlayTimKiem.playclip()" href="tim-kiem.html#noidungnoidung">Tìm kiếm</a><span class="cach"></span></p>
+                        <p class="slr"><a href="tim-kiem-theo-tu-khoa.html#noidungnoidung">Tìm theo từ khóa</a><span class="cach"></span></p>
+
+                        <p class="slr"><a onmouseover="PlayDangNhap.playclip()" href="dang-nhap.html#noidungnoidung" title="Phím tắt  alt+i">Đăng nhập</a><span class="cach"></span></p>
+                        <p class="slr"><a onmouseover="PlayDangKy.playclip()" href="dang-ky.html#noidungnoidung" title="Phím tắt  alt+u">Đăng ký</a></p>
                             </div>
                             <section><p class="vitrihientai">Bạn đang ở: Giới thiệu</p></section>
                         </header>
-                        <p class="mntop" id="menutoptop"><span>Menu top</span> <span class="font16">( Phím tắt  <u>6</u> )</span></p>
+                        <p onmouseover="PlayMenuTop.playclip()" class="mntop" id="menutoptop"><span>Menu top</span> <span class="font16">( Phím tắt  <u>6</u> )</span></p>
                         <nav class="menutopp">
                             <ul>
-                                <li><a class="" href="index.html#noidungnoidung">Trang chủ</a> <span class="padl5">(Phím tắt  <u>alt+a</u>)</span></li>
-                                <li><a class="dangxem" href="drd.html#noidungnoidung">Giới thiệu</a> <span class="padl5">(Phím tắt  <u>alt+j</u>)</span></li>
-                                <li><a class="" href="linh-vuc-hoat-dong.html#noidungnoidung">Lĩnh vực hoạt động</a> <span class="padl5">(Phím tắt  <u>alt+l</u>)</span></li>
-                                <li><a class="" href="hoi-quan.html#noidungnoidung">Hội quán Đời Rất Đẹp</a> <span class="padl5">(Phím tắt  <u>alt+c</u>)</span></li>
-                                <li><a class="" href="thu-vien-thong-tin.html#noidungnoidung">Tin tức</a> <span class="padl5">(Phím tắt  <u>alt+n</u>)</span></li>
-                                <li><a class="" href="video.html#noidungnoidung">Thư viện</a> <span class="padl5">(Phím tắt  <u>alt+m</u>)</span></li>
-                                <li><a class="" href="chinh-sach-phap-luat.html#noidungnoidung">Chính sách và pháp luật</a> <span class="padl5">(Phím tắt  <u>alt+p</u>)</span></li>
-                                <li><a class="" href="dien-dan.html#noidungnoidung">Diễn đàn</a> <span class="padl5">(Phím tắt  <u>alt+y</u>)</span></li>
+                                <li><a onmouseover="PlayTrangChu.playclip()" class="" href="index.html#noidungnoidung">Trang chủ</a> <span class="padl5">(Phím tắt  <u>alt+a</u>)</span></li>
+                                <li><a onmouseover="PlayGioiThieu.playclip()" class="dangxem" href="drd.html#noidungnoidung">Giới thiệu</a> <span class="padl5">(Phím tắt  <u>alt+j</u>)</span></li>
+                                <li><a onmouseover="PlayLinhVucHoatDong.playclip()" class="" href="linh-vuc-hoat-dong.html#noidungnoidung">Lĩnh vực hoạt động</a> <span class="padl5">(Phím tắt  <u>alt+l</u>)</span></li>
+                                <li><a onmouseover="PlayHoiQuanDoiRat.playclip()" class="" href="hoi-quan.html#noidungnoidung">Hội quán Đời Rất Đẹp</a> <span class="padl5">(Phím tắt  <u>alt+c</u>)</span></li>
+                                <li><a onmouseover="PlayTinTuc.playclip()" class="" href="thu-vien-thong-tin.html#noidungnoidung">Tin tức</a> <span class="padl5">(Phím tắt  <u>alt+n</u>)</span></li>
+                                <li><a onmouseover="PlayThuVien.playclip()" class="" href="video.html#noidungnoidung">Thư viện</a> <span class="padl5">(Phím tắt  <u>alt+m</u>)</span></li>
+                                <li><a onmouseover="PlayChinhSachPhapLuat.playclip()" class="" href="chinh-sach-phap-luat.html#noidungnoidung">Chính sách và pháp luật</a> <span class="padl5">(Phím tắt  <u>alt+p</u>)</span></li>
+                                <li><a onmouseover="PlayDienDan.playclip()" class="" href="dien-dan.html#noidungnoidung">Diễn đàn</a> <span class="padl5">(Phím tắt  <u>alt+y</u>)</span></li>
                                 <li class="gotop"><a href="drd.html#gotop" class="font14">Lên trên</a></li>
                             </ul>
                         </nav>
@@ -179,38 +183,42 @@ $(".decreaseFont").click(function(){
                             <div id="searchgoogle" class="searchgo"><gcse:searchbox></gcse:searchbox>
 <div style="visibility:hidden"><gcse:searchresults refinementStyle="link"></gcse:searchresults></div>
                         </div>
-                    </div>--><link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
-                    <script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
-                    <script>
+                    </div>-->
+
+                    <!-- Đóng code Manh 24/10/17 -->
+
+                    <!-- <link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
+                    <script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script> -->
+                    <!-- <script>
                         $(document).ready(function(){
                 //Examples of how to assign the ColorBox event to elements
                 $(".inlineee").colorbox({inline:true, Maxwidth:"50%", Maxheight:"90%"});
                 
             });
-        </script>
-        <p class="mntop" id="menumainmain"><span>Menu Chính</span> <span class="font16">( Phím tắt  <u>7</u> )</span></p>
+        </script> -->
+        <p onmouseover="PlayMenuChinh.playclip()" class="mntop" id="menumainmain"><span>Menu Chính</span> <span class="font16">( Phím tắt  <u>7</u> )</span></p>
         <nav class="menutopp">
             <ul>
                 
-                <li><a class="" href="gioi-thieu-drd.html#noidungnoidung">Giới thiệu</a></li>
-                <li class="menucon"><a class="" href="drd/lich-su-hinh-thanh.html#noidungnoidung">&raquo;&nbsp;Lịch sử hình thành</a></li>
-                <li class="menucon"><a class="" href="drd/tam-nhin.html#noidungnoidung">&raquo;&nbsp;Tầm nhìn</a></li>
-                <li class="menucon"><a class="" href="drd/gia-tri.html#noidungnoidung">&raquo;&nbsp;Giá trị</a></li>
-                <li class="menucon"><a class="" href="drd/muc-tieu.html#noidungnoidung">&raquo;&nbsp;Mục tiêu</a></li>
-                <li class="menucon"><a class="" href="drd/thanh-tuu.html#noidungnoidung">&raquo;&nbsp;Thành tựu</a></li>
-                <li class="menucon"><a class="" href="drd/so-do-to-chuc.html#noidungnoidung">&raquo;&nbsp;Sơ đồ tổ chức - hoạt động</a></li>
-                <li><a class="" href="tai-lieu/an-pham-do-drd-phat-hanh.html#noidungnoidung">Ấn phẩm đã phát hành</a></li>
-                <li><a class="" href="tai-lieu/bao-cao-hoat-dong-drd.html#noidungnoidung">Báo cáo hoạt động</a></li>
-                <li><a class="" href="nhan-vien-drd.html#noidungnoidung">Nhân viên DRD</a></li>
+                <li><a onmouseover="PlayGioiThieu.playclip()" class="" href="gioi-thieu-drd.html#noidungnoidung">Giới thiệu</a></li>
+                <li class="menucon"><a onmouseover="PlayLichSuHinhThanh.playclip()" class="" href="drd/lich-su-hinh-thanh.html#noidungnoidung">&raquo;&nbsp;Lịch sử hình thành</a></li>
+                <li class="menucon"><a onmouseover="PlayTamNhin.playclip()" class="" href="drd/tam-nhin.html#noidungnoidung">&raquo;&nbsp;Tầm nhìn</a></li>
+                <li class="menucon"><a onmouseover="PlayGiaTri.playclip()" class="" href="drd/gia-tri.html#noidungnoidung">&raquo;&nbsp;Giá trị</a></li>
+                <li class="menucon"><a onmouseover="PlayMucTieu.playclip()" class="" href="drd/muc-tieu.html#noidungnoidung">&raquo;&nbsp;Mục tiêu</a></li>
+                <li class="menucon"><a onmouseover="PlayThanhTuu.playclip()" class="" href="drd/thanh-tuu.html#noidungnoidung">&raquo;&nbsp;Thành tựu</a></li>
+                <li class="menucon"><a onmouseover="PlaySoDoToChuc.playclip()" class="" href="drd/so-do-to-chuc.html#noidungnoidung">&raquo;&nbsp;Sơ đồ tổ chức - hoạt động</a></li>
+                <li><a onmouseover="PlayAnPhamDaPhat.playclip()" class="" href="tai-lieu/an-pham-do-drd-phat-hanh.html#noidungnoidung">Ấn phẩm đã phát hành</a></li>
+                <li><a onmouseover="PlayBaoCaoHoatDong.playclip()" class="" href="tai-lieu/bao-cao-hoat-dong-drd.html#noidungnoidung">Báo cáo hoạt động</a></li>
+                <li><a onmouseover="PlayNhanVienDRD.playclip()" class="" href="nhan-vien-drd.html#noidungnoidung">Nhân viên DRD</a></li>
 
-                <li class="menucon"><a class="" href="nhan-vien/nhan-vien.html#noidungnoidung">&raquo;&nbsp;Nhân viên</a></li>
-                <li class="menucon"><a class="" href="nhan-vien/cuu-nhan-vien.html#noidungnoidung">&raquo;&nbsp;Cựu nhân viên</a></li>
+                <li class="menucon"><a onmouseover="PlayNhanVien.playclip()" class="" href="nhan-vien/nhan-vien.html#noidungnoidung">&raquo;&nbsp;Nhân viên</a></li>
+                <li class="menucon"><a onmouseover="PlayCuuNhanVien.playclip()" class="" href="nhan-vien/cuu-nhan-vien.html#noidungnoidung">&raquo;&nbsp;Cựu nhân viên</a></li>
 
-                <li><a class="" href="drd/lien-he.html#noidungnoidung">Liên hệ</a></li>
+                <li><a onmouseover="PlayLienHe.playclip()" class="" href="drd/lien-he.html#noidungnoidung">Liên hệ</a></li>
                 <li class="gotop"><a href="drd.html#gotop" class="font14">Lên trên</a></li>
             </ul>
         </nav>
-        <p class="mntop" id="noidungnoidung"><span>Nội dung</span> <span class="font16">( Phím tắt  <u>9</u> )</span></p>
+        <p onmouseover="PlayNoiDung.playclip()" class="mntop" id="noidungnoidung"><span>Nội dung</span> <span class="font16">( Phím tắt  <u>9</u> )</span></p>
         <section>
             <div id="ndtrangchon">
                 <section>

@@ -1,245 +1,254 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <base/>
+    <base />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HCI-Hỗ trợ người khuyết tật</title>
     <link rel="stylesheet" href="../css/style.css">
-<!--[if lt IE 9]>
-    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
-    <link href="http://www.drdvietnam.org/images/favico.ico" rel="shortcut icon" type="image/x-icon" />
-    <script src="../js/jquery-1.8.1.min.js"></script>
-    <link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
-    <script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
-    <script type="text/javascript" src="../js/greyscale.js"></script>
-    <script type="text/javascript" src="../js/expancer.js"></script>
-    <script type="text/javascript" src="../js/mousetrap.min.js"></script>
-    <script type="text/javascript" src="../js/audio.js"></script>
-<!--
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+        <link href="../images/favico.ico" rel="shortcut icon" type="image/x-icon" />
+        <script src="../js/jquery-1.8.1.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
+        <script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
+        <script type="text/javascript" src="../js/greyscale.js"></script>
+        <script type="text/javascript" src="../js/expancer.js"></script>
+        <script type="text/javascript" src="../js/mousetrap.min.js"></script>
+        <script type="text/javascript" src="../js/audio.js"></script>
+    <!--
 <script type="text/javascript" src="http://www.trungtamtinhoc.edu.vn/api/snowstorm.js"></script>
 <script type="text/javascript" src="js/hoa-mai-roi.js"></script>
 -->
 <script>
- $(document).ready(function(){
-                //Examples of how to assign the ColorBox event to elements
-                if ($(window).width() > 700) {
-                    $(".inlinee").colorbox({inline:true, width:"30%", height:"20%"});
+    $(document).ready(function () {
+            //Examples of how to assign the ColorBox event to elements
+            if ($(window).width() > 700) {
+                $(".inlinee").colorbox({ inline: true, width: "30%", height: "20%" });
+            }
+            else {
+                if ($(window).width() < 700 && $(window).width() > 500) {
+                    $(".inlinee").colorbox({ inline: true, width: "400px", height: "20%" });
                 }
                 else {
-                    if($(window).width()<700 && $(window).width()>500) {
-                        $(".inlinee").colorbox({inline:true, width:"400px", height:"20%"});
-                    }
-                    else {
-                        $(".inlinee").colorbox({inline:true, width:"220px", height:"20%"});
-                    }
+                    $(".inlinee").colorbox({ inline: true, width: "220px", height: "20%" });
                 }
-                
+            }
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            //ID, class and tag element that font size is adjustable in this array
+            //Put in html or body if you want the font of the entire page adjustable
+            var section = new Array('div.fontset', '.section2');
+            section = section.join(',');
+            // Reset Font Size
+            var originalFontSize = $(section).css('font-size');
+            $(".resetFont").click(function () {
+                $(section).css('font-size', originalFontSize);
             });
-        </script>
-        <script>
-            $(document).ready(function(){
-//ID, class and tag element that font size is adjustable in this array
-//Put in html or body if you want the font of the entire page adjustable
-var section = new Array('div.fontset','.section2');
-section = section.join(',');
-// Reset Font Size
-var originalFontSize = $(section).css('font-size');
-$(".resetFont").click(function(){
-    $(section).css('font-size', originalFontSize);
-});
-// Increase Font Size
-$(".increaseFont").click(function(){
-    var currentFontSize = $(section).css('font-size');
-    var currentFontSizeNum = parseFloat(currentFontSize, 10);
-    var newFontSize = currentFontSizeNum*1.2;
-    $(section).css('font-size', newFontSize);
-    return false;
-});
-// Decrease Font Size
-$(".decreaseFont").click(function(){
-    var currentFontSize = $(section).css('font-size');
-    var currentFontSizeNum = parseFloat(currentFontSize, 10);
-    var newFontSize = currentFontSizeNum*0.8;
-    $(section).css('font-size', newFontSize);
-    return false;
-});
-    // nhan 1 phim
-    // phim tat header 
-    Mousetrap.bind('alt+0', function() {window.location.assign("http://www.drdvietnam.org/highvisibility");}, 'keyup');
-    Mousetrap.bind('alt+1', function() {window.location.assign("http://www.drdvietnam.org/language.php?set=en");}, 'keyup');
-    Mousetrap.bind('alt+w', function() {
-      var currentFontSize = $(section).css('font-size');
-      var currentFontSizeNum = parseFloat(currentFontSize, 10);
-      var newFontSize = currentFontSizeNum*1.2;
-      $(section).css('font-size', newFontSize);
-      return false;
-  });
-    Mousetrap.bind('alt+r', function() {
-      $(section).css('font-size', originalFontSize);
-  });
-    Mousetrap.bind('alt+e', function() {
-      var currentFontSize = $(section).css('font-size');
-      var currentFontSizeNum = parseFloat(currentFontSize, 10);
-      var newFontSize = currentFontSizeNum*0.8;
-      $(section).css('font-size', newFontSize);
-      return false;
-  });
-    Mousetrap.bind('alt+q', function() {window.location.assign("danh-sach-ung-ho.html#noidungnoidung");}, 'keyup');
-    Mousetrap.bind('alt+i', function() {window.location.assign("dang-nhap.html#noidungnoidung");}, 'keyup');
-    Mousetrap.bind('alt+u', function() {window.location.assign("dang-ky.html#noidungnoidung");}, 'keyup');
-    
-    Mousetrap.bind('alt+a', function() {window.location.assign("index.html#noidungnoidung");}, 'keyup');
-    Mousetrap.bind('alt+j', function() {window.location.assign("drd.html#noidungnoidung");}, 'keyup');
-    Mousetrap.bind('alt+l', function() {window.location.assign("linh-vuc-hoat-dong.html#noidungnoidung");}, 'keyup');
-    Mousetrap.bind('alt+c', function() {window.location.assign("hoi-quan.html#noidungnoidung");}, 'keyup');
-    Mousetrap.bind('alt+n', function() {window.location.assign("thu-vien-thong-tin.html#noidungnoidung");}, 'keyup');
-    Mousetrap.bind('alt+m', function() {window.location.assign("video.html#noidungnoidung");}, 'keyup');
-    Mousetrap.bind('alt+p', function() {window.location.assign("chinh-sach-phap-luat.html#noidungnoidung");}, 'keyup');
-    Mousetrap.bind('alt+y', function() {window.location.assign("dien-dan.html#noidungnoidung");}, 'keyup');
-    
-    Mousetrap.bind('6', function() {window.location.assign("index.html#menutoptop");}, 'keyup');
-    Mousetrap.bind('7', function() {window.location.assign("index.html#menumainmain");}, 'keyup');
-    Mousetrap.bind('8', function() {window.location.assign("index.html#gotop");}, 'keyup');
-    Mousetrap.bind('9', function() {window.location.assign("index.html#noidungnoidung");}, 'keyup');
-    //Mousetrap.bind('alt+9', function() {$('html, body').animate({scrollTop: $("#noidungnoidung").offset().top}, 2000);}, 'keyup');
-    //Mousetrap.bind('alt+9', function() {$(document).scrollTo('#noidungnoidung');}, 'keyup');
-});
-</script>    
-<script type="text/javascript">
-    function setLocation(ev){
-        window.location.assign(ev);
-    }
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+            // Increase Font Size
+            $(".increaseFont").click(function () {
+                var currentFontSize = $(section).css('font-size');
+                var currentFontSizeNum = parseFloat(currentFontSize, 10);
+                var newFontSize = currentFontSizeNum * 1.2;
+                $(section).css('font-size', newFontSize);
+                return false;
+            });
+            // Decrease Font Size
+            $(".decreaseFont").click(function () {
+                var currentFontSize = $(section).css('font-size');
+                var currentFontSizeNum = parseFloat(currentFontSize, 10);
+                var newFontSize = currentFontSizeNum * 0.8;
+                $(section).css('font-size', newFontSize);
+                return false;
+            });
+            // nhan 1 phim
+            // phim tat header 
+            // Mousetrap.bind('alt+0', function() {window.location.assign("http://www.drdvietnam.org/highvisibility");}, 'keyup');
+            // Mousetrap.bind('alt+1', function() {window.location.assign("http://www.drdvietnam.org/language.php?set=en");}, 'keyup');
+            Mousetrap.bind('alt+w', function () {
+                var currentFontSize = $(section).css('font-size');
+                var currentFontSizeNum = parseFloat(currentFontSize, 10);
+                var newFontSize = currentFontSizeNum * 1.2;
+                $(section).css('font-size', newFontSize);
+                return false;
+            });
+            Mousetrap.bind('alt+r', function () {
+                $(section).css('font-size', originalFontSize);
+            });
+            Mousetrap.bind('alt+e', function () {
+                var currentFontSize = $(section).css('font-size');
+                var currentFontSizeNum = parseFloat(currentFontSize, 10);
+                var newFontSize = currentFontSizeNum * 0.8;
+                $(section).css('font-size', newFontSize);
+                return false;
+            });
+            Mousetrap.bind('alt+q', function () { window.location.assign("danh-sach-ung-ho.html#noidungnoidung"); }, 'keyup');
+            Mousetrap.bind('alt+i', function () { window.location.assign("dang-nhap.html#noidungnoidung"); }, 'keyup');
+            Mousetrap.bind('alt+u', function () { window.location.assign("dang-ky.html#noidungnoidung"); }, 'keyup');
 
-  ga('create', 'UA-50073537-1', 'drdvietnam.org');
-  ga('send', 'pageview');
+            Mousetrap.bind('alt+a', function () { window.location.assign("index.html#noidungnoidung"); }, 'keyup');
+            Mousetrap.bind('alt+j', function () { window.location.assign("drd.html#noidungnoidung"); }, 'keyup');
+            Mousetrap.bind('alt+l', function () { window.location.assign("linh-vuc-hoat-dong.html#noidungnoidung"); }, 'keyup');
+            Mousetrap.bind('alt+c', function () { window.location.assign("hoi-quan.html#noidungnoidung"); }, 'keyup');
+            Mousetrap.bind('alt+n', function () { window.location.assign("thu-vien-thong-tin.html#noidungnoidung"); }, 'keyup');
+            Mousetrap.bind('alt+m', function () { window.location.assign("video.html#noidungnoidung"); }, 'keyup');
+            Mousetrap.bind('alt+p', function () { window.location.assign("chinh-sach-phap-luat.html#noidungnoidung"); }, 'keyup');
+            Mousetrap.bind('alt+y', function () { window.location.assign("dien-dan.html#noidungnoidung"); }, 'keyup');
 
-</script>
+            Mousetrap.bind('6', function () { window.location.assign("index.html#menutoptop"); }, 'keyup');
+            Mousetrap.bind('7', function () { window.location.assign("index.html#menumainmain"); }, 'keyup');
+            Mousetrap.bind('8', function () { window.location.assign("index.html#gotop"); }, 'keyup');
+            Mousetrap.bind('9', function () { window.location.assign("index.html#noidungnoidung"); }, 'keyup');
+            //Mousetrap.bind('alt+9', function() {$('html, body').animate({scrollTop: $("#noidungnoidung").offset().top}, 2000);}, 'keyup');
+            //Mousetrap.bind('alt+9', function() {$(document).scrollTo('#noidungnoidung');}, 'keyup');
+        });
+    </script>
+    <script type="text/javascript">
+        function setLocation(ev) {
+            window.location.assign(ev);
+        }
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../js/analytics.js', 'ga');
+
+        ga('create', 'UA-50073537-1', 'drdvietnam.org');
+        ga('send', 'pageview');
+
+    </script>
 </head>
 <body class="normal" style="overflow-x: hidden;">
     <script>
-      (function() {
-        var cx = '004167217340609662241:rz4rgq9n_-m';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//www.google.com/cse/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-    })();
-</script><div id="gotop"></div>
-<div class="fontset">
-    <section>
-       <div id="giaodientiepcan" class="normal">
-           <header>
-               <div id="tcheader">
-                <p class="gdtc"><a href="http://localhost:8080/WebKhiemThinh/accessibility/index.html">Giao diện chuẩn</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
-                <!-- <p class="gdtp"><a href="http://www.drdvietnam.org/highvisibility/" title="Giao diện này phù hợp với người khuyết tật về mắt">Tương phản cao</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p> -->
-                <!-- <p class="gdtc"><a href="http://www.drdvietnam.org/nightmode/" title="Chế độ này phù hợp với máy tính bảng và các thiết bị cầm tay vì tiết kiệm pin và các đoạn văn được hiển thị với phông nền tối, chữ sáng">Chế độ ban đêm</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p> -->
-                <p class="resize"><a class='increaseFont' style='cursor: pointer; cursor: hand;' title=''>Tăng kích cỡ chữ </a><span class="font12">(Phím tắt  alt+w)</span><span class="cach"></span>
-                    <a class='resetFont' style='cursor: pointer; cursor: hand;'>Đặt lại cỡ chữ chuẩn </a><span class="font12">(Phím tắt  alt+r)</span><span class="cach"></span>
-                    <a class='decreaseFont' style='cursor: pointer; cursor: hand;' title=''>Giảm kích cỡ chữ </a><span class="font12">(Phím tắt  alt+e)</span><span class="cach"></span></p>
-                    <p><a href="huong-dan-su-dung.html#noidungnoidung">Hướng dẫn truy cập</a></p>
-                    <p class="dsuh"><a href="danh-sach-ung-ho.html#noidungnoidung"><span>Danh sách ủng hộ</span></a> <span class="font12">(Phím tắt  alt+q)</span><span class="cach"></span></p>
-                    
-                    <p class="ngonngu"><a href="http://www.drdvietnam.org/language.php?set=vn" title="">Tiếng Việt </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span>
-                        <a href="http://www.drdvietnam.org/language.php?set=en" title="">English </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span></p>
-                        <p class="slr"><a href="tim-kiem.html#noidungnoidung">Tìm kiếm</a><span class="cach"></span></p>
+        (function () {
+            var cx = '004167217340609662241:rz4rgq9n_-m';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+    <div id="gotop"></div>
+    <div class="fontset">
+        <section>
+            <div id="giaodientiepcan" class="normal">
+                <header>
+                    <div id="tcheader">
+                        <p class="gdtc"><a onmouseover="PlayGiaoDienChuan.playclip()" href="http://localhost:8080/WebKhiemThinh/accessibility/index.html">Giao diện chuẩn</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
+                        <!-- <p class="gdtp"><a href="http://www.drdvietnam.org/highvisibility/" title="Giao diện này phù hợp với người khuyết tật về mắt">Tương phản cao</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p> -->
+                        <!-- <p class="gdtc"><a href="http://www.drdvietnam.org/nightmode/" title="Chế độ này phù hợp với máy tính bảng và các thiết bị cầm tay vì tiết kiệm pin và các đoạn văn được hiển thị với phông nền tối, chữ sáng">Chế độ ban đêm</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p> -->
+                        <p class="resize">
+                            <a onmouseover="PlayTangKichCoChu.playclip()" class='increaseFont' style='cursor: pointer; cursor: hand;' title=''>Tăng kích cỡ chữ </a><span class="font12">(Phím tắt  alt+w)</span><span class="cach"></span>
+                            <a onmouseover="PlayDatLaiCoChu.playclip()" class='resetFont' style='cursor: pointer; cursor: hand;'>Đặt lại cỡ chữ chuẩn </a><span class="font12">(Phím tắt  alt+r)</span><span class="cach"></span>
+                            <a onmouseover="PlayGiamKichCoChu.playclip()" class='decreaseFont' style='cursor: pointer; cursor: hand;' title=''>Giảm kích cỡ chữ </a><span class="font12">(Phím tắt  alt+e)</span><span class="cach"></span>
+                        </p>
+                        <p><a onmouseover="PlayHuongDanTruyCap.playclip()" href="huong-dan-su-dung.html#noidungnoidung">Hướng dẫn truy cập</a></p>
+                        <p class="dsuh"><a onmouseover="PlayDanhSachUngHo.playclip()" href="danh-sach-ung-ho.html#noidungnoidung"><span>Danh sách ủng hộ</span></a> <span class="font12">(Phím tắt  alt+q)</span><span class="cach"></span></p>
+
+                        <p class="ngonngu">
+                            <a onmouseover="PlayTiengViet.playclip()" href="http://www.drdvietnam.org/language.php?set=vn" title="">Tiếng Việt </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span>
+                            <a onmouseover="PlayEnglish.playclip()" href="http://www.drdvietnam.org/language.php?set=en" title="">English </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span>
+                        </p>
+                        <p class="slr"><a onmouseover="PlayTimKiem.playclip()" href="tim-kiem.html#noidungnoidung">Tìm kiếm</a><span class="cach"></span></p>
                         <p class="slr"><a href="tim-kiem-theo-tu-khoa.html#noidungnoidung">Tìm theo từ khóa</a><span class="cach"></span></p>
-                        
-                        <p class="slr"><a href="dang-nhap.html#noidungnoidung" title="Phím tắt  alt+i">Đăng nhập</a><span class="cach"></span></p>
-                        <p class="slr"><a href="dang-ky.html#noidungnoidung" title="Phím tắt  alt+u">Đăng ký</a></p>
+
+                        <p class="slr"><a onmouseover="PlayDangNhap.playclip()" href="dang-nhap.html#noidungnoidung" title="Phím tắt  alt+i">Đăng nhập</a><span class="cach"></span></p>
+                        <p class="slr"><a onmouseover="PlayDangKy.playclip()" href="dang-ky.html#noidungnoidung" title="Phím tắt  alt+u">Đăng ký</a></p>
                     </div>
-                    <section><p class="vitrihientai">Bạn đang ở: Trang chủ</p></section>
+                    <section>
+                        <p class="vitrihientai">Bạn đang ở: Trang chủ</p>
+                    </section>
                 </header>
                 <p onmouseover="PlayMenuTop.playclip()" class="mntop" id="menutoptop"><span>Menu top</span> <span class="font16">( Phím tắt  <u>6</u> )</span></p>
                 <nav class="menutopp">
-                   <ul>
-                    <li>
-                        <a onmouseover="PlayTrangChu.playclip()" class="dangxem" href="index.html#noidungnoidung">Trang chủ</a> <span class="padl5">(Phím tắt  <u>alt+a</u>)</span>
-                    </li>
-                    <li>
-                        <a onmouseover="PlayGioiThieu.playclip()" class="" href="drd.html#noidungnoidung">Giới thiệu</a> <span class="padl5">(Phím tắt  <u>alt+j</u>)</span>
-                    </li>
-                    <li><a class="" href="linh-vuc-hoat-dong.html#noidungnoidung">Lĩnh vực hoạt động</a> <span class="padl5">(Phím tắt  <u>alt+l</u>)</span></li>
-                    <li><a class="" href="hoi-quan.html#noidungnoidung">Hội quán Đời Rất Đẹp</a> <span class="padl5">(Phím tắt  <u>alt+c</u>)</span></li>
-                    <li><a class="" href="thu-vien-thong-tin.html#noidungnoidung">Tin tức</a> <span class="padl5">(Phím tắt  <u>alt+n</u>)</span></li>
-                    <li><a class="" href="video.html#noidungnoidung">Thư viện</a> <span class="padl5">(Phím tắt  <u>alt+m</u>)</span></li>
-                    <li><a class="" href="chinh-sach-phap-luat.html#noidungnoidung">Chính sách và pháp luật</a> <span class="padl5">(Phím tắt  <u>alt+p</u>)</span></li>
-                    <li><a class="" href="dien-dan.html#noidungnoidung">Diễn đàn</a> <span class="padl5">(Phím tắt  <u>alt+y</u>)</span></li>
-                    <li class="gotop"><a href="index.html#gotop" class="font14">Lên trên</a></li>
-                </ul>
-            </nav>
-            <!--<div style="display:none;">
+                    <ul>
+                        <li><a onmouseover="PlayTrangChu.playclip()" class="dangxem" href="index.html#noidungnoidung">Trang chủ</a> <span class="padl5">(Phím tắt  <u>alt+a</u>)</span></li>
+                        <li><a onmouseover="PlayGioiThieu.playclip()" class="" href="drd.html#noidungnoidung">Giới thiệu</a> <span class="padl5">(Phím tắt  <u>alt+j</u>)</span></li>
+                        <li><a onmouseover="PlayLinhVucHoatDong.playclip()" class="" href="linh-vuc-hoat-dong.html#noidungnoidung">Lĩnh vực hoạt động</a> <span class="padl5">(Phím tắt  <u>alt+l</u>)</span></li>
+                        <li><a onmouseover="PlayHoiQuanDoiRat.playclip()" class="" href="hoi-quan.html#noidungnoidung">Hội quán Đời Rất Đẹp</a> <span class="padl5">(Phím tắt  <u>alt+c</u>)</span></li>
+                        <li><a onmouseover="PlayTinTuc.playclip()" class="" href="thu-vien-thong-tin.html#noidungnoidung">Tin tức</a> <span class="padl5">(Phím tắt  <u>alt+n</u>)</span></li>
+                        <li><a onmouseover="PlayThuVien.playclip()" class="" href="video.html#noidungnoidung">Thư viện</a> <span class="padl5">(Phím tắt  <u>alt+m</u>)</span></li>
+                        <li><a onmouseover="PlayChinhSachPhapLuat.playclip()" class="" href="chinh-sach-phap-luat.html#noidungnoidung">Chính sách và pháp luật</a> <span class="padl5">(Phím tắt  <u>alt+p</u>)</span></li>
+                        <li><a onmouseover="PlayDienDan.playclip()" class="" href="dien-dan.html#noidungnoidung">Diễn đàn</a> <span class="padl5">(Phím tắt  <u>alt+y</u>)</span></li>
+                        <li class="gotop"><a href="index.html#gotop" class="font14">Lên trên</a></li>
+                    </ul>
+                </nav>
+                <!--<div style="display:none;">
                             <div id="searchgoogle" class="searchgo"><gcse:searchbox></gcse:searchbox>
 <div style="visibility:hidden"><gcse:searchresults refinementStyle="link"></gcse:searchresults></div>
                         </div>
-                    </div>--><link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
-                    <script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script>
-                    <script>
+                    </div>-->
+
+                    <!-- Đóng code Manh 24/10/17 -->
+
+                <!-- <link type="text/css" rel="stylesheet" href="../admin/css/colorbox.css" media="screen" />
+                    <script type="text/javascript" src="../admin/js/jquery.colorbox.js"></script> -->
+                <!-- <script>
                      $(document).ready(function(){
                 //Examples of how to assign the ColorBox event to elements
                 $(".inlineee").colorbox({inline:true, Maxwidth:"50%", Maxheight:"90%"});
-                
             });
-        </script>
-        <p class="mntop" id="menumainmain"><span>Menu Chính</span> <span class="font16">( Phím tắt  <u>7</u> )</span></p>
+        </script> -->
+        <p onmouseover="PlayMenuChinh.playclip()" class="mntop" id="menumainmain"><span>Menu Chính</span> <span class="font16">( Phím tắt  <u>7</u> )</span></p>
         <nav class="menutopp">
-           <ul>
-               <li class="gotop"><a href="index.html#gotop" class="font14">Lên trên</a></li>
-           </ul>
-       </nav>
-       <p class="mntop" id="noidungnoidung"><span>Nội dung</span> <span class="font16">( Phím tắt  <u>9</u> )</span></p>
-       <section>
-        <!-- start noidung -->
-        <div class="contenttiepcan">
-           <p class="tdmuc">Lĩnh vực hoạt động</p>
-           <p class="tungttt"><a href="hoc-bong-nguoi-ban-dong-hanh-tin-hoat-dong/18175-sau-khi-ve-nha-toi-nhu-duoc-tay-nao.html#noidungnoidung">Sau khi về nhà, tôi như được tẩy não</a></p>                   
-           <p class="tungttt"><a href="tin-tuyen-dung/18172-cong-ty-nms-tuyen-nhan-vien-cham-soc-khach-hang-mang-di-dong-vietnamobile.html#noidungnoidung">Công ty NMS tuyển nhân viên chăm sóc khách hàng mạng di động Vietnamobile</a></p>                    
-           <p class="tungttt"><a href="viec-lam-tin-hoat-dong/18171-drd-chia-se-kinh-nghiem-lam-viec-voi-nguoi-khuyet-tat-tai-cong-ty-dicentral.html#noidungnoidung">DRD chia sẻ kinh nghiệm làm việc với người khuyết tật tại công ty DIcentral</a></p>                    
-           <p class="tungttt"><a href="hoc-bong-nguoi-ban-dong-hanh-tin-hoat-dong/18169-hop-nhom-hoc-bong--thao-luan-ve-chuong-trinh-giao-luu-sinh-vien-khuyet-tat.html#noidungnoidung">Họp nhóm học bổng: Thảo luận về chương trình giao lưu sinh viên khuyết tật</a></p>                  
-           <p class="tungttt"><a href="tin-tuyen-dung/18167-tuyen-dung-vi-tri-tro-ly-giam-doc.html#noidungnoidung">Tuyển dụng vị trí Trợ lý Giám đốc</a></p>                    
-           <p class="tdmuc">Hội quán Đời Rất Đẹp</p>
-           <p class="tungttt"><a href="hoat-dong-khac/18096-chuyen-de--%e2%80%9cban-hieu-gi-ve-ung-thu-vu%e2%80%9d.html#noidungnoidung">Chuyên đề: “Bạn hiểu gì về ung thứ vú?”</a></p>             
-           <p class="tungttt"><a href="hoat-dong-khac/18072-dai-dien-drd-tham-gia-khoa-tap-huan-quan-ly-du-an-dua-vao-ket-qua.html#noidungnoidung">Đại diện DRD tham gia khóa tập huấn quản lý dự án dựa vào kết quả</a></p>                
-           <p class="tungttt"><a href="hoat-dong-khac/18051-thong-bao-%e2%80%9ctrao-tang-xe-lan-cho-tre-em-khuyet-tat-thuoc-khu-vuc-tphcm%e2%80%9d.html#noidungnoidung">Thông báo “trao tặng xe lăn cho trẻ em khuyết tật thuộc khu vực Tp.HCM”</a></p>             
-           <p class="tungttt"><a href="hoat-dong-khac/18018-drd-tham-gia-hoi-cho-cong-dong.html#noidungnoidung">DRD tham gia hội chợ cộng đồng</a></p>              
-           <p class="tungttt"><a href="hoat-dong-khac/18013-phat-dong-lien-hoan-ve-dep-vang-trang-khuyet-nam-2017.html#noidungnoidung">Phát động Liên hoan "Vẻ đẹp Vầng Trăng Khuyết" năm 2017</a></p>              
-           <p class="tdmuc">Tin tức</p>
-           <p class="tungttt"><a href="tin-bon-phuong/18186-chuong-trinh-truyen-hinh-thuc-te-cua-bbc-ghi-hinh-o-vn.html#noidungnoidung">Chương trình truyền hình thực tế của BBC ghi hình ở VN</a></p>
-           <p class="tungttt"><a href="guong-dien-hinh/18185-8-tieng-nam-lanh-leo-trong-nha-xac-va-tieng-khoc-thay-doi-cuoc-doi-co-gai-quang-tri.html#noidungnoidung">8 tiếng nằm lạnh lẽo trong nhà xác và tiếng khóc thay đổi cuộc đời cô gái Quảng Trị</a></p>
-           <p class="tungttt"><a href="tin-bon-phuong/18179-ban-tin-hoat-dong-drd-thang-09-nam-2017.html#noidungnoidung">Bản tin hoạt động DRD tháng 09 năm 2017</a></p>
-           <p class="tungttt"><a href="tin-hoat-dong/18175-sau-khi-ve-nha-toi-nhu-duoc-tay-nao.html#noidungnoidung">Sau khi về nhà, tôi như được tẩy não</a></p>
-           <p class="tungttt"><a href="tin-bon-phuong/18174-du-lich-%e2%80%9cbo-roi%e2%80%9d-nguoi-khuyet-tat.html#noidungnoidung">Du lịch “bỏ rơi” người khuyết tật?</a></p>
-           <p class="tdmuc">Thư viện</p>
-           <p class="tungttt"><a href="tai-lieu/ky-nang-tim-viec/758-de-duoc-nha-tuyen-dung-chu-y.html#noidungnoidung">Để được nhà tuyển dụng chú ý </a></p>                
-           <p class="tungttt"><a href="tai-lieu/ky-nang-tim-viec/757-meo-tao-cv-thu-hut-nha-tuyen-dung.html#noidungnoidung">Mẹo tạo CV thu hút nhà tuyển dụng </a></p>              
-           <p class="tungttt"><a href="tai-lieu/ky-nang-tim-viec/756-chuan-bi-gi-cho-cuoc-phong-van.html#noidungnoidung">Chuẩn bị gì cho cuộc phỏng vấn? </a></p>               
-           <p class="tungttt"><a href="tai-lieu/ky-nang-tim-viec/755-meo-tranh-%e2%80%9cam-u%e2%80%9d-trong-khi-phong-van.html#noidungnoidung">Mẹo tránh “ậm ừ” trong khi phỏng vấn </a></p>                
-           <p class="tungttt"><a href="tai-lieu/ky-nang-tim-viec/754-5-buoc-de-co-luong-cao.html#noidungnoidung">5 bước để có lương cao </a></p>                
-           <p class="tdmuc">Chính sách và pháp luật</p>
-           <p class="tungttt"><a href="van-ban-luat-cac-linh-vuc-khac/18038-phap-lenh-26-2005-uu-dai-nguoi-co-cong-voi-cach-mang.html#noidungnoidung">Pháp lệnh 26/2005 Ưu đãi người có công với cách mạng</a></p>
-           <p class="tungttt"><a href="van-ban-luat-cac-linh-vuc-khac/18037-phap-lenh-04-2012-sua-doi-bo-sung-mot-so-dieu-phap-lenh-uu-dai-nguoi-co-cong-cach-mang.html#noidungnoidung">Pháp lệnh 04/2012 Sửa đổi, bổ sung một số điều Pháp lệnh Ưu đãi Người có công cách mạng</a></p>
-           <p class="tungttt"><a href="van-ban-luat-cac-linh-vuc-khac/18036-nghi-dinh-85-2016-ndcp-quy-dinh-ve-co-che-quan-ly-hoc-phi-doi-voi--co-so-giao-duc-quoc-dan-va-chinh-sach-mien-giam-hoc-phi-ho-tro-chi-phi-ho#noidungnoidung">Nghị định 85/2016/NĐ-CP Quy định về cơ chế, quản lý học phí đối với  cơ sở giáo dục quốc dân và chính sách miễn giảm học phí hỗ trợ chi phí học tập từ 2015-2016 đến năm học 2020-2021</a></p>
-           <p class="tungttt"><a href="van-ban-luat-cac-linh-vuc-khac/18035-thong-tu-34-2011-ttbldtbxh-bo-sung-diem-c-khoan-2-muc-ii--thong-tu-so-27-2007-ttbldtbxh-ngay-30-11-2007.html#noidungnoidung">Thông tư 34/2011/TT-BLĐTBXH Bổ sung Điểm c khoản 2 mục II  thông tư số 27/2007/TT-BLĐTBXH ngày 30/11/2007 </a></p>
-           <p class="tungttt"><a href="van-ban-luat-cac-linh-vuc-khac/18034-thong-tu-27-2007-ttbldtbxh-huong-dan-quy-trinh-thu-tuc-vay-von-theo--quyet-dinh-157-2007-qdttg-ve-tin-dung-doi-voi-hoc-sinh-sinh-vien.2e.del#noidungnoidung">Thông tư 27/2007/TT-BLĐTBXH Hướng dẫn quy trình thủ tục vay vốn theo  Quyết định 157/2007/QĐ-TTg Về tín đụng đối với học sinh sinh viên</a></p>
-           <p class="tdmuc">Diễn đàn</p>
-           <p class="tungttt"><a href="chu-de-khac/17677-tong-thong-obama-/bat-mi/-con-duong-tro-thanh-lanh-dao-my-voi-ban-tre-viet.html#noidungnoidung">Tổng thống Obama "bật mí" con đường trở thành lãnh đạo Mỹ với bạn trẻ Việt</a></p>
-           <p class="tungttt"><a href="chu-de-khac/16962-nen-cap-bang-lai-xe-so-tu-dong-cho-nguoi-khuyet-tat-viet-nam.html#noidungnoidung">Nên cấp bằng lái xe số tự động cho người khuyết tật Việt Nam</a></p>
-           <p class="tungttt"><a href="chu-de-khac/16699-tinh-yeu-tan-v%e1%bb%a1-boi-la-nguoi-khuyet-tat.html#noidungnoidung">Tình yêu tan vỡ bởi là người khuyết tật</a></p>
-           <p class="tungttt"><a href="chu-de-khac/16679-nguoi-khuyet-tat-lai-o-to.html#noidungnoidung">Người khuyết tật lái ô tô</a></p>
-           <p class="tungttt"><a href="chu-de-khac/16408-do-hoa-xay-dung.html#noidungnoidung">Đồ Họa Xây Dựng</a></p>
-       </div>
-       <!-- end noidung -->
-   </section><section>
-<!--    <footer>
+            <ul>
+                <li class="gotop"><a href="index.html#gotop" class="font14">Lên trên</a></li>
+            </ul>
+        </nav>
+        <p onmouseover="PlayNoiDung.playclip()" class="mntop" id="noidungnoidung"><span>Nội dung</span> <span class="font16">( Phím tắt  <u>9</u> )</span></p>
+        <section>
+            <!-- start noidung -->
+            <div class="contenttiepcan">
+                <p  onmouseover="PlayLinhVucHoatDong.playclip()" class="tdmuc">Lĩnh vực hoạt động</p>
+                <p class="tungttt"><a onmouseover="PlaySauKhiVeNha.playclip()" href="hoc-bong-nguoi-ban-dong-hanh-tin-hoat-dong/18175-sau-khi-ve-nha-toi-nhu-duoc-tay-nao.html#noidungnoidung">Sau khi về nhà, tôi như được tẩy não</a></p>
+                <p class="tungttt"><a onmouseover="PlayCongTyNMSTuyen.playclip()" href="tin-tuyen-dung/18172-cong-ty-nms-tuyen-nhan-vien-cham-soc-khach-hang-mang-di-dong-vietnamobile.html#noidungnoidung">Công ty NMS tuyển nhân viên chăm sóc khách hàng mạng di động Vietnamobile</a></p>
+                <p class="tungttt"><a onmouseover="PlayDRDChiaSeKinh.playclip()" href="viec-lam-tin-hoat-dong/18171-drd-chia-se-kinh-nghiem-lam-viec-voi-nguoi-khuyet-tat-tai-cong-ty-dicentral.html#noidungnoidung">DRD chia sẻ kinh nghiệm làm việc với người khuyết tật tại công ty DIcentral</a></p>
+                <p class="tungttt"><a onmouseover="PlayHopNhomHocBong.playclip()" href="hoc-bong-nguoi-ban-dong-hanh-tin-hoat-dong/18169-hop-nhom-hoc-bong--thao-luan-ve-chuong-trinh-giao-luu-sinh-vien-khuyet-tat.html#noidungnoidung">Họp nhóm học bổng: Thảo luận về chương trình giao lưu sinh viên khuyết tật</a></p>
+                <p class="tungttt"><a onmouseover="PlayTuyenDungViTri.playclip()" href="tin-tuyen-dung/18167-tuyen-dung-vi-tri-tro-ly-giam-doc.html#noidungnoidung">Tuyển dụng vị trí Trợ lý Giám đốc</a></p>
+                <p onmouseover="PlayHoiQuanDoiRat.playclip()" class="tdmuc">Hội quán Đời Rất Đẹp</p>
+                <p class="tungttt"><a onmouseover="PlayChuyenDeBanHieu.playclip()" href="hoat-dong-khac/18096-chuyen-de--%e2%80%9cban-hieu-gi-ve-ung-thu-vu%e2%80%9d.html#noidungnoidung">Chuyên đề: “Bạn hiểu gì về ung thứ vú?”</a></p>
+                <p class="tungttt"><a onmouseover="PlayDaiDienDRDTham.playclip()" href="hoat-dong-khac/18072-dai-dien-drd-tham-gia-khoa-tap-huan-quan-ly-du-an-dua-vao-ket-qua.html#noidungnoidung">Đại diện DRD tham gia khóa tập huấn quản lý dự án dựa vào kết quả</a></p>
+                <p class="tungttt"><a onmouseover="PlayThongBaoTraoTang.playclip()" href="hoat-dong-khac/18051-thong-bao-%e2%80%9ctrao-tang-xe-lan-cho-tre-em-khuyet-tat-thuoc-khu-vuc-tphcm%e2%80%9d.html#noidungnoidung">Thông báo “trao tặng xe lăn cho trẻ em khuyết tật thuộc khu vực Tp.HCM”</a></p>
+                <p class="tungttt"><a onmouseover="PlayDRDThamGia.playclip()" href="hoat-dong-khac/18018-drd-tham-gia-hoi-cho-cong-dong.html#noidungnoidung">DRD tham gia hội chợ cộng đồng</a></p>
+                <p class="tungttt"><a onmouseover="PlayPhatDongLienHoan.playclip()" href="hoat-dong-khac/18013-phat-dong-lien-hoan-ve-dep-vang-trang-khuyet-nam-2017.html#noidungnoidung">Phát động Liên hoan "Vẻ đẹp Vầng Trăng Khuyết" năm 2017</a></p>
+                <p onmouseover="PlayTinTuc.playclip()" class="tdmuc">Tin tức</p>
+                <p class="tungttt"><a onmouseover="PlayChuongTrinhTruyenHinh.playclip()" href="tin-bon-phuong/18186-chuong-trinh-truyen-hinh-thuc-te-cua-bbc-ghi-hinh-o-vn.html#noidungnoidung">Chương trình truyền hình thực tế của BBC ghi hình ở VN</a></p>
+                <p class="tungttt"><a onmouseover="Play8TiengNamLanh.playclip()" href="guong-dien-hinh/18185-8-tieng-nam-lanh-leo-trong-nha-xac-va-tieng-khoc-thay-doi-cuoc-doi-co-gai-quang-tri.html#noidungnoidung">8 tiếng nằm lạnh lẽo trong nhà xác và tiếng khóc thay đổi cuộc đời cô gái Quảng Trị</a></p>
+                <p class="tungttt"><a onmouseover="PlayBanTinHoatDong.playclip()" href="tin-bon-phuong/18179-ban-tin-hoat-dong-drd-thang-09-nam-2017.html#noidungnoidung">Bản tin hoạt động DRD tháng 09 năm 2017</a></p>
+                <p class="tungttt"><a onmouseover="PlaySauKhiVeNha.playclip()" href="tin-hoat-dong/18175-sau-khi-ve-nha-toi-nhu-duoc-tay-nao.html#noidungnoidung">Sau khi về nhà, tôi như được tẩy não</a></p>
+                <p class="tungttt"><a onmouseover="PlayDuLichBoRoi.playclip()" href="tin-bon-phuong/18174-du-lich-%e2%80%9cbo-roi%e2%80%9d-nguoi-khuyet-tat.html#noidungnoidung">Du lịch “bỏ rơi” người khuyết tật?</a></p>
+                <p onmouseover="PlayThuVien.playclip()" class="tdmuc">Thư viện</p>
+                <p class="tungttt"><a onmouseover="PlayDeDuocNhaTuyen.playclip()" href="tai-lieu/ky-nang-tim-viec/758-de-duoc-nha-tuyen-dung-chu-y.html#noidungnoidung">Để được nhà tuyển dụng chú ý </a></p>
+                <p class="tungttt"><a onmouseover="PlayMeoTaoCVThu.playclip()" href="tai-lieu/ky-nang-tim-viec/757-meo-tao-cv-thu-hut-nha-tuyen-dung.html#noidungnoidung">Mẹo tạo CV thu hút nhà tuyển dụng </a></p>
+                <p class="tungttt"><a onmouseover="PlayChuanBiGiCho.playclip()" href="tai-lieu/ky-nang-tim-viec/756-chuan-bi-gi-cho-cuoc-phong-van.html#noidungnoidung">Chuẩn bị gì cho cuộc phỏng vấn? </a></p>
+                <p class="tungttt"><a onmouseover="PlayMeoTranhAmU.playclip()" href="tai-lieu/ky-nang-tim-viec/755-meo-tranh-%e2%80%9cam-u%e2%80%9d-trong-khi-phong-van.html#noidungnoidung">Mẹo tránh “ậm ừ” trong khi phỏng vấn </a></p>
+                <p class="tungttt"><a onmouseover="Play5BuocDeCo.playclip()" href="tai-lieu/ky-nang-tim-viec/754-5-buoc-de-co-luong-cao.html#noidungnoidung">5 bước để có lương cao </a></p>
+                <p onmouseover="PlayChinhSachPhapLuat.playclip()" class="tdmuc">Chính sách và pháp luật</p>
+                <p class="tungttt"><a onmouseover="PlayPhapLenh26_2005.playclip()" href="van-ban-luat-cac-linh-vuc-khac/18038-phap-lenh-26-2005-uu-dai-nguoi-co-cong-voi-cach-mang.html#noidungnoidung">Pháp lệnh 26/2005 Ưu đãi người có công với cách mạng</a></p>
+                <p class="tungttt"><a onmouseover="PlayPhapLenh4_2012.playclip()" href="van-ban-luat-cac-linh-vuc-khac/18037-phap-lenh-04-2012-sua-doi-bo-sung-mot-so-dieu-phap-lenh-uu-dai-nguoi-co-cong-cach-mang.html#noidungnoidung">Pháp lệnh 04/2012 Sửa đổi, bổ sung một số điều Pháp lệnh Ưu đãi Người có công cách mạng</a></p>
+                <p class="tungttt"><a onmouseover="PlayNghiDinh85_2016.playclip()" href="van-ban-luat-cac-linh-vuc-khac/18036-nghi-dinh-85-2016-ndcp-quy-dinh-ve-co-che-quan-ly-hoc-phi-doi-voi--co-so-giao-duc-quoc-dan-va-chinh-sach-mien-giam-hoc-phi-ho-tro-chi-phi-ho#noidungnoidung">Nghị định 85/2016/NĐ-CP Quy định về cơ chế, quản lý học phí đối với  cơ sở giáo dục quốc dân và chính sách miễn giảm học phí hỗ trợ chi phí học tập từ 2015-2016 đến năm học 2020-2021</a></p>
+                <p class="tungttt"><a onmouseover="PlayThongTu34_2011.playclip()" href="van-ban-luat-cac-linh-vuc-khac/18035-thong-tu-34-2011-ttbldtbxh-bo-sung-diem-c-khoan-2-muc-ii--thong-tu-so-27-2007-ttbldtbxh-ngay-30-11-2007.html#noidungnoidung">Thông tư 34/2011/TT-BLĐTBXH Bổ sung Điểm c khoản 2 mục II  thông tư số 27/2007/TT-BLĐTBXH ngày 30/11/2007 </a></p>
+                <p class="tungttt"><a onmouseover="PlayThongTu27_2007.playclip()" href="van-ban-luat-cac-linh-vuc-khac/18034-thong-tu-27-2007-ttbldtbxh-huong-dan-quy-trinh-thu-tuc-vay-von-theo--quyet-dinh-157-2007-qdttg-ve-tin-dung-doi-voi-hoc-sinh-sinh-vien.2e.del#noidungnoidung">Thông tư 27/2007/TT-BLĐTBXH Hướng dẫn quy trình thủ tục vay vốn theo  Quyết định 157/2007/QĐ-TTg Về tín đụng đối với học sinh sinh viên</a></p>
+                <p onmouseover="PlayDienDan.playclip()" class="tdmuc">Diễn đàn</p>
+                <p class="tungttt"><a onmouseover="PlayTongThongObama.playclip()" href="chu-de-khac/17677-tong-thong-obama-/bat-mi/-con-duong-tro-thanh-lanh-dao-my-voi-ban-tre-viet.html#noidungnoidung">Tổng thống Obama "bật mí" con đường trở thành lãnh đạo Mỹ với bạn trẻ Việt</a></p>
+                <p class="tungttt"><a onmouseover="PlayNenCapBangLai.playclip()" href="chu-de-khac/16962-nen-cap-bang-lai-xe-so-tu-dong-cho-nguoi-khuyet-tat-viet-nam.html#noidungnoidung">Nên cấp bằng lái xe số tự động cho người khuyết tật Việt Nam</a></p>
+                <p class="tungttt"><a onmouseover="PlayTinhYeuTanVo.playclip()" href="chu-de-khac/16699-tinh-yeu-tan-v%e1%bb%a1-boi-la-nguoi-khuyet-tat.html#noidungnoidung">Tình yêu tan vỡ bởi là người khuyết tật</a></p>
+                <p class="tungttt"><a onmouseover="PlayNguoiKhuyetTatLai.playclip()" href="chu-de-khac/16679-nguoi-khuyet-tat-lai-o-to.html#noidungnoidung">Người khuyết tật lái ô tô</a></p>
+                <p class="tungttt"><a onmouseover="PlayDoHoaXayDung.playclip()" href="chu-de-khac/16408-do-hoa-xay-dung.html#noidungnoidung">Đồ Họa Xây Dựng</a></p>
+            </div>
+            <!-- end noidung -->
+        </section>
+        <section>
+                    <!--    <footer>
        <div class="footer">
            <div class="doitac">
              
@@ -286,14 +295,14 @@ $(".decreaseFont").click(function(){
 </div>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/58340a557bb7bf7f521ddde8/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = '../js/default.js';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
     })();
 </script>
 
