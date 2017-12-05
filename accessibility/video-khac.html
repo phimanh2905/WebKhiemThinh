@@ -68,8 +68,7 @@ $(".decreaseFont").click(function(){
 });
 	// nhan 1 phim
 	// phim tat header 
-  Mousetrap.bind('alt+0', function() {window.location.assign("http://www.drdvietnam.org/highvisibility");}, 'keyup');
-  Mousetrap.bind('alt+1', function() {window.location.assign("http://www.drdvietnam.org/language.php?set=en");}, 'keyup');
+  
   Mousetrap.bind('alt+w', function() {
       var currentFontSize = $(section).css('font-size');
       var currentFontSizeNum = parseFloat(currentFontSize, 10);
@@ -142,39 +141,43 @@ $(".decreaseFont").click(function(){
        <div id="giaodientiepcan" class="normal">
            <header>
                <div id="tcheader">
-                <p class="gdtc"><a href="http://www.drdvietnam.org/">Giao diện chuẩn</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
-                <p class="gdtp"><a href="http://www.drdvietnam.org/highvisibility/" title="Giao diện này phù hợp với người khuyết tật về mắt">Tương phản cao</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
-                <p class="gdtc"><a href="http://www.drdvietnam.org/nightmode/" title="Chế độ này phù hợp với máy tính bảng và các thiết bị cầm tay vì tiết kiệm pin và các đoạn văn được hiển thị với phông nền tối, chữ sáng">Chế độ ban đêm</a> <span class="font12">(Phím tắt  <u>alt+0</u>)</span><span class="cach"></span></p>
-                <p class="resize"><a class='increaseFont' style='cursor: pointer; cursor: hand;' title=''>Tăng kích cỡ chữ </a><span class="font12">(Phím tắt  alt+w)</span><span class="cach"></span>
-                    <a class='resetFont' style='cursor: pointer; cursor: hand;'>Đặt lại cỡ chữ chuẩn </a><span class="font12">(Phím tắt  alt+r)</span><span class="cach"></span>
-                    <a class='decreaseFont' style='cursor: pointer; cursor: hand;' title=''>Giảm kích cỡ chữ </a><span class="font12">(Phím tắt  alt+e)</span><span class="cach"></span></p>
-                    <p><a href="huong-dan-su-dung.html#noidungnoidung">Hướng dẫn truy cập</a></p>
-                    <p class="dsuh"><a href="danh-sach-ung-ho.html#noidungnoidung"><span>Danh sách ủng hộ</span></a> <span class="font12">(Phím tắt  alt+q)</span><span class="cach"></span></p>
-                    
-                    <p class="ngonngu"><a href="http://www.drdvietnam.org/language.php?set=vn" title="">Tiếng Việt </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span>
-                        <a href="http://www.drdvietnam.org/language.php?set=en" title="">English </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span></p>
-                        <p class="slr"><a href="tim-kiem.html#noidungnoidung">Tìm kiếm</a><span class="cach"></span></p>
+                        <p class="gdtc"><a onmouseover="PlayGiaoDienChuan.playclip()" >Giao diện chuẩn</a> <span class="font12"></span><span class="cach"></span></p>
+                        <p class="gdtp"><a title="Giao diện này phù hợp với người khuyết tật về mắt">Tương phản cao</a> <span class="font12"></span><span class="cach"></span></p>
+                        <p class="gdtc2"><a title="Chế độ này phù hợp với máy tính bảng và các thiết bị cầm tay vì tiết kiệm pin và các đoạn văn được hiển thị với phông nền tối, chữ sáng">Chế độ ban đêm</a> <span class="font12"></span><span class="cach"></span></p>
+                        <p class="resize">
+                            <a onmouseover="PlayTangKichCoChu.playclip()" class='increaseFont' style='cursor: pointer; cursor: hand;' title=''>Tăng kích cỡ chữ </a><span class="font12">(Phím tắt  alt+w)</span><span class="cach"></span>
+                            <a onmouseover="PlayDatLaiCoChu.playclip()" class='resetFont' style='cursor: pointer; cursor: hand;'>Đặt lại cỡ chữ chuẩn </a><span class="font12">(Phím tắt  alt+r)</span><span class="cach"></span>
+                            <a onmouseover="PlayGiamKichCoChu.playclip()" class='decreaseFont' style='cursor: pointer; cursor: hand;' title=''>Giảm kích cỡ chữ </a><span class="font12">(Phím tắt  alt+e)</span><span class="cach"></span>
+                        </p>
+                        <p><a onmouseover="PlayHuongDanTruyCap.playclip()" href="huong-dan-su-dung.html#noidungnoidung">Hướng dẫn truy cập</a></p>
+                        <p class="dsuh"><a onmouseover="PlayDanhSachUngHo.playclip()" href="danh-sach-ung-ho.html#noidungnoidung"><span>Danh sách ủng hộ</span></a> <span class="font12">(Phím tắt  alt+q)</span><span class="cach"></span></p>
+
+                        <p class="ngonngu">
+                            <a onmouseover="PlayTiengViet.playclip()" href="http://www.drdvietnam.org/language.php?set=vn" title="">Tiếng Việt </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span>
+                            <a onmouseover="PlayEnglish.playclip()" href="http://www.drdvietnam.org/language.php?set=en" title="">English </a><span class="font12">(Phím tắt  alt+1)</span><span class="cach"></span>
+                        </p>
+                        <p class="slr"><a onmouseover="PlayTimKiem.playclip()" href="tim-kiem.html#noidungnoidung">Tìm kiếm</a><span class="cach"></span></p>
                         <p class="slr"><a href="tim-kiem-theo-tu-khoa.html#noidungnoidung">Tìm theo từ khóa</a><span class="cach"></span></p>
-                        
-                        <p class="slr"><a href="dang-nhap.html#noidungnoidung" title="Phím tắt  alt+i">Đăng nhập</a><span class="cach"></span></p>
-                        <p class="slr"><a href="dang-ky.html#noidungnoidung" title="Phím tắt  alt+u">Đăng ký</a></p>
+
+                        <p class="slr"><a onmouseover="PlayDangNhap.playclip()" href="dang-nhap.html#noidungnoidung" title="Phím tắt  alt+i">Đăng nhập</a><span class="cach"></span></p>
+                        <p class="slr"><a onmouseover="PlayDangKy.playclip()" href="dang-ky.html#noidungnoidung" title="Phím tắt  alt+u">Đăng ký</a></p>
                     </div>
                     <section><p class="vitrihientai">Bạn đang ở: Thư viện&nbsp;&raquo;&nbsp;Khác</p></section>
                 </header>
-                <p class="mntop" id="menutoptop"><span>Menu top</span> <span class="font16">( Phím tắt  <u>6</u> )</span></p>
+                <p onmouseover="PlayMenuTop.playclip()" class="mntop" id="menutoptop"><span>Menu top</span> <span class="font16">( Phím tắt  <u>6</u> )</span></p>
                 <nav class="menutopp">
-                   <ul>
-                       <li><a class="" href="index.html#noidungnoidung">Trang chủ</a> <span class="padl5">(Phím tắt  <u>alt+a</u>)</span></li>
-                       <li><a class="" href="drd.html#noidungnoidung">Giới thiệu</a> <span class="padl5">(Phím tắt  <u>alt+j</u>)</span></li>
-                       <li><a class="" href="linh-vuc-hoat-dong.html#noidungnoidung">Lĩnh vực hoạt động</a> <span class="padl5">(Phím tắt  <u>alt+l</u>)</span></li>
-                       <li><a class="" href="hoi-quan.html#noidungnoidung">Hội quán Đời Rất Đẹp</a> <span class="padl5">(Phím tắt  <u>alt+c</u>)</span></li>
-                       <li><a class="" href="thu-vien-thong-tin.html#noidungnoidung">Tin tức</a> <span class="padl5">(Phím tắt  <u>alt+n</u>)</span></li>
-                       <li><a class="dangxem" href="video.html#noidungnoidung">Thư viện</a> <span class="padl5">(Phím tắt  <u>alt+m</u>)</span></li>
-                       <li><a class="" href="chinh-sach-phap-luat.html#noidungnoidung">Chính sách và pháp luật</a> <span class="padl5">(Phím tắt  <u>alt+p</u>)</span></li>
-                       <li><a class="" href="dien-dan.html#noidungnoidung">Diễn đàn</a> <span class="padl5">(Phím tắt  <u>alt+y</u>)</span></li>
-                       <li class="gotop"><a href="video-khac.html#gotop" class="font14">Lên trên</a></li>
-                   </ul>
-               </nav>
+                    <ul>
+                        <li id=""><a onmouseover="PlayTrangChu.playclip()" class="dangxem" href="index.html#noidungnoidung">Trang chủ</a> <span class="padl5">(Phím tắt  <u>alt+a</u>)</span></li>
+                        <li><a onmouseover="PlayGioiThieu.playclip()" class="" href="drd.html#noidungnoidung">Giới thiệu</a> <span class="padl5">(Phím tắt  <u>alt+j</u>)</span></li>
+                        <li><a onmouseover="PlayLinhVucHoatDong.playclip()" class="" href="linh-vuc-hoat-dong.html#noidungnoidung">Lĩnh vực hoạt động</a> <span class="padl5">(Phím tắt  <u>alt+l</u>)</span></li>
+                        <li><a onmouseover="PlayHoiQuanDoiRat.playclip()" class="" href="hoi-quan.html#noidungnoidung">Hội quán Đời Rất Đẹp</a> <span class="padl5">(Phím tắt  <u>alt+c</u>)</span></li>
+                        <li><a onmouseover="PlayTinTuc.playclip()" class="" href="thu-vien-thong-tin.html#noidungnoidung">Tin tức</a> <span class="padl5">(Phím tắt  <u>alt+n</u>)</span></li>
+                        <li><a onmouseover="PlayThuVien.playclip()" class="" href="video.html#noidungnoidung">Thư viện</a> <span class="padl5">(Phím tắt  <u>alt+m</u>)</span></li>
+                        <li><a onmouseover="PlayChinhSachPhapLuat.playclip()" class="" href="chinh-sach-phap-luat.html#noidungnoidung">Chính sách và pháp luật</a> <span class="padl5">(Phím tắt  <u>alt+p</u>)</span></li>
+                        <li><a onmouseover="PlayDienDan.playclip()" class="" href="dien-dan.html#noidungnoidung">Diễn đàn</a> <span class="padl5">(Phím tắt  <u>alt+y</u>)</span></li>
+                        <li class="gotop"><a href="index.html#gotop" class="font14">Lên trên</a></li>
+                    </ul>
+                </nav>
             <!--<div style="display:none;">
                         	<div id="searchgoogle" class="searchgo"><gcse:searchbox></gcse:searchbox>
 <div style="visibility:hidden"><gcse:searchresults refinementStyle="link"></gcse:searchresults></div>
@@ -191,28 +194,28 @@ $(".decreaseFont").click(function(){
         <p class="mntop" id="menumainmain"><span>Menu Chính</span> <span class="font16">( Phím tắt  <u>7</u> )</span></p>
         <nav class="menutopp">
            <ul>
-               <li><a class=" dangxem" href="video.html#noidungnoidung">Video</a></li>
-               <li class="menucon"><a class="" href="video-gioi-thieu-drd.html#noidungnoidung">&raquo;&nbsp;Giới thiệu DRD</a></li>
-               <li class="menucon"><a class="" href="video-cau-chuyen-thanh-nien.html#noidungnoidung">&raquo;&nbsp;Câu chuyện thanh niên</a></li>
-               <li class="menucon"><a class="" href="video-hoat-dong-drd.html#noidungnoidung">&raquo;&nbsp;Hoạt động DRD</a></li>
-               <li class="menucon"><a class="" href="video-hoat-dong-van-nghe.html#noidungnoidung">&raquo;&nbsp;Hoạt động văn nghệ</a></li>
-               <li class="menucon"><a class="" href="video-guong-dien-hinh.html#noidungnoidung">&raquo;&nbsp;Gương điển hình</a></li>
-               <li class="menucon"><a class=" dangxem" href="video-khac.html#noidungnoidung">&raquo;&nbsp;Khác</a></li>
-               
-               <li><a class="" href="goc-anh-dep.html#noidungnoidung">Hình ảnh</a></li><li><a class="" href="tai-lieu.html#noidungnoidung">Tài liệu</a></li>
-               <li class="menucon"><a class="" href="tai-lieu/thu-vien-sach.html#noidungnoidung">&raquo;&nbsp;Sách</a></li>
-               <li class="menucon"><a class="" href="tai-lieu/an-pham-do-drd-phat-hanh.html#noidungnoidung">&raquo;&nbsp;Ấn phẩm đã phát hành</a></li>
-               <li class="menucon"><a class="" href="tai-lieu/bao-cao-hoat-dong-drd.html#noidungnoidung">&raquo;&nbsp;Báo cáo hoạt động</a></li>
-               <li class="menucon"><a class="" href="tai-lieu/ky-nang-tim-viec.html#noidungnoidung">&raquo;&nbsp;Kỹ năng tìm việc</a></li>
-               <li><a class="" href="dien-dan.html#noidungnoidung">Diễn đàn</a></li>
-               <li class="menucon"><a class="" href="gioi-thieu-dien-dan-drd.html#noidungnoidung">&nbsp;&raquo;&nbsp;Giới thiệu diễn đàn DRD</a></li>
-               <li class="menucon"><a class="" href="noi-quy-dien-dan.html#noidungnoidung">&nbsp;&raquo;&nbsp;Nội quy diễn đàn</a></li>
-               <li class="menucon"><a class="" href="cac-chu-de-thao-luan.html#noidungnoidung">&nbsp;&raquo;&nbsp;Các chủ đề thảo luận</a></li>
-               
-               <li class="menucon"><a class="" href="luat-nguoi-khuyet-tat.html#noidungnoidung">&nbsp;&nbsp;&nbsp;&raquo;&nbsp;Luật người khuyết tật</a></li>
-               <li class="menucon"><a class="" href="sang-tac-cua-nguoi-khuyet-tat.html#noidungnoidung">&nbsp;&nbsp;&nbsp;&raquo;&nbsp;Sáng tác của người khuyết tật</a></li>
-               <li class="menucon"><a class="" href="chu-de-khac.html#noidungnoidung">&nbsp;&nbsp;&nbsp;&raquo;&nbsp;Chủ đề khác</a></li>
-               <li class="menucon"><a class="" href="tao-chu-de.html#noidungnoidung">&nbsp;&raquo;&nbsp;Tạo chủ đề mới</a></li>			
+               <li><a class="" href="video.html#noidungnoidung" onmouseover="PlayVideo.playclip()">Video</a></li>
+             <li class="menucon"><a onmouseover="PlayGioiThieuDRD.playclip()" class="" href="video-gioi-thieu-drd.html#noidungnoidung">&raquo;&nbsp;Giới thiệu DRD</a></li>
+             <li class="menucon"><a class="" href="video-cau-chuyen-thanh-nien.html#noidungnoidung" onmouseover="PlayCauChuyenThanhNien.playclip()">&raquo;&nbsp;Câu chuyện thanh niên</a></li>
+             <li class="menucon"><a onmouseover="PlayHoatDongDRD.playclip()" class="" href="video-hoat-dong-drd.html#noidungnoidung">&raquo;&nbsp;Hoạt động DRD</a></li>
+             <li class="menucon"><a onmouseover="PlayHoatDongVanNghe.playclip()" class="" href="video-hoat-dong-van-nghe.html#noidungnoidung">&raquo;&nbsp;Hoạt động văn nghệ</a></li>
+             <li class="menucon"><a onmouseover="PlayGuongDienHinh.playclip()" class="" href="video-guong-dien-hinh.html#noidungnoidung">&raquo;&nbsp;Gương điển hình</a></li>
+             <li class="menucon"><a class="" href="video-khac.html#noidungnoidung">&raquo;&nbsp;Khác</a></li>
+             
+             <li><a onmouseover="PlayHinhAnh.playclip()" class="" href="goc-anh-dep.html#noidungnoidung">Hình ảnh</a></li><li><a onmouseover="PlayTaiLieu.playclip()" class="" href="tai-lieu.html#noidungnoidung">Tài liệu</a></li>
+             <li class="menucon"><a onmouseover="PlaySach.playclip()" class="" href="tai-lieu/thu-vien-sach.html#noidungnoidung">&raquo;&nbsp;Sách</a></li>
+             <li class="menucon"><a onmouseover="PlayAnPhamPhatHanh.playclip()" class="" href="tai-lieu/an-pham-do-drd-phat-hanh.html#noidungnoidung">&raquo;&nbsp;Ấn phẩm đã phát hành</a></li>
+             <li class="menucon"><a onmouseover="PlayBaoCaoHoatDong.playclip()" class="" href="tai-lieu/bao-cao-hoat-dong-drd.html#noidungnoidung">&raquo;&nbsp;Báo cáo hoạt động</a></li>
+             <li class="menucon"><a onmouseover="PlayKiNangTimViec.playclip()" class="" href="tai-lieu/ky-nang-tim-viec.html#noidungnoidung">&raquo;&nbsp;Kỹ năng tìm việc</a></li>
+             <li><a class=" dangxem" href="dien-dan.html#noidungnoidung" onmouseover="PlayDienDan.playclip()">Diễn đàn</a></li>
+             <li class="menucon"><a onmouseover="PlayGioiThieuDienDan.playclip()" class="" href="gioi-thieu-dien-dan-drd.html#noidungnoidung">&nbsp;&raquo;&nbsp;Giới thiệu diễn đàn DRD</a></li>
+             <li class="menucon"><a onmouseover="PlayNoiQuyDienDan.playclip()" class="" href="noi-quy-dien-dan.html#noidungnoidung">&nbsp;&raquo;&nbsp;Nội quy diễn đàn</a></li>
+             <li class="menucon"><a class="" href="cac-chu-de-thao-luan.html#noidungnoidung">&nbsp;&raquo;&nbsp;Các chủ đề thảo luận</a></li>
+             
+             <li class="menucon"><a onmouseover="PlayLuatNguoiKhuyetTat.playclip()" class="" href="luat-nguoi-khuyet-tat.html#noidungnoidung">&nbsp;&nbsp;&nbsp;&raquo;&nbsp;Luật người khuyết tật</a></li>
+             <li class="menucon"><a onmouseover="PlaySangTacKhuyetTat.playclip()" class="" href="sang-tac-cua-nguoi-khuyet-tat.html#noidungnoidung">&nbsp;&nbsp;&nbsp;&raquo;&nbsp;Sáng tác của người khuyết tật</a></li>
+             <li class="menucon"><a onmouseover="PlayChuDeKhac.playclip()" class="" href="chu-de-khac.html#noidungnoidung">&nbsp;&nbsp;&nbsp;&raquo;&nbsp;Chủ đề khác</a></li>
+             <li class="menucon"><a onmouseover="PlayTaoChuDeMoi.playclip()" class="" href="tao-chu-de.html#noidungnoidung">&nbsp;&raquo;&nbsp;Tạo chủ đề mới</a></li>		
                <li class="gotop"><a href="video-khac.html#gotop" class="font14">Lên trên</a></li>
            </ul>
        </nav>
@@ -312,6 +315,21 @@ $(".decreaseFont").click(function(){
         s1.setAttribute('crossorigin','*');
         s0.parentNode.insertBefore(s1,s0);
     })();
+</script>
+<script>
+    $(".gdtc a").click(function(){
+        $("body").removeClass().addClass("normal");
+        $("#giaodientiepcan").removeClass().addClass("normal");
+    });
+    $(".gdtp a").click(function(){
+        $("body").removeClass().addClass("highvisibility");
+        $("#giaodientiepcan").removeClass().addClass("highvisibility");
+    });
+    $(".gdtc2 a").click(function(){
+        $("body").removeClass().addClass("nightmode");
+        $("#giaodientiepcan").removeClass().addClass("nightmode");
+    });
+
 </script>
 <!--End of Tawk.to Script-->
 </body>
